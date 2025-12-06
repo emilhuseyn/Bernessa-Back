@@ -523,10 +523,11 @@ C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\staticwebas
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\App.API.csproj.Up2Date
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\App.API.dll
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\refint\App.API.dll
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\App.API.pdb
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\App.API.genruntimeconfig.cache
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\ref\App.API.dll
+C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\App.API.sourcelink.json
+C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
