@@ -1,0 +1,103 @@
+﻿using App.Business.DTOs.Analytics;
+using App.Business.Services.Interfaces;
+using App.Core.Enums;
+using App.DAL.Presistence;
+using App.DAL.Repositories.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace App.Business.Services.Implementations
+{
+    public class AnalyticsService : IAnalyticsService
+    {
+        private readonly IOrderRepository _orderRepository;
+        private readonly IProductRepository _productRepository;
+        private readonly AppDbContext _context;
+
+        public AnalyticsService(
+            IOrderRepository orderRepository,
+            IProductRepository productRepository,
+            AppDbContext context)
+        {
+            _orderRepository = orderRepository;
+            _productRepository = productRepository;
+            _context = context;
+        }
+
+        public async Task<DashboardDTO> GetDashboardDataAsync()
+        {
+            // Total Revenue
+            var totalRevenue = await _orderRepository.GetTotalRevenueAsync();
+
+            // Today's Orders
+            var todayOrders = await _orderRepository.GetTodayOrdersAsync();
+            var todayOrdersCount = todayOrders.Count;
+
+            // Total Unique Customers
+            var totalCustomers = await _orderRepository.GetUniqueCustomersCountAsync();
+
+            // Total Active Products
+            var totalProducts = await _context.Products
+                .CountAsync(p => p.IsActive && !p.IsDeleted);
+
+            // Recent Orders
+            var recentOrders = await _context.Orders
+                .Where(o => !o.IsDeleted)
+                .OrderByDescending(o => o.CreatedOn)
+                .Take(10)
+                .Select(o => new RecentOrderDTO
+                {
+                    Id = o.Id,
+                    OrderNumber = o.OrderNumber,
+                    CustomerName = o.CustomerName,
+                    Total = o.Total,
+                    Status = o.Status.ToString(),
+                    CreatedOn = o.CreatedOn
+                })
+                .ToListAsync();
+
+            // Top Products
+            var topProducts = await _context.OrderItems
+                .Where(oi => !oi.IsDeleted)
+                .GroupBy(oi => oi.ProductId)
+                .Select(g => new
+                {
+                    ProductId = g.Key,
+                    TotalSold = g.Sum(oi => oi.Quantity),
+                    Revenue = g.Sum(oi => oi.Price * oi.Quantity)
+                })
+                .OrderByDescending(x => x.TotalSold)
+                .Take(5)
+                .ToListAsync();
+
+            var topProductDTOs = new List<TopProductDTO>();
+            foreach (var tp in topProducts)
+            {
+                var product = await _context.Products.FindAsync(tp.ProductId);
+                if (product != null)
+                {
+                    topProductDTOs.Add(new TopProductDTO
+                    {
+                        ProductId = tp.ProductId,
+                        ProductName = product.Name,
+                        TotalSold = tp.TotalSold,
+                        Revenue = tp.Revenue
+                    });
+                }
+            }
+
+            return new DashboardDTO
+            {
+                TotalRevenue = totalRevenue,
+                TodayOrders = todayOrdersCount,
+                TotalCustomers = totalCustomers,
+                TotalProducts = totalProducts,
+                RecentOrders = recentOrders,
+                TopProducts = topProductDTOs
+            };
+        }
+    }
+}

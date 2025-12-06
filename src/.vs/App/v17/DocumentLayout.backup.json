@@ -1,0 +1,1893 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|solutionrelative:app.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\AUTH-SERVICE-RESULT-PATTERN.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AUTH-SERVICE-RESULT-PATTERN.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\daldependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\daldependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\services\\implementations\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\services\\implementations\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.api\\controllers\\analyticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|solutionrelative:app.api\\controllers\\analyticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\dtos\\auth\\adminresetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\dtos\\auth\\adminresetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\repositories\\implementations\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\repositories\\implementations\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\services\\implementations\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\services\\implementations\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251205224042_removingStock2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:App.DAL\\Migrations\\20251205224042_removingStock2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\services\\implementations\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\services\\implementations\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.core\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|solutionrelative:app.core\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251205223917_removingStock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:App.DAL\\Migrations\\20251205223917_removingStock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\services\\implementations\\analyticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\services\\implementations\\analyticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\configurations\\productconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\configurations\\productconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.core\\entities\\producttranslation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|solutionrelative:app.core\\entities\\producttranslation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\dtos\\products\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\dtos\\products\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\migrations\\20251205220439_addingtranslation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\migrations\\20251205220439_addingtranslation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\dtos\\products\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\dtos\\products\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\dtos\\categories\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\dtos\\categories\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\converters\\azerbaijandatetimeconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\converters\\azerbaijandatetimeconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\presistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\presistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.core\\helpers\\datetimehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|solutionrelative:app.core\\helpers\\datetimehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\dtos\\categories\\createcategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\dtos\\categories\\createcategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\dtos\\categories\\categorytranslationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\dtos\\categories\\categorytranslationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.core\\entities\\categorytranslation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|solutionrelative:app.core\\entities\\categorytranslation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.core\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|solutionrelative:app.core\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\migrations\\20251204142735_asdasd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\migrations\\20251204142735_asdasd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.core\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|solutionrelative:app.core\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\repositories\\implementations\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\repositories\\implementations\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\repositories\\implementations\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\repositories\\implementations\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\repositories\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\repositories\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|solutionrelative:app.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|solutionrelative:app.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\dtos\\analytics\\dashboarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\dtos\\analytics\\dashboarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\presistence\\appdbcontextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\presistence\\appdbcontextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.api\\middlewares\\globalexceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|solutionrelative:app.api\\middlewares\\globalexceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|solutionrelative:app.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.core\\enums\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|solutionrelative:app.core\\enums\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\dtos\\orders\\updateorderstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\dtos\\orders\\updateorderstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\dtos\\orders\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\dtos\\orders\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\dtos\\orders\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\dtos\\orders\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|solutionrelative:app.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\configurations\\categoryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\configurations\\categoryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\services\\externalservices\\abstractions\\filemanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\services\\externalservices\\abstractions\\filemanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.core\\entities\\identity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|solutionrelative:app.core\\entities\\identity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\migrations\\20251201231754_addmodels2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\migrations\\20251201231754_addmodels2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\FIX-SEEDING-ERROR.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FIX-SEEDING-ERROR.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\quick-start.bat||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:quick-start.bat||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\SETUP-GUIDE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SETUP-GUIDE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\mappingprofiles\\categoryprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\mappingprofiles\\categoryprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\services\\interfaces\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\services\\interfaces\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\repositories\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\repositories\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\configurations\\orderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\configurations\\orderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|solutionrelative:app.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.core\\enums\\euserrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|solutionrelative:app.core\\enums\\euserrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF2F1779-80CD-492A-B5F8-9CAE159BEDE5}|App.Shared\\App.Shared.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.shared\\implementations\\claimservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF2F1779-80CD-492A-B5F8-9CAE159BEDE5}|App.Shared\\App.Shared.csproj|solutionrelative:app.shared\\implementations\\claimservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\businessdependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\businessdependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.core\\enums\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|solutionrelative:app.core\\enums\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.core\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|solutionrelative:app.core\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.core\\entities\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|solutionrelative:app.core\\entities\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\configurations\\orderitemconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\configurations\\orderitemconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\dtos\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\dtos\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\dtos\\auth\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\dtos\\auth\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\dtos\\auth\\userinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\dtos\\auth\\userinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\repositories\\interfaces\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\repositories\\interfaces\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\repositories\\implementations\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\repositories\\implementations\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\services\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\services\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\services\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\services\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\services\\interfaces\\ianalyticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\services\\interfaces\\ianalyticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\services\\implementations\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\services\\implementations\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.core\\exceptions\\unauthorizedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|solutionrelative:app.core\\exceptions\\unauthorizedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.core\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|solutionrelative:app.core\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\migration-commands.txt||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:migration-commands.txt||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\API-DOCUMENTATION.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API-DOCUMENTATION.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\Postman-Collection.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Postman-Collection.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\quick-start.sh||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:quick-start.sh||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\IMPLEMENTATION-SUMMARY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:IMPLEMENTATION-SUMMARY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\start-app.bat||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:start-app.bat||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\setup-database.bat||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:setup-database.bat||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\QUICK-SETUP.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QUICK-SETUP.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\check-database.bat||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:check-database.bat||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\START-HERE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:START-HERE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\fix-avatar-migration.bat||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:fix-avatar-migration.bat||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\reset-database.bat||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:reset-database.bat||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\migrations\\20251201230429_addmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\migrations\\20251201230429_addmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.api\\wwwroot\\images\\.gitkeep||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|solutionrelative:app.api\\wwwroot\\images\\.gitkeep||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\IMAGE-UPLOAD-IMPLEMENTATION.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:IMAGE-UPLOAD-IMPLEMENTATION.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\migrations\\20251202073259_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\migrations\\20251202073259_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\ANALYTICS-DASHBOARD-API.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ANALYTICS-DASHBOARD-API.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\dtos\\commons\\serviceresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\dtos\\commons\\serviceresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\RELATED-PRODUCTS-API.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RELATED-PRODUCTS-API.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\configurations\\categorytranslationconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\configurations\\categorytranslationconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\configurations\\producttranslationconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\configurations\\producttranslationconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\dtos\\products\\producttranslationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\dtos\\products\\producttranslationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\MULTI-LANGUAGE-IMPLEMENTATION.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MULTI-LANGUAGE-IMPLEMENTATION.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\AZERBAIJAN-TIMEZONE-IMPLEMENTATION.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AZERBAIJAN-TIMEZONE-IMPLEMENTATION.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\PRODUCT-UPDATE-FIX.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PRODUCT-UPDATE-FIX.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\ANALYTICS-REVENUE-FIX.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ANALYTICS-REVENUE-FIX.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\dtos\\auth\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\dtos\\auth\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\dtos\\auth\\updateprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\dtos\\auth\\updateprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\dtos\\auth\\forgotpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\dtos\\auth\\forgotpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\dtos\\auth\\resetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\dtos\\auth\\resetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\dtos\\auth\\validatetokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\dtos\\auth\\validatetokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\PASSWORD-MANAGEMENT.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PASSWORD-MANAGEMENT.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\SIMPLE-PASSWORD-RESET.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SIMPLE-PASSWORD-RESET.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\localization\\azerbaijaniidentityerrordescriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\localization\\azerbaijaniidentityerrordescriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\localization\\azerbaijaniidentityerrordescriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\localization\\azerbaijaniidentityerrordescriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\AZERBAIJANI-ERROR-MESSAGES.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AZERBAIJANI-ERROR-MESSAGES.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 111,
+              "Title": "AzerbaijaniIdentityErrorDescriber.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Localization\\AzerbaijaniIdentityErrorDescriber.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Localization\\AzerbaijaniIdentityErrorDescriber.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Localization\\AzerbaijaniIdentityErrorDescriber.cs",
+              "RelativeToolTip": "App.DAL\\Localization\\AzerbaijaniIdentityErrorDescriber.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T23:44:43.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 110,
+              "Title": "AzerbaijaniIdentityErrorDescriber.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Localization\\AzerbaijaniIdentityErrorDescriber.cs",
+              "RelativeDocumentMoniker": "App.Business\\Localization\\AzerbaijaniIdentityErrorDescriber.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Localization\\AzerbaijaniIdentityErrorDescriber.cs",
+              "RelativeToolTip": "App.Business\\Localization\\AzerbaijaniIdentityErrorDescriber.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T23:44:28.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "App.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "App.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAmwIAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:43:18.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DALDependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\DALDependencyInjection.cs",
+              "RelativeDocumentMoniker": "App.DAL\\DALDependencyInjection.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\DALDependencyInjection.cs",
+              "RelativeToolTip": "App.DAL\\DALDependencyInjection.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAuwEEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T16:47:37.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AUTH-SERVICE-RESULT-PATTERN.md",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\AUTH-SERVICE-RESULT-PATTERN.md",
+              "RelativeDocumentMoniker": "AUTH-SERVICE-RESULT-PATTERN.md",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\AUTH-SERVICE-RESULT-PATTERN.md",
+              "RelativeToolTip": "AUTH-SERVICE-RESULT-PATTERN.md",
+              "ViewState": "AgIAAE4BAAAAAAAAAAAuwF0BAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-03T13:31:35.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Implementations\\AuthService.cs",
+              "RelativeDocumentMoniker": "App.Business\\Services\\Implementations\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Implementations\\AuthService.cs",
+              "RelativeToolTip": "App.Business\\Services\\Implementations\\AuthService.cs",
+              "ViewState": "AgIAAOEAAAAAAAAAAAAuwN4AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:39:25.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 112,
+              "Title": "AZERBAIJANI-ERROR-MESSAGES.md",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\AZERBAIJANI-ERROR-MESSAGES.md",
+              "RelativeDocumentMoniker": "AZERBAIJANI-ERROR-MESSAGES.md",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\AZERBAIJANI-ERROR-MESSAGES.md",
+              "RelativeToolTip": "AZERBAIJANI-ERROR-MESSAGES.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-05T23:46:08.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AnalyticsController.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Controllers\\AnalyticsController.cs",
+              "RelativeDocumentMoniker": "App.API\\Controllers\\AnalyticsController.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Controllers\\AnalyticsController.cs",
+              "RelativeToolTip": "App.API\\Controllers\\AnalyticsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:44:09.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdminResetPasswordDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\AdminResetPasswordDTO.cs",
+              "RelativeDocumentMoniker": "App.Business\\DTOs\\Auth\\AdminResetPasswordDTO.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\AdminResetPasswordDTO.cs",
+              "RelativeToolTip": "App.Business\\DTOs\\Auth\\AdminResetPasswordDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T23:23:40.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 109,
+              "Title": "SIMPLE-PASSWORD-RESET.md",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\SIMPLE-PASSWORD-RESET.md",
+              "RelativeDocumentMoniker": "SIMPLE-PASSWORD-RESET.md",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\SIMPLE-PASSWORD-RESET.md",
+              "RelativeToolTip": "SIMPLE-PASSWORD-RESET.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAO4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-05T23:26:26.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Implementations\\CategoryService.cs",
+              "RelativeDocumentMoniker": "App.Business\\Services\\Implementations\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Implementations\\CategoryService.cs",
+              "RelativeToolTip": "App.Business\\Services\\Implementations\\CategoryService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:40:06.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 103,
+              "Title": "ChangePasswordDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\ChangePasswordDTO.cs",
+              "RelativeDocumentMoniker": "App.Business\\DTOs\\Auth\\ChangePasswordDTO.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\ChangePasswordDTO.cs",
+              "RelativeToolTip": "App.Business\\DTOs\\Auth\\ChangePasswordDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T23:09:32.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 104,
+              "Title": "UpdateProfileDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\UpdateProfileDTO.cs",
+              "RelativeDocumentMoniker": "App.Business\\DTOs\\Auth\\UpdateProfileDTO.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\UpdateProfileDTO.cs",
+              "RelativeToolTip": "App.Business\\DTOs\\Auth\\UpdateProfileDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T23:09:40.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 105,
+              "Title": "ForgotPasswordDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\ForgotPasswordDTO.cs",
+              "RelativeDocumentMoniker": "App.Business\\DTOs\\Auth\\ForgotPasswordDTO.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\ForgotPasswordDTO.cs",
+              "RelativeToolTip": "App.Business\\DTOs\\Auth\\ForgotPasswordDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T23:09:46.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 106,
+              "Title": "ResetPasswordDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\ResetPasswordDTO.cs",
+              "RelativeDocumentMoniker": "App.Business\\DTOs\\Auth\\ResetPasswordDTO.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\ResetPasswordDTO.cs",
+              "RelativeToolTip": "App.Business\\DTOs\\Auth\\ResetPasswordDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T23:10:01.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 107,
+              "Title": "ValidateTokenDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\ValidateTokenDTO.cs",
+              "RelativeDocumentMoniker": "App.Business\\DTOs\\Auth\\ValidateTokenDTO.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\ValidateTokenDTO.cs",
+              "RelativeToolTip": "App.Business\\DTOs\\Auth\\ValidateTokenDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T23:12:17.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 108,
+              "Title": "PASSWORD-MANAGEMENT.md",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\PASSWORD-MANAGEMENT.md",
+              "RelativeDocumentMoniker": "PASSWORD-MANAGEMENT.md",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\PASSWORD-MANAGEMENT.md",
+              "RelativeToolTip": "PASSWORD-MANAGEMENT.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-05T23:14:16.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Implementations\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Repositories\\Implementations\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Implementations\\ProductRepository.cs",
+              "RelativeToolTip": "App.DAL\\Repositories\\Implementations\\ProductRepository.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAC8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:36:14.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Implementations\\ProductService.cs",
+              "RelativeDocumentMoniker": "App.Business\\Services\\Implementations\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Implementations\\ProductService.cs",
+              "RelativeToolTip": "App.Business\\Services\\Implementations\\ProductService.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAmwGkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:39:47.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 102,
+              "Title": "ANALYTICS-REVENUE-FIX.md",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\ANALYTICS-REVENUE-FIX.md",
+              "RelativeDocumentMoniker": "ANALYTICS-REVENUE-FIX.md",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\ANALYTICS-REVENUE-FIX.md",
+              "RelativeToolTip": "ANALYTICS-REVENUE-FIX.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-05T23:07:43.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20251205224042_removingStock2.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251205224042_removingStock2.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Migrations\\20251205224042_removingStock2.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251205224042_removingStock2.cs",
+              "RelativeToolTip": "App.DAL\\Migrations\\20251205224042_removingStock2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T22:40:42.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "App.Core\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\Product.cs",
+              "RelativeToolTip": "App.Core\\Entities\\Product.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA0wB8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:30:48.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20251205223917_removingStock.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251205223917_removingStock.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Migrations\\20251205223917_removingStock.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251205223917_removingStock.cs",
+              "RelativeToolTip": "App.DAL\\Migrations\\20251205223917_removingStock.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T22:39:18.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\ProductConfiguration.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Configurations\\ProductConfiguration.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\ProductConfiguration.cs",
+              "RelativeToolTip": "App.DAL\\Configurations\\ProductConfiguration.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAIAzwBoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:31:57.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProductTranslation.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\ProductTranslation.cs",
+              "RelativeDocumentMoniker": "App.Core\\Entities\\ProductTranslation.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\ProductTranslation.cs",
+              "RelativeToolTip": "App.Core\\Entities\\ProductTranslation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T21:44:09.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProductDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Products\\ProductDTO.cs",
+              "RelativeDocumentMoniker": "App.Business\\DTOs\\Products\\ProductDTO.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Products\\ProductDTO.cs",
+              "RelativeToolTip": "App.Business\\DTOs\\Products\\ProductDTO.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwBEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:33:27.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Implementations\\OrderService.cs",
+              "RelativeDocumentMoniker": "App.Business\\Services\\Implementations\\OrderService.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Implementations\\OrderService.cs",
+              "RelativeToolTip": "App.Business\\Services\\Implementations\\OrderService.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAawEYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:40:30.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20251205220439_addingTranslation.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251205220439_addingTranslation.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Migrations\\20251205220439_addingTranslation.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251205220439_addingTranslation.cs",
+              "RelativeToolTip": "App.DAL\\Migrations\\20251205220439_addingTranslation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T22:04:40.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AnalyticsService.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Implementations\\AnalyticsService.cs",
+              "RelativeDocumentMoniker": "App.Business\\Services\\Implementations\\AnalyticsService.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Implementations\\AnalyticsService.cs",
+              "RelativeToolTip": "App.Business\\Services\\Implementations\\AnalyticsService.cs",
+              "ViewState": "AgIAAG4BAAAAAAAAAAAuwIoBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:40:44.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 101,
+              "Title": "PRODUCT-UPDATE-FIX.md",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\PRODUCT-UPDATE-FIX.md",
+              "RelativeDocumentMoniker": "PRODUCT-UPDATE-FIX.md",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\PRODUCT-UPDATE-FIX.md",
+              "RelativeToolTip": "PRODUCT-UPDATE-FIX.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-05T22:11:37.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CreateProductDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Products\\CreateProductDTO.cs",
+              "RelativeDocumentMoniker": "App.Business\\DTOs\\Products\\CreateProductDTO.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Products\\CreateProductDTO.cs",
+              "RelativeToolTip": "App.Business\\DTOs\\Products\\CreateProductDTO.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAwwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:33:12.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CategoryDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Categories\\CategoryDTO.cs",
+              "RelativeDocumentMoniker": "App.Business\\DTOs\\Categories\\CategoryDTO.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Categories\\CategoryDTO.cs",
+              "RelativeToolTip": "App.Business\\DTOs\\Categories\\CategoryDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:33:54.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AzerbaijanDateTimeConverter.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Converters\\AzerbaijanDateTimeConverter.cs",
+              "RelativeDocumentMoniker": "App.Business\\Converters\\AzerbaijanDateTimeConverter.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Converters\\AzerbaijanDateTimeConverter.cs",
+              "RelativeToolTip": "App.Business\\Converters\\AzerbaijanDateTimeConverter.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T21:56:51.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 100,
+              "Title": "AZERBAIJAN-TIMEZONE-IMPLEMENTATION.md",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\AZERBAIJAN-TIMEZONE-IMPLEMENTATION.md",
+              "RelativeDocumentMoniker": "AZERBAIJAN-TIMEZONE-IMPLEMENTATION.md",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\AZERBAIJAN-TIMEZONE-IMPLEMENTATION.md",
+              "RelativeToolTip": "AZERBAIJAN-TIMEZONE-IMPLEMENTATION.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-05T22:00:19.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Presistence\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Presistence\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Presistence\\AppDbContext.cs",
+              "RelativeToolTip": "App.DAL\\Presistence\\AppDbContext.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T16:45:42.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DateTimeHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Helpers\\DateTimeHelper.cs",
+              "RelativeDocumentMoniker": "App.Core\\Helpers\\DateTimeHelper.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Helpers\\DateTimeHelper.cs",
+              "RelativeToolTip": "App.Core\\Helpers\\DateTimeHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T21:56:08.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CreateCategoryDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Categories\\CreateCategoryDTO.cs",
+              "RelativeDocumentMoniker": "App.Business\\DTOs\\Categories\\CreateCategoryDTO.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Categories\\CreateCategoryDTO.cs",
+              "RelativeToolTip": "App.Business\\DTOs\\Categories\\CreateCategoryDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:33:37.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CategoryTranslationDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Categories\\CategoryTranslationDTO.cs",
+              "RelativeDocumentMoniker": "App.Business\\DTOs\\Categories\\CategoryTranslationDTO.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Categories\\CategoryTranslationDTO.cs",
+              "RelativeToolTip": "App.Business\\DTOs\\Categories\\CategoryTranslationDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T21:45:19.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 99,
+              "Title": "MULTI-LANGUAGE-IMPLEMENTATION.md",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\MULTI-LANGUAGE-IMPLEMENTATION.md",
+              "RelativeDocumentMoniker": "MULTI-LANGUAGE-IMPLEMENTATION.md",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\MULTI-LANGUAGE-IMPLEMENTATION.md",
+              "RelativeToolTip": "MULTI-LANGUAGE-IMPLEMENTATION.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJYCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-05T21:50:45.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 98,
+              "Title": "ProductTranslationDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Products\\ProductTranslationDTO.cs",
+              "RelativeDocumentMoniker": "App.Business\\DTOs\\Products\\ProductTranslationDTO.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Products\\ProductTranslationDTO.cs",
+              "RelativeToolTip": "App.Business\\DTOs\\Products\\ProductTranslationDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T21:45:36.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 96,
+              "Title": "CategoryTranslationConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\CategoryTranslationConfiguration.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Configurations\\CategoryTranslationConfiguration.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\CategoryTranslationConfiguration.cs",
+              "RelativeToolTip": "App.DAL\\Configurations\\CategoryTranslationConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T21:44:39.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CategoryTranslation.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\CategoryTranslation.cs",
+              "RelativeDocumentMoniker": "App.Core\\Entities\\CategoryTranslation.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\CategoryTranslation.cs",
+              "RelativeToolTip": "App.Core\\Entities\\CategoryTranslation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T21:44:02.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 97,
+              "Title": "ProductTranslationConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\ProductTranslationConfiguration.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Configurations\\ProductTranslationConfiguration.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\ProductTranslationConfiguration.cs",
+              "RelativeToolTip": "App.DAL\\Configurations\\ProductTranslationConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T21:44:45.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20251204142735_asdasd.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251204142735_asdasd.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Migrations\\20251204142735_asdasd.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251204142735_asdasd.cs",
+              "RelativeToolTip": "App.DAL\\Migrations\\20251204142735_asdasd.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T14:27:35.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "App.Core\\Entities\\Order.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\Order.cs",
+              "RelativeToolTip": "App.Core\\Entities\\Order.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:31:24.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Implementations\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Repositories\\Implementations\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Implementations\\CategoryRepository.cs",
+              "RelativeToolTip": "App.DAL\\Repositories\\Implementations\\CategoryRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:36:28.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "App.Core\\Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\Category.cs",
+              "RelativeToolTip": "App.Core\\Entities\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:31:06.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Implementations\\Repository.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Repositories\\Implementations\\Repository.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Implementations\\Repository.cs",
+              "RelativeToolTip": "App.DAL\\Repositories\\Implementations\\Repository.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwDYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T16:46:24.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Interfaces\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Repositories\\Interfaces\\ICategoryRepository.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Interfaces\\ICategoryRepository.cs",
+              "RelativeToolTip": "App.DAL\\Repositories\\Interfaces\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:35:14.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "App.API\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "App.API\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAUwFgAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:43:34.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 95,
+              "Title": "RELATED-PRODUCTS-API.md",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\RELATED-PRODUCTS-API.md",
+              "RelativeDocumentMoniker": "RELATED-PRODUCTS-API.md",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\RELATED-PRODUCTS-API.md",
+              "RelativeToolTip": "RELATED-PRODUCTS-API.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-04T13:02:10.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Interfaces\\IProductService.cs",
+              "RelativeDocumentMoniker": "App.Business\\Services\\Interfaces\\IProductService.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Interfaces\\IProductService.cs",
+              "RelativeToolTip": "App.Business\\Services\\Interfaces\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:38:22.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "App.API\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "App.API\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAuwDgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:43:48.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AppDbContextSeed.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Presistence\\AppDbContextSeed.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Presistence\\AppDbContextSeed.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Presistence\\AppDbContextSeed.cs",
+              "RelativeToolTip": "App.DAL\\Presistence\\AppDbContextSeed.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAApwCEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:44:33.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "DashboardDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Analytics\\DashboardDTO.cs",
+              "RelativeDocumentMoniker": "App.Business\\DTOs\\Analytics\\DashboardDTO.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Analytics\\DashboardDTO.cs",
+              "RelativeToolTip": "App.Business\\DTOs\\Analytics\\DashboardDTO.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAAAJ8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:35:01.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "ServiceResult.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Commons\\ServiceResult.cs",
+              "RelativeDocumentMoniker": "App.Business\\DTOs\\Commons\\ServiceResult.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Commons\\ServiceResult.cs",
+              "RelativeToolTip": "App.Business\\DTOs\\Commons\\ServiceResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:29:21.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "OrderDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Orders\\OrderDTO.cs",
+              "RelativeDocumentMoniker": "App.Business\\DTOs\\Orders\\OrderDTO.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Orders\\OrderDTO.cs",
+              "RelativeToolTip": "App.Business\\DTOs\\Orders\\OrderDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:34:48.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "GlobalExceptionHandlerMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Middlewares\\GlobalExceptionHandlerMiddleware.cs",
+              "RelativeDocumentMoniker": "App.API\\Middlewares\\GlobalExceptionHandlerMiddleware.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Middlewares\\GlobalExceptionHandlerMiddleware.cs",
+              "RelativeToolTip": "App.API\\Middlewares\\GlobalExceptionHandlerMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:45:00.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "UpdateOrderStatusDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Orders\\UpdateOrderStatusDTO.cs",
+              "RelativeDocumentMoniker": "App.Business\\DTOs\\Orders\\UpdateOrderStatusDTO.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Orders\\UpdateOrderStatusDTO.cs",
+              "RelativeToolTip": "App.Business\\DTOs\\Orders\\UpdateOrderStatusDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:34:52.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "OrderStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Enums\\OrderStatus.cs",
+              "RelativeDocumentMoniker": "App.Core\\Enums\\OrderStatus.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Enums\\OrderStatus.cs",
+              "RelativeToolTip": "App.Core\\Enums\\OrderStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:31:11.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "App.API\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "App.API\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:44:02.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "ANALYTICS-DASHBOARD-API.md",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\ANALYTICS-DASHBOARD-API.md",
+              "RelativeDocumentMoniker": "ANALYTICS-DASHBOARD-API.md",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\ANALYTICS-DASHBOARD-API.md",
+              "RelativeToolTip": "ANALYTICS-DASHBOARD-API.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-03T08:35:22.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "CreateOrderDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Orders\\CreateOrderDTO.cs",
+              "RelativeDocumentMoniker": "App.Business\\DTOs\\Orders\\CreateOrderDTO.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Orders\\CreateOrderDTO.cs",
+              "RelativeToolTip": "App.Business\\DTOs\\Orders\\CreateOrderDTO.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAYwCIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:34:41.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "FileManagerService.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\ExternalServices\\Abstractions\\FileManagerService.cs",
+              "RelativeDocumentMoniker": "App.Business\\Services\\ExternalServices\\Abstractions\\FileManagerService.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\ExternalServices\\Abstractions\\FileManagerService.cs",
+              "RelativeToolTip": "App.Business\\Services\\ExternalServices\\Abstractions\\FileManagerService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T07:34:56.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Program.cs",
+              "RelativeDocumentMoniker": "App.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Program.cs",
+              "RelativeToolTip": "App.API\\Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:29:18.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "IMAGE-UPLOAD-IMPLEMENTATION.md",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\IMAGE-UPLOAD-IMPLEMENTATION.md",
+              "RelativeDocumentMoniker": "IMAGE-UPLOAD-IMPLEMENTATION.md",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\IMAGE-UPLOAD-IMPLEMENTATION.md",
+              "RelativeToolTip": "IMAGE-UPLOAD-IMPLEMENTATION.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-02T08:12:32.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "CategoryConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\CategoryConfiguration.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Configurations\\CategoryConfiguration.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\CategoryConfiguration.cs",
+              "RelativeToolTip": "App.DAL\\Configurations\\CategoryConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:32:04.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "20251202073259_test.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251202073259_test.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Migrations\\20251202073259_test.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251202073259_test.cs",
+              "RelativeToolTip": "App.DAL\\Migrations\\20251202073259_test.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T07:32:59.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": ".gitkeep",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\wwwroot\\images\\.gitkeep",
+              "RelativeDocumentMoniker": "App.API\\wwwroot\\images\\.gitkeep",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\wwwroot\\images\\.gitkeep",
+              "RelativeToolTip": "App.API\\wwwroot\\images\\.gitkeep",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-02T07:37:19.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "quick-start.bat",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\quick-start.bat",
+              "RelativeDocumentMoniker": "quick-start.bat",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\quick-start.bat",
+              "RelativeToolTip": "quick-start.bat",
+              "ViewState": "AgIAABoAAAAAAAAAAAAhwDEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000614|",
+              "WhenOpened": "2025-12-01T22:48:08.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-01T22:49:15.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "IMPLEMENTATION-SUMMARY.md",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\IMPLEMENTATION-SUMMARY.md",
+              "RelativeDocumentMoniker": "IMPLEMENTATION-SUMMARY.md",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\IMPLEMENTATION-SUMMARY.md",
+              "RelativeToolTip": "IMPLEMENTATION-SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-01T22:50:11.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "start-app.bat",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\start-app.bat",
+              "RelativeDocumentMoniker": "start-app.bat",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\start-app.bat",
+              "RelativeToolTip": "start-app.bat",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000614|",
+              "WhenOpened": "2025-12-01T22:54:09.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\Identity\\User.cs",
+              "RelativeDocumentMoniker": "App.Core\\Entities\\Identity\\User.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\Identity\\User.cs",
+              "RelativeToolTip": "App.Core\\Entities\\Identity\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T16:44:32.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "UserConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\UserConfiguration.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Configurations\\UserConfiguration.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\UserConfiguration.cs",
+              "RelativeToolTip": "App.DAL\\Configurations\\UserConfiguration.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAApwBYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:32:31.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "setup-database.bat",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\setup-database.bat",
+              "RelativeDocumentMoniker": "setup-database.bat",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\setup-database.bat",
+              "RelativeToolTip": "setup-database.bat",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000614|",
+              "WhenOpened": "2025-12-01T22:54:19.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "20251201231754_addmodels2.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251201231754_addmodels2.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Migrations\\20251201231754_addmodels2.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251201231754_addmodels2.cs",
+              "RelativeToolTip": "App.DAL\\Migrations\\20251201231754_addmodels2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T23:17:55.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "FIX-SEEDING-ERROR.md",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\FIX-SEEDING-ERROR.md",
+              "RelativeDocumentMoniker": "FIX-SEEDING-ERROR.md",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\FIX-SEEDING-ERROR.md",
+              "RelativeToolTip": "FIX-SEEDING-ERROR.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-01T23:14:02.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "QUICK-SETUP.md",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\QUICK-SETUP.md",
+              "RelativeDocumentMoniker": "QUICK-SETUP.md",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\QUICK-SETUP.md",
+              "RelativeToolTip": "QUICK-SETUP.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-01T22:54:56.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "reset-database.bat",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\reset-database.bat",
+              "RelativeDocumentMoniker": "reset-database.bat",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\reset-database.bat",
+              "RelativeToolTip": "reset-database.bat",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000614|",
+              "WhenOpened": "2025-12-01T23:13:33.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "20251201230429_addmodels.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251201230429_addmodels.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Migrations\\20251201230429_addmodels.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251201230429_addmodels.cs",
+              "RelativeToolTip": "App.DAL\\Migrations\\20251201230429_addmodels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T23:04:29.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "fix-avatar-migration.bat",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\fix-avatar-migration.bat",
+              "RelativeDocumentMoniker": "fix-avatar-migration.bat",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\fix-avatar-migration.bat",
+              "RelativeToolTip": "fix-avatar-migration.bat",
+              "ViewState": "AgIAACMAAAAAAAAAAIBJwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000614|",
+              "WhenOpened": "2025-12-01T23:08:22.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "check-database.bat",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\check-database.bat",
+              "RelativeDocumentMoniker": "check-database.bat",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\check-database.bat",
+              "RelativeToolTip": "check-database.bat",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000614|",
+              "WhenOpened": "2025-12-01T22:55:12.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "START-HERE.md",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\START-HERE.md",
+              "RelativeDocumentMoniker": "START-HERE.md",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\START-HERE.md",
+              "RelativeToolTip": "START-HERE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-01T22:56:01.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "quick-start.sh",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\quick-start.sh",
+              "RelativeDocumentMoniker": "quick-start.sh",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\quick-start.sh",
+              "RelativeToolTip": "quick-start.sh",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2025-12-01T22:48:16.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "CategoryProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\MappingProfiles\\CategoryProfile.cs",
+              "RelativeDocumentMoniker": "App.Business\\MappingProfiles\\CategoryProfile.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\MappingProfiles\\CategoryProfile.cs",
+              "RelativeToolTip": "App.Business\\MappingProfiles\\CategoryProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:41:08.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "SETUP-GUIDE.md",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\SETUP-GUIDE.md",
+              "RelativeDocumentMoniker": "SETUP-GUIDE.md",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\SETUP-GUIDE.md",
+              "RelativeToolTip": "SETUP-GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-01T22:47:09.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "Postman-Collection.json",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\Postman-Collection.json",
+              "RelativeDocumentMoniker": "Postman-Collection.json",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\Postman-Collection.json",
+              "RelativeToolTip": "Postman-Collection.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAP8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-01T22:47:53.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "API-DOCUMENTATION.md",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\API-DOCUMENTATION.md",
+              "RelativeDocumentMoniker": "API-DOCUMENTATION.md",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\API-DOCUMENTATION.md",
+              "RelativeToolTip": "API-DOCUMENTATION.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8CAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-01T22:46:02.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "migration-commands.txt",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\migration-commands.txt",
+              "RelativeDocumentMoniker": "migration-commands.txt",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\migration-commands.txt",
+              "RelativeToolTip": "migration-commands.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-01T22:45:09.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "BadRequestException.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Exceptions\\BadRequestException.cs",
+              "RelativeDocumentMoniker": "App.Core\\Exceptions\\BadRequestException.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Exceptions\\BadRequestException.cs",
+              "RelativeToolTip": "App.Core\\Exceptions\\BadRequestException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:44:48.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "UnauthorizedException.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Exceptions\\UnauthorizedException.cs",
+              "RelativeDocumentMoniker": "App.Core\\Exceptions\\UnauthorizedException.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Exceptions\\UnauthorizedException.cs",
+              "RelativeToolTip": "App.Core\\Exceptions\\UnauthorizedException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:44:43.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Implementations\\TokenService.cs",
+              "RelativeDocumentMoniker": "App.Business\\Services\\Implementations\\TokenService.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Implementations\\TokenService.cs",
+              "RelativeToolTip": "App.Business\\Services\\Implementations\\TokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:39:01.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "ICategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Interfaces\\ICategoryService.cs",
+              "RelativeDocumentMoniker": "App.Business\\Services\\Interfaces\\ICategoryService.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Interfaces\\ICategoryService.cs",
+              "RelativeToolTip": "App.Business\\Services\\Interfaces\\ICategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:38:29.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Interfaces\\IOrderService.cs",
+              "RelativeDocumentMoniker": "App.Business\\Services\\Interfaces\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Interfaces\\IOrderService.cs",
+              "RelativeToolTip": "App.Business\\Services\\Interfaces\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:38:40.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "IAnalyticsService.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Interfaces\\IAnalyticsService.cs",
+              "RelativeDocumentMoniker": "App.Business\\Services\\Interfaces\\IAnalyticsService.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Interfaces\\IAnalyticsService.cs",
+              "RelativeToolTip": "App.Business\\Services\\Interfaces\\IAnalyticsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:38:50.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Interfaces\\ITokenService.cs",
+              "RelativeDocumentMoniker": "App.Business\\Services\\Interfaces\\ITokenService.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Interfaces\\ITokenService.cs",
+              "RelativeToolTip": "App.Business\\Services\\Interfaces\\ITokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:38:13.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "App.Business\\Services\\Interfaces\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "App.Business\\Services\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAABBwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:37:48.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Implementations\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Repositories\\Implementations\\OrderRepository.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Implementations\\OrderRepository.cs",
+              "RelativeToolTip": "App.DAL\\Repositories\\Implementations\\OrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:36:44.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Interfaces\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Repositories\\Interfaces\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Interfaces\\IProductRepository.cs",
+              "RelativeToolTip": "App.DAL\\Repositories\\Interfaces\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:35:08.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "IOrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Interfaces\\IOrderRepository.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Repositories\\Interfaces\\IOrderRepository.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Interfaces\\IOrderRepository.cs",
+              "RelativeToolTip": "App.DAL\\Repositories\\Interfaces\\IOrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:35:23.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "App.Business\\DTOs\\Auth\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\LoginDTO.cs",
+              "RelativeToolTip": "App.Business\\DTOs\\Auth\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:32:56.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "TokenDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\TokenDTO.cs",
+              "RelativeDocumentMoniker": "App.Business\\DTOs\\Auth\\TokenDTO.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\TokenDTO.cs",
+              "RelativeToolTip": "App.Business\\DTOs\\Auth\\TokenDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:33:01.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\appsettings.json",
+              "RelativeDocumentMoniker": "App.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\appsettings.json",
+              "RelativeToolTip": "App.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-01T22:32:20.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "UserInfoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\UserInfoDTO.cs",
+              "RelativeDocumentMoniker": "App.Business\\DTOs\\Auth\\UserInfoDTO.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\UserInfoDTO.cs",
+              "RelativeToolTip": "App.Business\\DTOs\\Auth\\UserInfoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:33:06.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "OrderConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\OrderConfiguration.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Configurations\\OrderConfiguration.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\OrderConfiguration.cs",
+              "RelativeToolTip": "App.DAL\\Configurations\\OrderConfiguration.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:32:15.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "OrderItemConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\OrderItemConfiguration.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Configurations\\OrderItemConfiguration.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\OrderItemConfiguration.cs",
+              "RelativeToolTip": "App.DAL\\Configurations\\OrderItemConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:32:23.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "PaymentMethod.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Enums\\PaymentMethod.cs",
+              "RelativeDocumentMoniker": "App.Core\\Enums\\PaymentMethod.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Enums\\PaymentMethod.cs",
+              "RelativeToolTip": "App.Core\\Enums\\PaymentMethod.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:31:17.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\OrderItem.cs",
+              "RelativeDocumentMoniker": "App.Core\\Entities\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\OrderItem.cs",
+              "RelativeToolTip": "App.Core\\Entities\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:31:30.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Setting.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\Setting.cs",
+              "RelativeDocumentMoniker": "App.Core\\Entities\\Setting.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\Setting.cs",
+              "RelativeToolTip": "App.Core\\Entities\\Setting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:31:38.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "EUserRole.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Enums\\EUserRole.cs",
+              "RelativeDocumentMoniker": "App.Core\\Enums\\EUserRole.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Enums\\EUserRole.cs",
+              "RelativeToolTip": "App.Core\\Enums\\EUserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T16:44:55.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "ClaimService.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Shared\\Implementations\\ClaimService.cs",
+              "RelativeDocumentMoniker": "App.Shared\\Implementations\\ClaimService.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Shared\\Implementations\\ClaimService.cs",
+              "RelativeToolTip": "App.Shared\\Implementations\\ClaimService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T16:48:02.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "BusinessDependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\BusinessDependencyInjection.cs",
+              "RelativeDocumentMoniker": "App.Business\\BusinessDependencyInjection.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\BusinessDependencyInjection.cs",
+              "RelativeToolTip": "App.Business\\BusinessDependencyInjection.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:28:56.396Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 97,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

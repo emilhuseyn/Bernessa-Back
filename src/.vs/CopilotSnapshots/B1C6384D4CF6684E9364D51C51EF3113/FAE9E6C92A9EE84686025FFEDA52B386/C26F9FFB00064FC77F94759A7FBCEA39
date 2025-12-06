@@ -1,0 +1,64 @@
+﻿@echo off
+echo ========================================
+echo  Perfume E-Commerce - Quick Start
+echo ========================================
+echo.
+
+echo [1/5] Restoring NuGet packages...
+dotnet restore
+if errorlevel 1 (
+    echo ERROR: Failed to restore packages
+    pause
+    exit /b 1
+)
+echo OK!
+echo.
+
+echo [2/5] Building solution...
+dotnet build --no-restore
+if errorlevel 1 (
+    echo ERROR: Build failed
+    pause
+    exit /b 1
+)
+echo OK!
+echo.
+
+echo [3/5] Creating database migration...
+dotnet ef migrations add InitialCreate --project App.DAL --startup-project App.API --context AppDbContext
+if errorlevel 1 (
+    echo WARNING: Migration might already exist or EF tools not installed
+    echo Run: dotnet tool install --global dotnet-ef
+)
+echo.
+
+echo [4/5] Updating database...
+dotnet ef database update --project App.DAL --startup-project App.API --context AppDbContext
+if errorlevel 1 (
+    echo ERROR: Database update failed
+    echo Please check your connection string in appsettings.json
+    echo Make sure MySQL server is running on port 3306
+    pause
+    exit /b 1
+)
+echo OK!
+echo.
+
+echo [5/5] Starting application...
+echo.
+echo ========================================
+echo  Application is starting...
+echo ========================================
+echo  Swagger UI: https://localhost:5076/swagger
+echo  API URL: https://localhost:5076
+echo.
+echo  Default Admin:
+echo  Email: admin@admin.com
+echo  Password: !Admin123.?Back3ndFr0nt3nd@
+echo ========================================
+echo.
+
+cd App.API
+dotnet run
+
+pause

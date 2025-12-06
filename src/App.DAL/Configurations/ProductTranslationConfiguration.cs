@@ -1,0 +1,36 @@
+using App.Core.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+namespace App.DAL.Configurations
+{
+    public class ProductTranslationConfiguration : IEntityTypeConfiguration<ProductTranslation>
+    {
+        public void Configure(EntityTypeBuilder<ProductTranslation> builder)
+        {
+            builder.HasKey(pt => pt.Id);
+            
+            builder.Property(pt => pt.LanguageCode)
+                .IsRequired()
+                .HasMaxLength(5);
+            
+            builder.Property(pt => pt.Name)
+                .IsRequired()
+                .HasMaxLength(200);
+            
+            builder.Property(pt => pt.Description)
+                .HasMaxLength(2000);
+            
+            builder.Property(pt => pt.Type)
+                .HasMaxLength(100);
+            
+            builder.HasOne(pt => pt.Product)
+                .WithMany(p => p.Translations)
+                .HasForeignKey(pt => pt.ProductId)
+                .OnDelete(DeleteBehavior.Cascade);
+            
+            builder.HasIndex(pt => new { pt.ProductId, pt.LanguageCode })
+                .IsUnique();
+        }
+    }
+}

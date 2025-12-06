@@ -1,0 +1,12 @@
+﻿namespace App.Business.DTOs.Categories
+{
+    public class CategoryDTO
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Slug { get; set; }
+        public string Image { get; set; }
+        public int ProductCount { get; set; }
+        public Dictionary<string, string> Translations { get; set; } // { "en": "Category Name", "ru": "Название категории" }
+    }
+}

@@ -1,0 +1,18 @@
+using App.Business.DTOs.Products;
+
+namespace App.Business.Services.Interfaces
+{
+    public interface IProductService
+    {
+        Task<IEnumerable<ProductDTO>> GetAllProductsAsync();
+        Task<ProductDTO> GetProductByIdAsync(int id);
+        Task<IEnumerable<ProductDTO>> GetFeaturedProductsAsync();
+        Task<IEnumerable<ProductDTO>> GetProductsByCategorySlugAsync(string slug);
+        Task<IEnumerable<ProductDTO>> GetRelatedProductsAsync(int productId, int limit = 8);
+        Task<IEnumerable<ProductDTO>> SearchProductsAsync(string query);
+        Task<IEnumerable<ProductDTO>> GetDealsAsync();
+        Task<ProductDTO> CreateProductAsync(CreateProductDTO createProductDto);
+        Task<ProductDTO> UpdateProductAsync(int id, CreateProductDTO updateProductDto);
+        Task DeleteProductAsync(int id);
+    }
+}

@@ -1,0 +1,116 @@
+﻿using App.Business.DTOs.Categories;
+using App.Business.Services.Interfaces;
+using App.Core.Entities;
+using App.DAL.Repositories.Interfaces;
+using AutoMapper;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace App.Business.Services.Implementations
+{
+    public class CategoryService : ICategoryService
+    {
+        private readonly ICategoryRepository _categoryRepository;
+        private readonly IMapper _mapper;
+
+        public CategoryService(ICategoryRepository categoryRepository, IMapper mapper)
+        {
+            _categoryRepository = categoryRepository;
+            _mapper = mapper;
+        }
+
+        public async Task<IEnumerable<CategoryDTO>> GetAllCategoriesAsync()
+        {
+            var categories = await _categoryRepository.GetAllAsync(c => !c.IsDeleted);
+            return _mapper.Map<IEnumerable<CategoryDTO>>(categories);
+        }
+
+        public async Task<CategoryDTO> GetCategoryByIdAsync(int id)
+        {
+            var category = await _categoryRepository.GetByIdAsync(c => c.Id == id);
+            
+            if (category == null)
+            {
+                throw new Exception("Kateqoriya tap?lmad?");
+            }
+
+            return _mapper.Map<CategoryDTO>(category);
+        }
+
+        public async Task<CategoryDTO> GetCategoryBySlugAsync(string slug)
+        {
+            var category = await _categoryRepository.GetBySlugAsync(slug);
+            
+            if (category == null)
+            {
+                throw new Exception("Kateqoriya tap?lmad?");
+            }
+
+            return _mapper.Map<CategoryDTO>(category);
+        }
+
+        public async Task<CategoryDTO> CreateCategoryAsync(CreateCategoryDTO createCategoryDto)
+        {
+            var existingCategory = await _categoryRepository.GetBySlugAsync(createCategoryDto.Slug);
+            if (existingCategory != null)
+            {
+                throw new Exception("Bu slug art?q mövcuddur");
+            }
+
+            var category = new Category
+            {
+                Name = createCategoryDto.Name,
+                Slug = createCategoryDto.Slug,
+                Image = createCategoryDto.Image,
+                ProductCount = 0
+            };
+
+            var createdCategory = await _categoryRepository.AddAsync(category);
+            return _mapper.Map<CategoryDTO>(createdCategory);
+        }
+
+        public async Task<CategoryDTO> UpdateCategoryAsync(int id, CreateCategoryDTO updateCategoryDto)
+        {
+            var category = await _categoryRepository.GetByIdAsync(c => c.Id == id);
+            
+            if (category == null)
+            {
+                throw new Exception("Kateqoriya tap?lmad?");
+            }
+
+            if (category.Slug != updateCategoryDto.Slug)
+            {
+                var existingCategory = await _categoryRepository.GetBySlugAsync(updateCategoryDto.Slug);
+                if (existingCategory != null)
+                {
+                    throw new Exception("Bu slug art?q mövcuddur");
+                }
+            }
+
+            category.Name = updateCategoryDto.Name;
+            category.Slug = updateCategoryDto.Slug;
+            category.Image = updateCategoryDto.Image;
+
+            var updatedCategory = await _categoryRepository.UpdateAsync(category);
+            return _mapper.Map<CategoryDTO>(updatedCategory);
+        }
+
+        public async Task DeleteCategoryAsync(int id)
+        {
+            var category = await _categoryRepository.GetByIdAsync(c => c.Id == id);
+            
+            if (category == null)
+            {
+                throw new Exception("Kateqoriya tap?lmad?");
+            }
+
+            if (category.ProductCount > 0)
+            {
+                throw new Exception("Bu kateqoriyada m?hsullar mövcuddur. ?vv?lc? m?hsullar? silin.");
+            }
+
+            await _categoryRepository.DeleteAsync(category);
+        }
+    }
+}

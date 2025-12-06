@@ -1,0 +1,151 @@
+﻿using App.Business.DTOs.Auth;
+using App.Business.Services.Interfaces;
+using App.Core.Entities.Identity;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace App.Business.Services.Implementations
+{
+    public class AuthService : IAuthService
+    {
+        private readonly UserManager<User> _userManager;
+        private readonly SignInManager<User> _signInManager;
+        private readonly ITokenService _tokenService;
+
+        public AuthService(
+            UserManager<User> userManager,
+            SignInManager<User> signInManager,
+            ITokenService tokenService)
+        {
+            _userManager = userManager;
+            _signInManager = signInManager;
+            _tokenService = tokenService;
+        }
+
+        public async Task<TokenDTO> LoginAsync(LoginDTO loginDto)
+        {
+            var user = await _userManager.FindByEmailAsync(loginDto.Email);
+            
+            if (user == null || user.IsDisabled)
+            {
+                throw new UnauthorizedAccessException("Email v? ya ?ifr? yanl??d?r");
+            }
+
+            var result = await _signInManager.CheckPasswordSignInAsync(user, loginDto.Password, lockoutOnFailure: true);
+            
+            if (!result.Succeeded)
+            {
+                if (result.IsLockedOut)
+                {
+                    throw new UnauthorizedAccessException("Hesab müv?qq?ti olaraq bloklan?b");
+                }
+                throw new UnauthorizedAccessException("Email v? ya ?ifr? yanl??d?r");
+            }
+
+             user.LastLoginAt = DateTime.UtcNow;
+            await _userManager.UpdateAsync(user);
+
+            var roles = await _userManager.GetRolesAsync(user);
+            var role = roles.FirstOrDefault() ?? "User";
+
+            var accessToken = _tokenService.GenerateAccessToken(user.Id, user.Email, role);
+            var refreshToken = _tokenService.GenerateRefreshToken();
+
+            return new TokenDTO
+            {
+                AccessToken = accessToken,
+                RefreshToken = refreshToken,
+                ExpiresAt = DateTime.UtcNow.AddMinutes(60),
+                User = new UserInfoDTO
+                {
+                    Id = user.Id,
+                    Email = user.Email,
+                    FirstName = user.FirstName,
+                    LastName = user.LastName,
+                    Avatar = user.Avatar,
+                    Role = role
+                }
+            };
+        }
+
+        public async Task<TokenDTO> RefreshTokenAsync(string refreshToken)
+        {
+            if (!_tokenService.ValidateRefreshToken(refreshToken))
+            {
+                throw new UnauthorizedAccessException("Token etibars?zd?r");
+            }
+
+            // Implement refresh token logic
+            throw new NotImplementedException("Refresh token functionality not implemented");
+        }
+
+        public async Task<UserInfoDTO> GetCurrentUserAsync(string userId)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            
+            if (user == null  )
+            {
+                throw new Exception("?stifad?çi tap?lmad?");
+            }
+
+            var roles = await _userManager.GetRolesAsync(user);
+            var role = roles.FirstOrDefault() ?? "User";
+
+            return new UserInfoDTO
+            {
+                Id = user.Id,
+                Email = user.Email,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Avatar = user.Avatar,
+                Role = role
+            };
+        }
+
+        public async Task<bool> ChangePasswordAsync(string userId, string currentPassword, string newPassword)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            
+            if (user == null)
+            {
+                throw new Exception("?stifad?çi tap?lmad?");
+            }
+
+            var result = await _userManager.ChangePasswordAsync(user, currentPassword, newPassword);
+            
+            if (!result.Succeeded)
+            {
+                throw new Exception("?ifr? d?yi?dirilm?di: " + string.Join(", ", result.Errors.Select(e => e.Description)));
+            }
+
+            return true;
+        }
+
+        public async Task UpdateProfileAsync(string userId, string firstName, string lastName, string avatar)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            
+            if (user == null)
+            {
+                throw new Exception("?stifad?çi tap?lmad?");
+            }
+
+            user.FirstName = firstName;
+            user.LastName = lastName;
+            if (!string.IsNullOrEmpty(avatar))
+            {
+                user.Avatar = avatar;
+            }
+
+            var result = await _userManager.UpdateAsync(user);
+            
+            if (!result.Succeeded)
+            {
+                throw new Exception("Profil yenil?nm?di");
+            }
+        }
+    }
+}

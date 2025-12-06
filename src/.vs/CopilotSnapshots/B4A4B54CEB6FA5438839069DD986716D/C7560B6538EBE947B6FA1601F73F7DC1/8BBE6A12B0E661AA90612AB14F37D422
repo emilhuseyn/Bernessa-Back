@@ -1,0 +1,14 @@
+﻿using App.Business.DTOs.Auth;
+using App.Core.Entities.Identity;
+
+namespace App.Business.Services.Interfaces
+{
+    public interface IAuthService
+    {
+        Task<TokenDTO> LoginAsync(LoginDTO loginDto);
+        Task<TokenDTO> RefreshTokenAsync(string refreshToken);
+        Task<UserInfoDTO> GetCurrentUserAsync(string userId);
+        Task<bool> ChangePasswordAsync(string userId, string currentPassword, string newPassword);
+        Task UpdateProfileAsync(string userId, string firstName, string lastName, string avatar);
+    }
+}

@@ -1,0 +1,213 @@
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace App.Business.Localization
+{
+    public class AzerbaijaniIdentityErrorDescriber : IdentityErrorDescriber
+    {
+        // Password errors
+        public override IdentityError PasswordTooShort(int length)
+        {
+            return new IdentityError
+            {
+                Code = nameof(PasswordTooShort),
+                Description = $"Şifrə ən azı {length} simvol olmalıdır"
+            };
+        }
+
+        public override IdentityError PasswordRequiresDigit()
+        {
+            return new IdentityError
+            {
+                Code = nameof(PasswordRequiresDigit),
+                Description = "Şifrə ən azı bir rəqəm (0-9) ehtiva etməlidir"
+            };
+        }
+
+        public override IdentityError PasswordRequiresLower()
+        {
+            return new IdentityError
+            {
+                Code = nameof(PasswordRequiresLower),
+                Description = "Şifrə ən azı bir kiçik hərf (a-z) ehtiva etməlidir"
+            };
+        }
+
+        public override IdentityError PasswordRequiresUpper()
+        {
+            return new IdentityError
+            {
+                Code = nameof(PasswordRequiresUpper),
+                Description = "Şifrə ən azı bir böyük hərf (A-Z) ehtiva etməlidir"
+            };
+        }
+
+        public override IdentityError PasswordRequiresNonAlphanumeric()
+        {
+            return new IdentityError
+            {
+                Code = nameof(PasswordRequiresNonAlphanumeric),
+                Description = "Şifrə ən azı bir xüsusi simvol (!@#$%^&* və s.) ehtiva etməlidir"
+            };
+        }
+
+        public override IdentityError PasswordRequiresUniqueChars(int uniqueChars)
+        {
+            return new IdentityError
+            {
+                Code = nameof(PasswordRequiresUniqueChars),
+                Description = $"Şifrə ən azı {uniqueChars} fərqli simvol ehtiva etməlidir"
+            };
+        }
+
+        public override IdentityError PasswordMismatch()
+        {
+            return new IdentityError
+            {
+                Code = nameof(PasswordMismatch),
+                Description = "Şifrələr uyğun gəlmir"
+            };
+        }
+
+        // User errors
+        public override IdentityError DuplicateEmail(string email)
+        {
+            return new IdentityError
+            {
+                Code = nameof(DuplicateEmail),
+                Description = $"{email} artıq istifadə olunur"
+            };
+        }
+
+        public override IdentityError DuplicateUserName(string userName)
+        {
+            return new IdentityError
+            {
+                Code = nameof(DuplicateUserName),
+                Description = $"{userName} artıq istifadə olunur"
+            };
+        }
+
+        public override IdentityError InvalidEmail(string email)
+        {
+            return new IdentityError
+            {
+                Code = nameof(InvalidEmail),
+                Description = $"{email} etibarsız email ünvanıdır"
+            };
+        }
+
+        public override IdentityError InvalidUserName(string userName)
+        {
+            return new IdentityError
+            {
+                Code = nameof(InvalidUserName),
+                Description = $"{userName} etibarsızdır. İstifadəçi adı yalnız hərf və rəqəmlərdən ibarət ola bilər"
+            };
+        }
+
+        public override IdentityError UserAlreadyHasPassword()
+        {
+            return new IdentityError
+            {
+                Code = nameof(UserAlreadyHasPassword),
+                Description = "İstifadəçinin artıq şifrəsi mövcuddur"
+            };
+        }
+
+        public override IdentityError UserAlreadyInRole(string role)
+        {
+            return new IdentityError
+            {
+                Code = nameof(UserAlreadyInRole),
+                Description = $"İstifadəçi artıq '{role}' roluna malikdir"
+            };
+        }
+
+        public override IdentityError UserNotInRole(string role)
+        {
+            return new IdentityError
+            {
+                Code = nameof(UserNotInRole),
+                Description = $"İstifadəçi '{role}' roluna malik deyil"
+            };
+        }
+
+        public override IdentityError UserLockoutNotEnabled()
+        {
+            return new IdentityError
+            {
+                Code = nameof(UserLockoutNotEnabled),
+                Description = "Bu istifadəçi üçün bloklanma aktivləşdirilməyib"
+            };
+        }
+
+        // Role errors
+        public override IdentityError DuplicateRoleName(string role)
+        {
+            return new IdentityError
+            {
+                Code = nameof(DuplicateRoleName),
+                Description = $"'{role}' rolu artıq mövcuddur"
+            };
+        }
+
+        public override IdentityError InvalidRoleName(string role)
+        {
+            return new IdentityError
+            {
+                Code = nameof(InvalidRoleName),
+                Description = $"'{role}' etibarsız rol adıdır"
+            };
+        }
+
+        // Token errors
+        public override IdentityError InvalidToken()
+        {
+            return new IdentityError
+            {
+                Code = nameof(InvalidToken),
+                Description = "Token etibarsızdır"
+            };
+        }
+
+        // Recovery code errors
+        public override IdentityError RecoveryCodeRedemptionFailed()
+        {
+            return new IdentityError
+            {
+                Code = nameof(RecoveryCodeRedemptionFailed),
+                Description = "Bərpa kodu etibarsızdır"
+            };
+        }
+
+        // Concurrency errors
+        public override IdentityError ConcurrencyFailure()
+        {
+            return new IdentityError
+            {
+                Code = nameof(ConcurrencyFailure),
+                Description = "Optimistik yoxlama xətası, obyekt dəyişdirilib"
+            };
+        }
+
+        // Default error
+        public override IdentityError DefaultError()
+        {
+            return new IdentityError
+            {
+                Code = nameof(DefaultError),
+                Description = "Xəta baş verdi"
+            };
+        }
+
+        // Login errors
+        public override IdentityError LoginAlreadyAssociated()
+        {
+            return new IdentityError
+            {
+                Code = nameof(LoginAlreadyAssociated),
+                Description = "Bu login artıq başqa istifadəçiyə bağlıdır"
+            };
+        }
+    }
+}

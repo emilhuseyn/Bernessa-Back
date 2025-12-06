@@ -1,0 +1,165 @@
+# Image Upload Implementation Summary
+
+## Overview
+The image upload functionality has been successfully implemented using `IFormFile` with files stored in `wwwroot/images`.
+
+## Changes Made
+
+### 1. **FileManagerService** (`App.Business/Services/ExternalServices/Abstractions/FileManagerService.cs`)
+- Updated to save uploaded images to `wwwroot/images` instead of `wwwroot/uploads`
+- Returns relative path `/images/{filename}` instead of full URL
+- Automatically creates the images directory if it doesn't exist
+- Validates images (max 5MB, must be image type)
+
+### 2. **Category Entity** (`App.Core/Entities/Category.cs`)
+- Added `Image` property of type `string`
+
+### 3. **Category DTOs**
+- **CreateCategoryDTO**: Added `IFormFile Image` property for upload
+- **CategoryDTO**: Added `string Image` property to return image URL
+
+### 4. **Product DTOs** (`App.Business/DTOs/Products/CreateProductDTO.cs`)
+- Changed `Images` property from `List<string>` to `List<IFormFile>` for multiple image uploads
+
+### 5. **Services**
+- **CategoryService**: Integrated `IFileManagerService` to handle image uploads in Create and Update operations
+- **ProductService**: Integrated `IFileManagerService` to handle multiple image uploads
+
+### 6. **Controllers**
+- **CategoriesController**: Changed from `[FromBody]` to `[FromForm]` for Create and Update endpoints
+- **ProductsController**: Changed from `[FromBody]` to `[FromForm]` for Create and Update endpoints
+
+### 7. **Program.cs**
+- Added `app.UseStaticFiles()` to serve images from wwwroot
+- Updated CORS policy to `AllowAll` - allows all origins, headers, and methods
+
+### 8. **Database Configuration**
+- Updated `CategoryConfiguration` to include Image property with max length of 500
+
+## Database Migration Required
+
+After stopping the application, run this command to create and apply the migration:
+
+```bash
+cd C:\Users\Emil\source\repos\Bernessa\App\src\App.DAL
+dotnet ef migrations add AddImageToCategory --startup-project ..\App.API\App.API.csproj
+dotnet ef database update --startup-project ..\App.API\App.API.csproj
+```
+
+## API Usage Examples
+
+### Creating a Category with Image
+
+**Endpoint**: `POST /api/categories`  
+**Content-Type**: `multipart/form-data`
+
+```javascript
+const formData = new FormData();
+formData.append('Name', 'Skincare');
+formData.append('Slug', 'skincare');
+formData.append('Image', fileInput.files[0]);
+
+fetch('http://localhost:5000/api/categories', {
+  method: 'POST',
+  headers: {
+    'Authorization': 'Bearer YOUR_TOKEN'
+  },
+  body: formData
+});
+```
+
+### Creating a Product with Multiple Images
+
+**Endpoint**: `POST /api/products`  
+**Content-Type**: `multipart/form-data`
+
+```javascript
+const formData = new FormData();
+formData.append('Name', 'Moisturizer');
+formData.append('Brand', 'Brand Name');
+formData.append('Price', '29.99');
+formData.append('Volume', '50ml');
+formData.append('Type', 'Cream');
+formData.append('Description', 'Product description');
+formData.append('CategoryId', '1');
+formData.append('Stock', '100');
+formData.append('IsActive', 'true');
+formData.append('IsFeatured', 'false');
+
+// Add multiple images
+for (let i = 0; i < fileInput.files.length; i++) {
+  formData.append('Images', fileInput.files[i]);
+}
+
+fetch('http://localhost:5000/api/products', {
+  method: 'POST',
+  headers: {
+    'Authorization': 'Bearer YOUR_TOKEN'
+  },
+  body: formData
+});
+```
+
+### Accessing Images
+
+Images are accessible via:
+- **Full URL**: `http://localhost:5000/images/{filename}`
+- **Relative Path**: `/images/{filename}` (stored in database)
+
+Example response from API:
+```json
+{
+  "success": true,
+  "data": {
+    "id": 1,
+    "name": "Skincare",
+    "slug": "skincare",
+    "image": "/images/abc123-def456_category.jpg",
+    "productCount": 0
+  }
+}
+```
+
+## CORS Configuration
+
+The API now accepts requests from **all origins**. For production, consider restricting this:
+
+```csharp
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("Production", policy =>
+    {
+        policy.WithOrigins("https://yourfrontend.com")
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials();
+    });
+});
+```
+
+## File Structure
+
+```
+App.API/
+??? wwwroot/
+    ??? images/
+        ??? .gitkeep
+        ??? (uploaded images will be stored here)
+```
+
+## Important Notes
+
+1. **Stop the application** before running migrations
+2. **Images are validated**: 
+   - Must be image type (content-type contains "image")
+   - Maximum size: 5MB
+3. **Unique filenames**: Each uploaded file gets a unique GUID prefix
+4. **Static files**: Automatically served from wwwroot directory
+5. **CORS**: Currently set to allow all origins - adjust for production
+
+## Next Steps
+
+1. Stop the running application
+2. Run the migration commands above
+3. Start the application
+4. Test the image upload functionality using the examples above

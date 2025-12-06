@@ -1,0 +1,25 @@
+using App.Core.Entities.Commons;
+using System;
+using System.Collections.Generic;
+
+namespace App.Core.Entities
+{
+    public class Category : BaseEntity, IAuditedEntity
+    {
+        public string Name { get; set; } // Default name (Azerbaijani)
+        public string Slug { get; set; }
+        public string Image { get; set; }
+        public int ProductCount { get; set; }
+        
+        // IAuditedEntity
+        public string CreatedBy { get; set; }
+        public DateTime CreatedOn { get; set; }
+        public string UpdatedBy { get; set; }
+        public DateTime UpdatedOn { get; set; }
+        public bool IsDeleted { get; set; }
+        
+        // Navigation properties
+        public ICollection<Product> Products { get; set; }
+        public ICollection<CategoryTranslation> Translations { get; set; }
+    }
+}

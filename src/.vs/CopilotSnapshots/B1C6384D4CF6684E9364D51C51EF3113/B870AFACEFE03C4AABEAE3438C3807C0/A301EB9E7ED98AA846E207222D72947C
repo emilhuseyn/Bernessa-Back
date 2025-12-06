@@ -1,0 +1,22 @@
+﻿using App.Core.Entities.Commons;
+using Microsoft.AspNetCore.Identity;
+using System;
+
+namespace App.Core.Entities.Identity
+{
+    public class User : IdentityUser, IAuditedEntity
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Avatar { get; set; }
+        public bool IsDisabled { get; set; }
+        public DateTime? LastLoginAt { get; set; }
+        
+        // IAuditedEntity
+        public string CreatedBy { get; set; }
+        public DateTime CreatedOn { get; set; }
+        public string UpdatedBy { get; set; }
+        public DateTime UpdatedOn { get; set; }
+        public bool IsDeleted { get; set; }
+    }
+}

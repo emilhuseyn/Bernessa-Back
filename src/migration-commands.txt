@@ -1,0 +1,7 @@
+# Run this command to create a migration
+# Make sure you're in the solution directory
+
+dotnet ef migrations add InitialCreate --project App.DAL --startup-project App.API --context AppDbContext
+
+# Run this command to update the database
+dotnet ef database update --project App.DAL --startup-project App.API --context AppDbContext

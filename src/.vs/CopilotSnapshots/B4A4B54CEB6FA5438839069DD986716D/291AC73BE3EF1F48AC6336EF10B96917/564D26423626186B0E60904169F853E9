@@ -1,0 +1,54 @@
+﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
+
+namespace App.Business.DTOs.Products
+{
+    public class CreateProductDTO
+    {
+        [Required]
+        [MaxLength(200)]
+        public string Name { get; set; } // Azerbaijani name
+
+        [Required]
+        [MaxLength(100)]
+        public string Brand { get; set; }
+
+        [Required]
+        [Range(0.01, double.MaxValue)]
+        public decimal Price { get; set; }
+
+        public decimal? OriginalPrice { get; set; }
+
+        [Required]
+        [MaxLength(50)]
+        public string Volume { get; set; }
+
+        [Required]
+        [MaxLength(100)]
+        public string Type { get; set; } // Azerbaijani type
+
+        [Required]
+        [MaxLength(2000)]
+        public string Description { get; set; } // Azerbaijani description
+
+        public List<IFormFile> Images { get; set; }
+
+        [Required]
+        public int CategoryId { get; set; }
+
+        [Required]
+        [Range(0, int.MaxValue)]
+        public int Stock { get; set; }
+
+        public bool IsActive { get; set; } = true;
+        public bool IsFeatured { get; set; } = false;
+        
+        // Translations
+        public string NameEn { get; set; }
+        public string NameRu { get; set; }
+        public string TypeEn { get; set; }
+        public string TypeRu { get; set; }
+        public string DescriptionEn { get; set; }
+        public string DescriptionRu { get; set; }
+    }
+}

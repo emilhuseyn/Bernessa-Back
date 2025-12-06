@@ -1,0 +1,33 @@
+﻿using App.Core.Entities.Commons;
+using System;
+using System.Collections.Generic;
+
+namespace App.Core.Entities
+{
+    public class Product : BaseEntity, IAuditedEntity
+    {
+        public string Name { get; set; }
+        public string Brand { get; set; }
+        public decimal Price { get; set; }
+        public decimal? OriginalPrice { get; set; }
+        public string Volume { get; set; }
+        public string Type { get; set; }
+        public string Description { get; set; }
+        public string Images { get; set; } // JSON array stored as string
+        public int CategoryId { get; set; }
+        public int Stock { get; set; }
+        public bool IsActive { get; set; }
+        public bool IsFeatured { get; set; }
+        
+        // IAuditedEntity
+        public string CreatedBy { get; set; }
+        public DateTime CreatedOn { get; set; }
+        public string UpdatedBy { get; set; }
+        public DateTime UpdatedOn { get; set; }
+        public bool IsDeleted { get; set; }
+        
+        // Navigation properties
+        public Category Category { get; set; }
+        public ICollection<OrderItem> OrderItems { get; set; }
+    }
+}

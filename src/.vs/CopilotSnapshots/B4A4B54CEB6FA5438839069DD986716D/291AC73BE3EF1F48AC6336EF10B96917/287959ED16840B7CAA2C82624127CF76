@@ -1,0 +1,116 @@
+﻿using App.Business.DTOs.Auth;
+using App.Business.Services.Interfaces;
+using App.Shared.Interfaces;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
+
+namespace App.API.Controllers
+{
+    [Route("api/admin/auth")]
+    [ApiController]
+    public class AuthController : ControllerBase
+    {
+        private readonly IAuthService _authService;
+        private readonly IClaimService _claimService;
+
+        public AuthController(IAuthService authService, IClaimService claimService)
+        {
+            _authService = authService;
+            _claimService = claimService;
+        }
+
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginDTO loginDto)
+        {
+            var result = await _authService.LoginAsync(loginDto);
+            
+            if (!result.Success)
+            {
+                return BadRequest(new { success = false, message = result.Message });
+            }
+
+            return Ok(new { success = true, data = result.Data, message = result.Message });
+        }
+
+        [HttpPost("refresh-token")]
+        public async Task<IActionResult> RefreshToken([FromBody] string refreshToken)
+        {
+            var result = await _authService.RefreshTokenAsync(refreshToken);
+            
+            if (!result.Success)
+            {
+                return BadRequest(new { success = false, message = result.Message });
+            }
+
+            return Ok(new { success = true, data = result.Data, message = result.Message });
+        }
+
+        [Authorize]
+        [HttpGet("me")]
+        public async Task<IActionResult> GetCurrentUser()
+        {
+            var userId = _claimService.GetUserId();
+            var result = await _authService.GetCurrentUserAsync(userId);
+            
+            if (!result.Success)
+            {
+                return BadRequest(new { success = false, message = result.Message });
+            }
+
+            return Ok(new { success = true, data = result.Data });
+        }
+
+        [Authorize]
+        [HttpPut("profile")]
+        public async Task<IActionResult> UpdateProfile([FromBody] UpdateProfileDTO updateProfileDto)
+        {
+            var userId = _claimService.GetUserId();
+            var result = await _authService.UpdateProfileAsync(
+                userId, 
+                updateProfileDto.FirstName, 
+                updateProfileDto.LastName, 
+                updateProfileDto.Avatar
+            );
+            
+            if (!result.Success)
+            {
+                return BadRequest(new { success = false, message = result.Message });
+            }
+
+            return Ok(new { success = true, message = result.Message });
+        }
+
+        [Authorize]
+        [HttpPost("change-password")]
+        public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordDTO changePasswordDto)
+        {
+            var userId = _claimService.GetUserId();
+            var result = await _authService.ChangePasswordAsync(
+                userId, 
+                changePasswordDto.CurrentPassword, 
+                changePasswordDto.NewPassword
+            );
+            
+            if (!result.Success)
+            {
+                return BadRequest(new { success = false, message = result.Message });
+            }
+
+            return Ok(new { success = true, message = result.Message });
+        }
+    }   
+
+    public class UpdateProfileDTO
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Avatar { get; set; }
+    }
+
+    public class ChangePasswordDTO
+    {
+        public string CurrentPassword { get; set; }
+        public string NewPassword { get; set; }
+    }
+}

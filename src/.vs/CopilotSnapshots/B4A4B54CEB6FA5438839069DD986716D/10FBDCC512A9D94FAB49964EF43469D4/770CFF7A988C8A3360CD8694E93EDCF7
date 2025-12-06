@@ -1,0 +1,206 @@
+﻿using App.Business.DTOs.Auth;
+using App.Business.DTOs.Commons;
+using App.Business.Services.Interfaces;
+using App.Core.Entities.Identity;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace App.Business.Services.Implementations
+{
+    public class AuthService : IAuthService
+    {
+        private readonly UserManager<User> _userManager;
+        private readonly SignInManager<User> _signInManager;
+        private readonly ITokenService _tokenService;
+
+        public AuthService(
+            UserManager<User> userManager,
+            SignInManager<User> signInManager,
+            ITokenService tokenService)
+        {
+            _userManager = userManager;
+            _signInManager = signInManager;
+            _tokenService = tokenService;
+        }
+
+        public async Task<ServiceResult<TokenDTO>> LoginAsync(LoginDTO loginDto)
+        {
+            var user = await _userManager.FindByEmailAsync(loginDto.Email);
+            
+            if (user == null)
+            {
+                return ServiceResult<TokenDTO>.FailureResult("Email v? ya ?ifr? yanl??d?r");
+            }
+
+            if (user.IsDisabled)
+            {
+                return ServiceResult<TokenDTO>.FailureResult("Hesab?n?z deaktiv edilib. D?st?k il? ?laq? saxlay?n");
+            }
+
+            var result = await _signInManager.CheckPasswordSignInAsync(user, loginDto.Password, lockoutOnFailure: true);
+            
+            if (!result.Succeeded)
+            {
+                if (result.IsLockedOut)
+                {
+                    return ServiceResult<TokenDTO>.FailureResult("Hesab müv?qq?ti olaraq bloklan?b. Z?hm?t olmasa bir q?d?r sonra yenid?n c?hd edin");
+                }
+                return ServiceResult<TokenDTO>.FailureResult("Email v? ya ?ifr? yanl??d?r");
+            }
+
+            user.LastLoginAt = DateTime.UtcNow;
+            await _userManager.UpdateAsync(user);
+
+            var roles = await _userManager.GetRolesAsync(user);
+            var role = roles.FirstOrDefault() ?? "User";
+
+            var accessToken = _tokenService.GenerateAccessToken(user.Id, user.Email, role);
+            var refreshToken = _tokenService.GenerateRefreshToken();
+
+            var tokenDto = new TokenDTO
+            {
+                AccessToken = accessToken,
+                RefreshToken = refreshToken,
+                ExpiresAt = DateTime.UtcNow.AddMinutes(60),
+                User = new UserInfoDTO
+                {
+                    Id = user.Id,
+                    Email = user.Email,
+                    FirstName = user.FirstName,
+                    LastName = user.LastName,
+                    Avatar = user.Avatar,
+                    Role = role
+                }
+            };
+
+            return ServiceResult<TokenDTO>.SuccessResult(tokenDto, "U?urla daxil oldunuz");
+        }
+
+        public async Task<ServiceResult<TokenDTO>> RefreshTokenAsync(string refreshToken)
+        {
+            if (!_tokenService.ValidateRefreshToken(refreshToken))
+            {
+                return ServiceResult<TokenDTO>.FailureResult("Token etibars?zd?r");
+            }
+
+            // Implement refresh token logic when needed
+            return ServiceResult<TokenDTO>.FailureResult("Refresh token funksionall??? h?l? t?tbiq edilm?yib");
+        }
+
+        public async Task<ServiceResult<UserInfoDTO>> GetCurrentUserAsync(string userId)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            
+            if (user == null)
+            {
+                return ServiceResult<UserInfoDTO>.FailureResult("?stifad?çi tap?lmad?");
+            }
+
+            if (user.IsDisabled)
+            {
+                return ServiceResult<UserInfoDTO>.FailureResult("Hesab?n?z deaktiv edilib");
+            }
+
+            var roles = await _userManager.GetRolesAsync(user);
+            var role = roles.FirstOrDefault() ?? "User";
+
+            var userInfo = new UserInfoDTO
+            {
+                Id = user.Id,
+                Email = user.Email,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Avatar = user.Avatar,
+                Role = role
+            };
+
+            return ServiceResult<UserInfoDTO>.SuccessResult(userInfo);
+        }
+
+        public async Task<ServiceResult> ChangePasswordAsync(string userId, string currentPassword, string newPassword)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            
+            if (user == null)
+            {
+                return ServiceResult.FailureResult("?stifad?çi tap?lmad?");
+            }
+
+            if (user.IsDisabled)
+            {
+                return ServiceResult.FailureResult("Hesab?n?z deaktiv edilib");
+            }
+
+            if (string.IsNullOrWhiteSpace(currentPassword))
+            {
+                return ServiceResult.FailureResult("Cari ?ifr? daxil edilm?lidir");
+            }
+
+            if (string.IsNullOrWhiteSpace(newPassword))
+            {
+                return ServiceResult.FailureResult("Yeni ?ifr? daxil edilm?lidir");
+            }
+
+            if (newPassword.Length < 6)
+            {
+                return ServiceResult.FailureResult("Yeni ?ifr? ?n az? 6 simvol olmal?d?r");
+            }
+
+            var result = await _userManager.ChangePasswordAsync(user, currentPassword, newPassword);
+            
+            if (!result.Succeeded)
+            {
+                var errors = string.Join(", ", result.Errors.Select(e => e.Description));
+                return ServiceResult.FailureResult($"?ifr? d?yi?dirilm?di: {errors}");
+            }
+
+            return ServiceResult.SuccessResult("?ifr? u?urla d?yi?dirildi");
+        }
+
+        public async Task<ServiceResult> UpdateProfileAsync(string userId, string firstName, string lastName, string avatar)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            
+            if (user == null)
+            {
+                return ServiceResult.FailureResult("?stifad?çi tap?lmad?");
+            }
+
+            if (user.IsDisabled)
+            {
+                return ServiceResult.FailureResult("Hesab?n?z deaktiv edilib");
+            }
+
+            if (string.IsNullOrWhiteSpace(firstName))
+            {
+                return ServiceResult.FailureResult("Ad daxil edilm?lidir");
+            }
+
+            if (string.IsNullOrWhiteSpace(lastName))
+            {
+                return ServiceResult.FailureResult("Soyad daxil edilm?lidir");
+            }
+
+            user.FirstName = firstName.Trim();
+            user.LastName = lastName.Trim();
+            
+            if (!string.IsNullOrEmpty(avatar))
+            {
+                user.Avatar = avatar.Trim();
+            }
+
+            var result = await _userManager.UpdateAsync(user);
+            
+            if (!result.Succeeded)
+            {
+                var errors = string.Join(", ", result.Errors.Select(e => e.Description));
+                return ServiceResult.FailureResult($"Profil yenil?nm?di: {errors}");
+            }
+
+            return ServiceResult.SuccessResult("Profil u?urla yenil?ndi");
+        }
+    }
+}

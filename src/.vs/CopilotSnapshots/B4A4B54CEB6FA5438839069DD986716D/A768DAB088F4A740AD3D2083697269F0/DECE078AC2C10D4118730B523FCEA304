@@ -1,0 +1,17 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace App.Business.DTOs.Categories
+{
+    public class CreateCategoryDTO
+    {
+        [Required]
+        [MaxLength(100)]
+        public string Name { get; set; }
+
+        [Required]
+        [MaxLength(150)]
+        public string Slug { get; set; }
+
+        public string Image { get; set; }
+    }
+}

@@ -1,0 +1,37 @@
+@echo off
+echo ========================================
+echo  Fix User Audit Fields Migration
+echo ========================================
+echo.
+
+echo Removing previous migration...
+dotnet ef migrations remove --project App.DAL --startup-project App.API --context AppDbContext --force
+
+echo.
+echo Creating new migration with fixed audit fields...
+dotnet ef migrations add FixUserAuditFields --project App.DAL --startup-project App.API --context AppDbContext
+
+if errorlevel 1 (
+    echo ERROR: Failed to create migration
+    pause
+    exit /b 1
+)
+
+echo.
+echo Applying migration to database...
+dotnet ef database update --project App.DAL --startup-project App.API --context AppDbContext
+
+if errorlevel 1 (
+    echo ERROR: Failed to update database
+    pause
+    exit /b 1
+)
+
+echo.
+echo ========================================
+echo  Migration completed successfully!
+echo ========================================
+echo.
+echo Now you can run: start-app.bat
+echo.
+pause
