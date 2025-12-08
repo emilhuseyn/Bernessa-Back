@@ -527,3 +527,9 @@ C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\App.API.sou
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\App.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

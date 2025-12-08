@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|solutionrelative:app.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\services\\implementations\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|solutionrelative:app.business\\services\\implementations\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|solutionrelative:app.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|solutionrelative:app.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -502,19 +502,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 119,
-              "Title": "CONTROLLER-SECURITY-FIX.md",
-              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\CONTROLLER-SECURITY-FIX.md",
-              "RelativeDocumentMoniker": "CONTROLLER-SECURITY-FIX.md",
-              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\CONTROLLER-SECURITY-FIX.md",
-              "RelativeToolTip": "CONTROLLER-SECURITY-FIX.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-12-08T08:12:00.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
               "Title": "XSSProtectionMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Middlewares\\XSSProtectionMiddleware.cs",
@@ -523,8 +510,7 @@
               "RelativeToolTip": "App.API\\Middlewares\\XSSProtectionMiddleware.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAgwAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T07:04:16.405Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T07:04:16.405Z"
             },
             {
               "$type": "Document",
@@ -536,12 +522,11 @@
               "RelativeToolTip": "App.API\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAGwAAAAAAAAAAAAmwIAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T22:43:18.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T22:43:18.961Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "App.API\\Controllers\\CategoriesController.cs",
@@ -549,12 +534,11 @@
               "RelativeToolTip": "App.API\\Controllers\\CategoriesController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T22:43:48.822Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T22:43:48.822Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CategoryService.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Implementations\\CategoryService.cs",
               "RelativeDocumentMoniker": "App.Business\\Services\\Implementations\\CategoryService.cs",
@@ -562,12 +546,11 @@
               "RelativeToolTip": "App.Business\\Services\\Implementations\\CategoryService.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAgwCMAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T22:40:06.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T22:40:06.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ProductService.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Implementations\\ProductService.cs",
               "RelativeDocumentMoniker": "App.Business\\Services\\Implementations\\ProductService.cs",
@@ -580,6 +563,31 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\appsettings.json",
+              "RelativeDocumentMoniker": "App.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\appsettings.json",
+              "RelativeToolTip": "App.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-01T22:32:20.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 119,
+              "Title": "CONTROLLER-SECURITY-FIX.md",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\CONTROLLER-SECURITY-FIX.md",
+              "RelativeDocumentMoniker": "CONTROLLER-SECURITY-FIX.md",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\CONTROLLER-SECURITY-FIX.md",
+              "RelativeToolTip": "CONTROLLER-SECURITY-FIX.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-08T08:12:00.439Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
               "Title": "APIDependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\APIDependencyInjection.cs",
@@ -588,21 +596,7 @@
               "RelativeToolTip": "App.API\\APIDependencyInjection.cs",
               "ViewState": "AgIAAFEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T07:04:56.19Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\appsettings.json",
-              "RelativeDocumentMoniker": "App.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\appsettings.json",
-              "RelativeToolTip": "App.API\\appsettings.json",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-01T22:32:20.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T07:04:56.19Z"
             },
             {
               "$type": "Document",
@@ -614,12 +608,7 @@
               "RelativeToolTip": "FIX-CATEGORY-IFORMFILE-ERROR.md",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAANQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-12-08T07:59:16.916Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2025-12-08T07:59:16.916Z"
             },
             {
               "$type": "Document",
@@ -631,8 +620,7 @@
               "RelativeToolTip": "FIX-415-ERROR.md",
               "ViewState": "AgIAACIBAAAAAAAAAABRwCUBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-12-08T07:51:32.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T07:51:32.749Z"
             },
             {
               "$type": "Document",
@@ -644,8 +632,7 @@
               "RelativeToolTip": "App.API\\Controllers\\AnalyticsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T22:44:09.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T22:44:09.368Z"
             },
             {
               "$type": "Document",
@@ -657,8 +644,7 @@
               "RelativeToolTip": "App.Core\\Entities\\Identity\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T16:44:32.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T16:44:32.432Z"
             },
             {
               "$type": "Document",
@@ -670,8 +656,7 @@
               "RelativeToolTip": "App.API\\Program.cs",
               "ViewState": "AgIAAEMAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T22:29:18.375Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T22:29:18.375Z"
             },
             {
               "$type": "Document",
@@ -683,8 +668,7 @@
               "RelativeToolTip": "App.API\\Controllers\\ProductsController.cs",
               "ViewState": "AgIAAHMAAAAAAAAAAAAAAJEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T22:43:34.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T22:43:34.042Z"
             },
             {
               "$type": "Document",
@@ -696,8 +680,7 @@
               "RelativeToolTip": "SECURITY-IMPROVEMENTS-COMPLETED.md",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-12-08T07:08:21.719Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T07:08:21.719Z"
             },
             {
               "$type": "Document",
@@ -709,8 +692,7 @@
               "RelativeToolTip": "App.Business\\Services\\Implementations\\OrderService.cs",
               "ViewState": "AgIAADYAAAAAAAAAAAAawEYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T22:40:30.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T22:40:30.272Z"
             },
             {
               "$type": "Document",
@@ -722,8 +704,7 @@
               "RelativeToolTip": "App.DAL\\DALDependencyInjection.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAAuwD8AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T16:47:37.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T16:47:37.727Z"
             },
             {
               "$type": "Document",
@@ -735,8 +716,7 @@
               "RelativeToolTip": "AUTH-SERVICE-RESULT-PATTERN.md",
               "ViewState": "AgIAAE4BAAAAAAAAAAAuwF0BAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-12-03T13:31:35.531Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-03T13:31:35.531Z"
             },
             {
               "$type": "Document",
@@ -748,8 +728,7 @@
               "RelativeToolTip": "App.Core\\Entities\\OrderItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T22:31:30.868Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T22:31:30.868Z"
             },
             {
               "$type": "Document",
@@ -761,8 +740,7 @@
               "RelativeToolTip": "App.DAL\\Presistence\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T16:45:42.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T16:45:42.935Z"
             },
             {
               "$type": "Document",
@@ -1386,8 +1364,7 @@
               "RelativeToolTip": "App.API\\Controllers\\OrdersController.cs",
               "ViewState": "AgIAAGMAAAAAAAAAAABRwGYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T22:44:02.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T22:44:02.393Z"
             },
             {
               "$type": "Document",
