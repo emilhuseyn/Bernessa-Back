@@ -384,8 +384,6 @@ C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\System.Net.
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\System.Web.Http.dll
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\System.Web.Http.WebHost.dll
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -401,10 +399,6 @@ C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.E
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
-C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
-C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
@@ -531,3 +525,5 @@ C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\App.API.gen
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\ref\App.API.dll
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\App.API.sourcelink.json
 C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\App.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Emil\source\repos\Bernessa\App\src\App.API\obj\Debug\net8.0\swae.build.ex.cache

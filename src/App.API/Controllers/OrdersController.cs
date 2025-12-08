@@ -1,6 +1,7 @@
 using App.Business.DTOs.Orders;
 using App.Business.Services.Interfaces;
 using App.Core.Enums;
+using App.Shared.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
@@ -12,13 +13,19 @@ namespace App.API.Controllers
     public class OrdersController : ControllerBase
     {
         private readonly IOrderService _orderService;
+        private readonly IClaimService _claimService;
 
-        public OrdersController(IOrderService orderService)
+        public OrdersController(IOrderService orderService, IClaimService claimService)
         {
             _orderService = orderService;
+            _claimService = claimService;
         }
 
+        /// <summary>
+        /// Create new order (Public - for customers)
+        /// </summary>
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Create([FromBody] CreateOrderDTO createOrderDto)
         {
             var order = await _orderService.CreateOrderAsync(createOrderDto);
@@ -32,36 +39,60 @@ namespace App.API.Controllers
             });
         }
 
+        /// <summary>
+        /// Track order by order number (Public - customers can track their orders)
+        /// </summary>
         [HttpGet("track/{orderNumber}")]
+        [AllowAnonymous]
         public async Task<IActionResult> TrackOrder(string orderNumber)
         {
+            if (string.IsNullOrWhiteSpace(orderNumber))
+            {
+                return BadRequest(new { success = false, message = "Sifari? nömr?si daxil edilm?lidir" });
+            }
+
             var order = await _orderService.GetOrderByNumberAsync(orderNumber);
             return Ok(new { success = true, data = order });
         }
 
- 
+        /// <summary>
+        /// Get all orders (Admin only)
+        /// </summary>
         [HttpGet]
+        [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> GetAll()
         {
             var orders = await _orderService.GetAllOrdersAsync();
             return Ok(new { success = true, data = orders });
         }
 
-         [HttpGet("{id}")]
+        /// <summary>
+        /// Get order by ID (Admin only)
+        /// </summary>
+        [HttpGet("{id}")]
+        [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> GetById(int id)
         {
             var order = await _orderService.GetOrderByIdAsync(id);
             return Ok(new { success = true, data = order });
         }
 
-         [HttpPut("{id}/status")]
+        /// <summary>
+        /// Update order status (Admin only)
+        /// </summary>
+        [HttpPut("{id}/status")]
+        [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> UpdateStatus(int id, [FromBody] UpdateOrderStatusDTO updateStatusDto)
         {
             var order = await _orderService.UpdateOrderStatusAsync(id, updateStatusDto.Status);
-            return Ok(new { success = true, data = order });
+            return Ok(new { success = true, data = order, message = "Sifari? statusu yenil?ndi" });
         }
 
-         [HttpDelete("{id}")]
+        /// <summary>
+        /// Delete order (Admin only)
+        /// </summary>
+        [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> Delete(int id)
         {
             await _orderService.DeleteOrderAsync(id);

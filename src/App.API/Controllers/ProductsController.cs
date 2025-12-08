@@ -17,73 +17,125 @@ namespace App.API.Controllers
             _productService = productService;
         }
 
+        /// <summary>
+        /// Get all active products (Public)
+        /// </summary>
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAll()
         {
             var products = await _productService.GetAllProductsAsync();
             return Ok(new { success = true, data = products });
         }
 
+        /// <summary>
+        /// Get product by ID (Public)
+        /// </summary>
         [HttpGet("{id}")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetById(int id)
         {
             var product = await _productService.GetProductByIdAsync(id);
             return Ok(new { success = true, data = product });
         }
 
+        /// <summary>
+        /// Get related products (Public)
+        /// </summary>
         [HttpGet("{id}/related")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetRelatedProducts(int id, [FromQuery] int limit = 8)
         {
+            if (limit < 1 || limit > 50)
+            {
+                return BadRequest(new { success = false, message = "Limit 1-50 aras?nda olmal?d?r" });
+            }
+
             var products = await _productService.GetRelatedProductsAsync(id, limit);
             return Ok(new { success = true, data = products });
         }
 
+        /// <summary>
+        /// Get featured products (Public)
+        /// </summary>
         [HttpGet("featured")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetFeatured()
         {
             var products = await _productService.GetFeaturedProductsAsync();
             return Ok(new { success = true, data = products });
         }
 
+        /// <summary>
+        /// Get products by category slug (Public)
+        /// </summary>
         [HttpGet("category/{slug}")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetByCategory(string slug)
         {
             var products = await _productService.GetProductsByCategorySlugAsync(slug);
             return Ok(new { success = true, data = products });
         }
 
+        /// <summary>
+        /// Search products (Public)
+        /// </summary>
         [HttpGet("search")]
+        [AllowAnonymous]
         public async Task<IActionResult> Search([FromQuery] string q)
         {
+            if (string.IsNullOrWhiteSpace(q) || q.Length < 2)
+            {
+                return BadRequest(new { success = false, message = "Axtar?? ?n az? 2 simvol olmal?d?r" });
+            }
+
+            if (q.Length > 100)
+            {
+                return BadRequest(new { success = false, message = "Axtar?? maksimum 100 simvol ola bil?r" });
+            }
+
             var products = await _productService.SearchProductsAsync(q);
             return Ok(new { success = true, data = products });
         }
 
+        /// <summary>
+        /// Get products with discounts (Public)
+        /// </summary>
         [HttpGet("deals")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetDeals()
         {
             var products = await _productService.GetDealsAsync();
             return Ok(new { success = true, data = products });
         }
 
-        [Authorize(Roles = "Admin,SuperAdmin")]
+        /// <summary>
+        /// Create new product (Admin only)
+        /// </summary>
         [HttpPost]
+        [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> Create([FromForm] CreateProductDTO createProductDto)
         {
             var product = await _productService.CreateProductAsync(createProductDto);
-            return CreatedAtAction(nameof(GetById), new { id = product.Id }, new { success = true, data = product });
+            return CreatedAtAction(nameof(GetById), new { id = product.Id }, new { success = true, data = product, message = "M?hsul u?urla yarad?ld?" });
         }
 
-        [Authorize(Roles = "Admin,SuperAdmin")]
+        /// <summary>
+        /// Update product (Admin only)
+        /// </summary>
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> Update(int id, [FromForm] CreateProductDTO updateProductDto)
         {
             var product = await _productService.UpdateProductAsync(id, updateProductDto);
-            return Ok(new { success = true, data = product });
+            return Ok(new { success = true, data = product, message = "M?hsul u?urla yenil?ndi" });
         }
 
-        [Authorize(Roles = "Admin,SuperAdmin")]
+        /// <summary>
+        /// Delete product (Admin only)
+        /// </summary>
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> Delete(int id)
         {
             await _productService.DeleteProductAsync(id);

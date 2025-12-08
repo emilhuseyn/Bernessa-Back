@@ -7,7 +7,7 @@ namespace App.API.Controllers
 {
     [Route("api/admin/analytics")]
     [ApiController]
-
+    [Authorize(Roles = "Admin,SuperAdmin")]
     public class AnalyticsController : ControllerBase
     {
         private readonly IAnalyticsService _analyticsService;
@@ -18,7 +18,7 @@ namespace App.API.Controllers
         }
 
         /// <summary>
-        /// Get comprehensive dashboard statistics
+        /// Get comprehensive dashboard statistics (Admin only)
         /// Includes revenue, orders, customers, products, trends, and growth metrics
         /// </summary>
         [HttpGet("dashboard")]

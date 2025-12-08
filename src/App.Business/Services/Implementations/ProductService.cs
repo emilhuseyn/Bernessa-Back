@@ -34,7 +34,7 @@ namespace App.Business.Services.Implementations
         public async Task<IEnumerable<ProductDTO>> GetAllProductsAsync()
         {
             var products = await _productRepository.GetAllAsync(
-                p => p.IsActive && !p.IsDeleted,
+                p =>!p.IsDeleted,
                 p => p.Category,
                 p => p.Translations
             );

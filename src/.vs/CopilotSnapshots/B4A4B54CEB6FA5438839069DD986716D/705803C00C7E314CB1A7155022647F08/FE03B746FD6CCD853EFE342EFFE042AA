@@ -1,0 +1,63 @@
+﻿using App.Business.DTOs.Categories;
+using App.Business.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
+
+namespace App.API.Controllers
+{
+    [Route("api/categories")]
+    [ApiController]
+    public class CategoriesController : ControllerBase
+    {
+        private readonly ICategoryService _categoryService;
+
+        public CategoriesController(ICategoryService categoryService)
+        {
+            _categoryService = categoryService;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var categories = await _categoryService.GetAllCategoriesAsync();
+            return Ok(new { success = true, data = categories });
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var category = await _categoryService.GetCategoryByIdAsync(id);
+            return Ok(new { success = true, data = category });
+        }
+
+        [HttpGet("slug/{slug}")]
+        public async Task<IActionResult> GetBySlug(string slug)
+        {
+            var category = await _categoryService.GetCategoryBySlugAsync(slug);
+            return Ok(new { success = true, data = category });
+        }
+
+         [HttpPost]
+        public async Task<IActionResult> Create([FromForm] CreateCategoryDTO createCategoryDto)
+        {
+            var category = await _categoryService.CreateCategoryAsync(createCategoryDto);
+            return CreatedAtAction(nameof(GetById), new { id = category.Id }, new { success = true, data = category });
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id, [FromForm] CreateCategoryDTO updateCategoryDto)
+        {
+            var category = await _categoryService.UpdateCategoryAsync(id, updateCategoryDto);
+            return Ok(new { success = true, data = category });
+        }
+
+        [Authorize(Roles = "Admin,SuperAdmin")]
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            await _categoryService.DeleteCategoryAsync(id);
+            return Ok(new { success = true, message = "Kateqoriya ugurla silindi" });
+        }
+    }
+}

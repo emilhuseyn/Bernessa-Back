@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fOtfJtuinaw=",
+  "dgSpecHash": "6nLiDATVX5g=",
   "success": true,
   "projectFilePath": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Shared\\App.Shared.csproj",
   "expectedPackageFiles": [
@@ -26,8 +26,7 @@
     "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",
     "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
-    "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
-    "C:\\Users\\Emil\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
+    "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

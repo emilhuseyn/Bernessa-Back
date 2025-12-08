@@ -17,47 +17,70 @@ namespace App.API.Controllers
             _categoryService = categoryService;
         }
 
+        /// <summary>
+        /// Get all categories (Public)
+        /// </summary>
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAll()
         {
             var categories = await _categoryService.GetAllCategoriesAsync();
             return Ok(new { success = true, data = categories });
         }
 
+        /// <summary>
+        /// Get category by ID (Public)
+        /// </summary>
         [HttpGet("{id}")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetById(int id)
         {
             var category = await _categoryService.GetCategoryByIdAsync(id);
             return Ok(new { success = true, data = category });
         }
 
+        /// <summary>
+        /// Get category by slug (Public)
+        /// </summary>
         [HttpGet("slug/{slug}")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetBySlug(string slug)
         {
             var category = await _categoryService.GetCategoryBySlugAsync(slug);
             return Ok(new { success = true, data = category });
         }
 
-         [HttpPost]
+        /// <summary>
+        /// Create new category (Admin only)
+        /// </summary>
+        [HttpPost]
+        [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> Create([FromForm] CreateCategoryDTO createCategoryDto)
         {
             var category = await _categoryService.CreateCategoryAsync(createCategoryDto);
-            return CreatedAtAction(nameof(GetById), new { id = category.Id }, new { success = true, data = category });
+            return CreatedAtAction(nameof(GetById), new { id = category.Id }, new { success = true, data = category, message = "Kateqoriya u?urla yarad?ld?" });
         }
 
+        /// <summary>
+        /// Update category (Admin only)
+        /// </summary>
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> Update(int id, [FromForm] CreateCategoryDTO updateCategoryDto)
         {
             var category = await _categoryService.UpdateCategoryAsync(id, updateCategoryDto);
-            return Ok(new { success = true, data = category });
+            return Ok(new { success = true, data = category, message = "Kateqoriya u?urla yenil?ndi" });
         }
 
-        [Authorize(Roles = "Admin,SuperAdmin")]
+        /// <summary>
+        /// Delete category (Admin only)
+        /// </summary>
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> Delete(int id)
         {
             await _categoryService.DeleteCategoryAsync(id);
-            return Ok(new { success = true, message = "Kateqoriya ugurla silindi" });
+            return Ok(new { success = true, message = "Kateqoriya u?urla silindi" });
         }
     }
 }
