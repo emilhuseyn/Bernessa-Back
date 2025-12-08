@@ -39,9 +39,9 @@ C:\Users\Emil\source\repos\Bernessa\App\src\App.Shared\obj\Debug\net8.0\App.Shar
 C:\Users\Emil\source\repos\Bernessa\App\src\App.Shared\obj\Debug\net8.0\App.Shared.AssemblyInfoInputs.cache
 C:\Users\Emil\source\repos\Bernessa\App\src\App.Shared\obj\Debug\net8.0\App.Shared.AssemblyInfo.cs
 C:\Users\Emil\source\repos\Bernessa\App\src\App.Shared\obj\Debug\net8.0\App.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Emil\source\repos\Bernessa\App\src\App.Shared\obj\Debug\net8.0\App.Shared.sourcelink.json
 C:\Users\Emil\source\repos\Bernessa\App\src\App.Shared\obj\Debug\net8.0\App.Shared.csproj.Up2Date
 C:\Users\Emil\source\repos\Bernessa\App\src\App.Shared\obj\Debug\net8.0\App.Shared.dll
 C:\Users\Emil\source\repos\Bernessa\App\src\App.Shared\obj\Debug\net8.0\refint\App.Shared.dll
 C:\Users\Emil\source\repos\Bernessa\App\src\App.Shared\obj\Debug\net8.0\App.Shared.pdb
 C:\Users\Emil\source\repos\Bernessa\App\src\App.Shared\obj\Debug\net8.0\ref\App.Shared.dll
-C:\Users\Emil\source\repos\Bernessa\App\src\App.Shared\obj\Debug\net8.0\App.Shared.sourcelink.json

@@ -50,10 +50,10 @@ C:\Users\Emil\source\repos\Bernessa\App\src\App.DAL\obj\Debug\net8.0\App.DAL.Gen
 C:\Users\Emil\source\repos\Bernessa\App\src\App.DAL\obj\Debug\net8.0\App.DAL.AssemblyInfoInputs.cache
 C:\Users\Emil\source\repos\Bernessa\App\src\App.DAL\obj\Debug\net8.0\App.DAL.AssemblyInfo.cs
 C:\Users\Emil\source\repos\Bernessa\App\src\App.DAL\obj\Debug\net8.0\App.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Emil\source\repos\Bernessa\App\src\App.DAL\obj\Debug\net8.0\App.DAL.sourcelink.json
 C:\Users\Emil\source\repos\Bernessa\App\src\App.DAL\obj\Debug\net8.0\App.DAL.csproj.Up2Date
 C:\Users\Emil\source\repos\Bernessa\App\src\App.DAL\obj\Debug\net8.0\App.DAL.dll
 C:\Users\Emil\source\repos\Bernessa\App\src\App.DAL\obj\Debug\net8.0\refint\App.DAL.dll
 C:\Users\Emil\source\repos\Bernessa\App\src\App.DAL\obj\Debug\net8.0\App.DAL.pdb
 C:\Users\Emil\source\repos\Bernessa\App\src\App.DAL\obj\Debug\net8.0\App.DAL.genruntimeconfig.cache
 C:\Users\Emil\source\repos\Bernessa\App\src\App.DAL\obj\Debug\net8.0\ref\App.DAL.dll
-C:\Users\Emil\source\repos\Bernessa\App\src\App.DAL\obj\Debug\net8.0\App.DAL.sourcelink.json
