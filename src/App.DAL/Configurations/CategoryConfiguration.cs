@@ -21,9 +21,7 @@ namespace App.DAL.Configurations
             builder.Property(c => c.Image)
                 .HasMaxLength(500);
             
-            builder.HasIndex(c => c.Slug)
-                .IsUnique();
-  
+            builder.HasIndex(c => c.Slug);
             
             builder.HasQueryFilter(c => !c.IsDeleted);
         }

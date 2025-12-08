@@ -1,0 +1,24 @@
+﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
+using App.Business.ValidationAttributes;
+
+namespace App.Business.DTOs.Categories
+{
+    public class CreateCategoryDTO
+    {
+        [Required]
+        [MaxLength(100)]
+        public string Name { get; set; }  
+
+        [Required]
+        [MaxLength(150)]
+        [NotNumeric(ErrorMessage = "Slug sadəcə rəqəm ola bilməz")]
+        public string Slug { get; set; }
+
+        public IFormFile Image { get; set; }
+        
+        // Translations
+        public string NameEn { get; set; }
+        public string NameRu { get; set; }
+    }
+}

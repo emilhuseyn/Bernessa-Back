@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Http;
 using System.ComponentModel.DataAnnotations;
+using App.Business.ValidationAttributes;
 
 namespace App.Business.DTOs.Categories
 {
@@ -11,6 +12,7 @@ namespace App.Business.DTOs.Categories
 
         [Required]
         [MaxLength(150)]
+        [NotNumeric(ErrorMessage = "Slug sad?c? r?q?m ola bilm?z")]
         public string Slug { get; set; }
 
         public IFormFile Image { get; set; }

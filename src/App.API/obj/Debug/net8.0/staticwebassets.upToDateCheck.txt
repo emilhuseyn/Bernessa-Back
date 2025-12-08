@@ -11,8 +11,10 @@ wwwroot\images\24166f4e-8b2f-4995-b18f-09547749f642_360_F_669628739_WTCYHmwZI9xz
 wwwroot\images\303d58bc-a52b-4c5b-88a0-2b36b56e53ba_Tom-Ford-Oud-Wood-3-qutiv30j1oi5zcml0rvkc9g4zqwu6q2g2gwzurq7mw.jpg
 wwwroot\images\3610425b-bee2-40d2-a131-d2e6573c9f41_4583684-Versace-Bright-Crystal-Eau-de-Toilette-50ml-2000-x-2000_800x.webp
 wwwroot\images\3bbc1e5b-3178-4e02-96b2-156714d02854_Untitled_1800x2700px_-4.webp
+wwwroot\images\40e7308b-e03e-412d-81da-b87ee61f732b_perfume-glass-packaging-mockup-on-dark-background-with-haze-effect-photo.jpg
 wwwroot\images\48643457-0530-49e6-89b2-09b314104a51_JDR67.webp
 wwwroot\images\4b505ef8-7cc0-49dd-a917-cc13e911fd2b_perfume-glass-packaging-mockup-on-dark-background-with-haze-effect-photo.jpg
+wwwroot\images\4c796b03-c2f4-4ee3-ab1c-54e74be0ea17_perfume-glass-packaging-mockup-on-dark-background-with-haze-effect-photo.jpg
 wwwroot\images\54346830-53d3-45f0-a176-03b1bcbf303e_sun_9-wallpaper-3840x2160.jpg
 wwwroot\images\5e50ebe0-9ad6-425c-add3-279d18fb6afc_delicate-pink-paper-roses_1212719-2822.avif
 wwwroot\images\60974c31-ca69-4ec8-89a4-bfcd7903d81f_pngtree-luxury-cherry-blossom-perfume-for-modern-women-chic-bottle-a-touch-image_16256723.jpg
@@ -20,6 +22,7 @@ wwwroot\images\65f19ac2-5a78-48c7-a8e3-edda52cb83e3_Y0997145_C099700831_E01_GHC.
 wwwroot\images\67ad1463-5753-42a5-9594-bc1a39a9c192_1750768790390-onepdpeditopushdm974x1298px052xjpg_2596x1948.jpg
 wwwroot\images\681f5ec0-4131-4363-8875-1c769fe6d548_4583684-Versace-Bright-Crystal-Eau-de-Toilette-50ml-2000-x-2000_800x.webp
 wwwroot\images\6a0cbac7-46a8-4991-9244-8bcb1df9e1a0_10539394433054.jpg
+wwwroot\images\746c0e7e-383b-4ccb-a7df-97e25626804f_perfume-glass-packaging-mockup-on-dark-background-with-haze-effect-photo.jpg
 wwwroot\images\765856c9-9610-4fc3-82b8-72c265514dd3_perfume-glass-packaging-mockup-on-dark-background-with-haze-effect-photo.jpg
 wwwroot\images\7ef54f83-0fcd-4c70-b609-9feb5e7b47e1_images (1).jpeg
 wwwroot\images\80b866ae-7481-4925-b208-de598deec4de_perfume-glass-packaging-mockup-on-dark-background-with-haze-effect-photo.jpg
@@ -27,13 +30,17 @@ wwwroot\images\8417c7b1-f65a-481a-8f18-b595bb05650f_pngtree-luxury-cherry-blosso
 wwwroot\images\8485fba5-9e16-4c7e-bec6-5e79b3888493_1750768790390-onepdpeditopushdm974x1298px052xjpg_2596x1948.jpg
 wwwroot\images\8da6617a-e7ef-413b-8bcc-983064408cbd_360_F_669628739_WTCYHmwZI9xztCZhjUIOl3QDG3t5aWoT.jpg
 wwwroot\images\8fcc0b4e-6974-46a2-bebb-32ab8fe9bc31_pngtree-luxury-cherry-blossom-perfume-for-modern-women-chic-bottle-a-touch-image_16256723.jpg
+wwwroot\images\92202d59-d768-4fd5-b57b-b37105caa6c0_perfume-glass-packaging-mockup-on-dark-background-with-haze-effect-photo.jpg
 wwwroot\images\98930b6e-1cee-422e-ad2d-0cb677fefb4d_291198-223441a9701e6a18d80386020c370670.jpg
+wwwroot\images\9953b82c-b12a-48a5-9928-4a7cad4467a8_perfume-glass-packaging-mockup-on-dark-background-with-haze-effect-photo.jpg
 wwwroot\images\9deb551f-e191-4417-95cc-de9f07af124d_perfume-glass-packaging-mockup-on-dark-background-with-haze-effect-photo.jpg
 wwwroot\images\a03d0a81-f508-468d-a973-df84cf732111_Untitled_1800x2700px_-4.webp
 wwwroot\images\b00edfcb-ee67-4ea2-b2df-fe3b71ebba59_360_F_669628739_WTCYHmwZI9xztCZhjUIOl3QDG3t5aWoT.jpg
 wwwroot\images\b321343f-d60c-4918-91a3-a43c16bc7ce2_Mens-fragrances1.png
+wwwroot\images\b7574efa-32e9-4d34-9705-e110bcdf0eca_perfume-glass-packaging-mockup-on-dark-background-with-haze-effect-photo.jpg
 wwwroot\images\bd43d263-e601-4797-8fca-97475ddf22b2_10539394433054.jpg
 wwwroot\images\c07b69fd-eb5f-4f6f-8d9e-2288cb411ce6_images.jpeg
+wwwroot\images\c4a2a3ea-1322-41f0-96b4-3c63eaa11389_perfume-glass-packaging-mockup-on-dark-background-with-haze-effect-photo.jpg
 wwwroot\images\c62b958c-78cc-4eaf-9f3d-e2b3a3525ba3_delicate-pink-paper-roses_1212719-2822.avif
 wwwroot\images\d8a6fde4-3176-4301-ba92-aba67ee9169b_49706ace72e0896ca5b5ff2c76cb1dd9.png
 wwwroot\images\ddbf2c83-9567-4f9f-b98e-b0063e8f7f7c_360_F_669628739_WTCYHmwZI9xztCZhjUIOl3QDG3t5aWoT.jpg

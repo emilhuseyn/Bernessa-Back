@@ -69,7 +69,10 @@ namespace App.Business.Services.Implementations
 
         public async Task<CategoryDTO> CreateCategoryAsync(CreateCategoryDTO createCategoryDto)
         {
-           
+            if (int.TryParse(createCategoryDto.Slug, out _) || long.TryParse(createCategoryDto.Slug, out _))
+            {
+                throw new Exception("Slug sad?c? r?q?m ola bilm?z");
+            }
 
             string imageUrl = null;
             if (createCategoryDto.Image != null)
@@ -120,7 +123,10 @@ namespace App.Business.Services.Implementations
                 throw new Exception("Kateqoriya tap?lmad?");
             }
 
-            
+            if (int.TryParse(updateCategoryDto.Slug, out _) || long.TryParse(updateCategoryDto.Slug, out _))
+    {
+        throw new Exception("Slug sad?c? r?q?m ola bilm?z");
+    }
 
             category.Name = updateCategoryDto.Name;
             category.Slug = updateCategoryDto.Slug;

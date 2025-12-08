@@ -67,8 +67,7 @@ namespace App.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Slug")
-                        .IsUnique();
+                    b.HasIndex("Slug");
 
                     b.ToTable("Categories");
                 });
