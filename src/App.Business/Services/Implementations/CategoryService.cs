@@ -69,11 +69,7 @@ namespace App.Business.Services.Implementations
 
         public async Task<CategoryDTO> CreateCategoryAsync(CreateCategoryDTO createCategoryDto)
         {
-            var existingCategory = await _categoryRepository.GetBySlugAsync(createCategoryDto.Slug);
-            if (existingCategory != null)
-            {
-                throw new Exception("Bu slug art?q mövcuddur");
-            }
+           
 
             string imageUrl = null;
             if (createCategoryDto.Image != null)
@@ -90,8 +86,7 @@ namespace App.Business.Services.Implementations
                 Translations = new List<CategoryTranslation>()
             };
             
-            // Add English translation if provided
-            if (!string.IsNullOrWhiteSpace(createCategoryDto.NameEn))
+             if (!string.IsNullOrWhiteSpace(createCategoryDto.NameEn))
             {
                 category.Translations.Add(new CategoryTranslation
                 {
@@ -100,8 +95,7 @@ namespace App.Business.Services.Implementations
                 });
             }
             
-            // Add Russian translation if provided
-            if (!string.IsNullOrWhiteSpace(createCategoryDto.NameRu))
+             if (!string.IsNullOrWhiteSpace(createCategoryDto.NameRu))
             {
                 category.Translations.Add(new CategoryTranslation
                 {
@@ -126,14 +120,7 @@ namespace App.Business.Services.Implementations
                 throw new Exception("Kateqoriya tap?lmad?");
             }
 
-            if (category.Slug != updateCategoryDto.Slug)
-            {
-                var existingCategory = await _categoryRepository.GetBySlugAsync(updateCategoryDto.Slug);
-                if (existingCategory != null)
-                {
-                    throw new Exception("Bu slug art?q mövcuddur");
-                }
-            }
+            
 
             category.Name = updateCategoryDto.Name;
             category.Slug = updateCategoryDto.Slug;

@@ -54,7 +54,6 @@ namespace App.API.Controllers
         /// Create new category (Admin only)
         /// </summary>
         [HttpPost]
-        [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> Create([FromForm] CreateCategoryDTO createCategoryDto)
         {
             var category = await _categoryService.CreateCategoryAsync(createCategoryDto);

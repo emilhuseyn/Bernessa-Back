@@ -18,6 +18,7 @@ wwwroot\images\5e50ebe0-9ad6-425c-add3-279d18fb6afc_delicate-pink-paper-roses_12
 wwwroot\images\60974c31-ca69-4ec8-89a4-bfcd7903d81f_pngtree-luxury-cherry-blossom-perfume-for-modern-women-chic-bottle-a-touch-image_16256723.jpg
 wwwroot\images\65f19ac2-5a78-48c7-a8e3-edda52cb83e3_Y0997145_C099700831_E01_GHC.webp
 wwwroot\images\67ad1463-5753-42a5-9594-bc1a39a9c192_1750768790390-onepdpeditopushdm974x1298px052xjpg_2596x1948.jpg
+wwwroot\images\681f5ec0-4131-4363-8875-1c769fe6d548_4583684-Versace-Bright-Crystal-Eau-de-Toilette-50ml-2000-x-2000_800x.webp
 wwwroot\images\6a0cbac7-46a8-4991-9244-8bcb1df9e1a0_10539394433054.jpg
 wwwroot\images\765856c9-9610-4fc3-82b8-72c265514dd3_perfume-glass-packaging-mockup-on-dark-background-with-haze-effect-photo.jpg
 wwwroot\images\7ef54f83-0fcd-4c70-b609-9feb5e7b47e1_images (1).jpeg
@@ -27,6 +28,7 @@ wwwroot\images\8485fba5-9e16-4c7e-bec6-5e79b3888493_1750768790390-onepdpeditopus
 wwwroot\images\8da6617a-e7ef-413b-8bcc-983064408cbd_360_F_669628739_WTCYHmwZI9xztCZhjUIOl3QDG3t5aWoT.jpg
 wwwroot\images\8fcc0b4e-6974-46a2-bebb-32ab8fe9bc31_pngtree-luxury-cherry-blossom-perfume-for-modern-women-chic-bottle-a-touch-image_16256723.jpg
 wwwroot\images\98930b6e-1cee-422e-ad2d-0cb677fefb4d_291198-223441a9701e6a18d80386020c370670.jpg
+wwwroot\images\9deb551f-e191-4417-95cc-de9f07af124d_perfume-glass-packaging-mockup-on-dark-background-with-haze-effect-photo.jpg
 wwwroot\images\a03d0a81-f508-468d-a973-df84cf732111_Untitled_1800x2700px_-4.webp
 wwwroot\images\b00edfcb-ee67-4ea2-b2df-fe3b71ebba59_360_F_669628739_WTCYHmwZI9xztCZhjUIOl3QDG3t5aWoT.jpg
 wwwroot\images\b321343f-d60c-4918-91a3-a43c16bc7ce2_Mens-fragrances1.png
@@ -38,4 +40,5 @@ wwwroot\images\ddbf2c83-9567-4f9f-b98e-b0063e8f7f7c_360_F_669628739_WTCYHmwZI9xz
 wwwroot\images\e626e7c5-207a-49ba-a041-07f2e01d0a05_Tom-Ford-Oud-Wood-3-qutiv30j1oi5zcml0rvkc9g4zqwu6q2g2gwzurq7mw.jpg
 wwwroot\images\e73726ba-d422-49eb-a35a-97543a79796a_Mens-fragrances1.png
 wwwroot\images\e7f52a7d-99fd-4851-936b-d6603c526295_bottle-modern-male-perfume-dark-background_392895-166533.avif
+wwwroot\images\fad41bdd-6395-4d2b-9e29-fa348b7dbd1b_291198-223441a9701e6a18d80386020c370670.jpg
 wwwroot\images\ff3f03b1-d96a-44d1-a4eb-527a8fcb1ec4_291198-223441a9701e6a18d80386020c370670.jpg
