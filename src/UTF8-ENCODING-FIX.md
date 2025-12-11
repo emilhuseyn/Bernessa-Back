@@ -20,30 +20,53 @@ API responses were returning garbled Azerbaijani text instead of properly encode
 ```
 
 ## Root Cause
-1. **Missing JSON Encoder Configuration**: ASP.NET Core was using default HTML-escaping which corrupts non-ASCII characters
-2. **Inconsistent Serialization**: The global exception handler was using `Newtonsoft.Json` without proper UTF-8 configuration
-3. **Missing Content-Type Charset**: Response headers didn't explicitly specify UTF-8 encoding
+The issue was caused by **conflicting JSON serialization configurations** in two places:
+
+1. **Program.cs** - Called `AddControllers()` with JSON encoder options
+2. **BusinessDependencyInjection.cs** - Called `AddControllers()` again WITHOUT the JSON encoder option
+
+The second call was **overriding** the first configuration, causing ASP.NET Core to use its default HTML-escaping encoder instead of `UnsafeRelaxedJsonEscaping`, which corrupted non-ASCII characters.
 
 ## Solution
 
-### 1. Updated Program.cs
-Added JSON serializer configuration to use `UnsafeRelaxedJsonEscaping`:
+### 1. Updated BusinessDependencyInjection.cs
+Added proper JSON serialization configuration:
 
 ```csharp
-builder.Services.AddControllers()
-    .AddJsonOptions(options =>
-    {
-        options.JsonSerializerOptions.Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping;
-    });
+using System.Text.Encodings.Web;  // Add this import
+
+services.AddControllers(options =>
+{
+    options.Conventions.Add(new PluralizedRouteConvention());
+    options.ModelValidatorProviders.Clear();
+})
+.AddFluentValidation(...)
+.AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+    options.JsonSerializerOptions.Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping;
+    // Add Azerbaijan timezone converter for all DateTime properties
+    options.JsonSerializerOptions.Converters.Add(new AzerbaijanDateTimeConverter());
+    options.JsonSerializerOptions.Converters.Add(new AzerbaijanNullableDateTimeConverter());
+});
 ```
 
-This ensures that:
-- UTF-8 characters (?, ?, ç, ?, ?, ö, ü) are preserved in JSON responses
-- Proper encoding for all API endpoints
-- All controllers benefit from consistent serialization
+### 2. Simplified Program.cs
+Removed redundant `AddJsonOptions` since it's now configured in the Business layer:
 
-### 2. Updated GlobalExceptionHandlerMiddleware.cs
-Replaced `Newtonsoft.Json` with `System.Text.Json` and configured proper encoding:
+```csharp
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddControllers();  // Configuration moved to BusinessDependencyInjection.cs
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(...);
+
+builder.Services
+    .AddDataAccess(builder.Configuration)
+    .AddBusiness();  // This now handles all JSON serialization settings
+```
+
+### 3. GlobalExceptionHandlerMiddleware.cs
+Already updated to use proper UTF-8 encoding:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -53,33 +76,41 @@ var options = new JsonSerializerOptions
 };
 
 var result = JsonSerializer.Serialize(new { success = false, errors }, options);
-
 context.Response.ContentType = "application/json; charset=utf-8";
 ```
 
-This ensures:
-- Exception responses also preserve Azerbaijani characters
-- Content-Type header explicitly declares UTF-8 encoding
-- Consistent serialization across all middleware
-
 ## Impact
-? All API responses now properly display Azerbaijani text
-? Login error messages show correctly: "Email v? ya ?ifr? yanl??d?r"
-? Profile update messages show correctly: "Profil u?urla yenil?ndi"
-? Password change messages show correctly: "?ifr? u?urla d?yi?dirildi"
-? Exception handler messages preserve all special characters
+
+? **All API responses** now properly display Azerbaijani text
+? **Login error messages** show correctly: "Email v? ya ?ifr? yanl??d?r"
+? **Profile update messages** show correctly: "Profil u?urla yenil?ndi"  
+? **Password change messages** show correctly: "?ifr? u?urla d?yi?dirildi"
+? **Exception handler responses** preserve all special characters
+? **DateTime conversions** to Azerbaijan timezone still work properly
+
+## Key Characters Fixed
+
+All Azerbaijani special characters are now properly encoded:
+- **?** - schwa (e.g., "Email", "d?yi?dirildi")
+- **?** - s with cedilla (e.g., "?ifr?")
+- **ç** - c with cedilla (e.g., "h?r?k?tçi")
+- **?** - g with breve (e.g., "da?")
+- **?** - dotless i (e.g., "?ifr?")
+- **ö** - o with diaeresis
+- **ü** - u with diaeresis
 
 ## Testing
-To verify the fix:
 
-1. Test login with invalid credentials:
+To verify the fix works:
+
+1. **Test login with invalid credentials:**
 ```bash
 curl -X POST http://localhost:5000/api/admin/auth/login \
   -H "Content-Type: application/json" \
   -d '{"email":"user@example.com","password":"wrong"}'
 ```
 
-2. Response should now show:
+Expected response:
 ```json
 {
   "success": false,
@@ -87,13 +118,74 @@ curl -X POST http://localhost:5000/api/admin/auth/login \
 }
 ```
 
-3. Test other endpoints (profile update, password change, etc.) to verify all Azerbaijani text is properly encoded
+2. **Test profile update:**
+```bash
+curl -X PUT http://localhost:5000/api/admin/auth/profile \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer YOUR_TOKEN" \
+  -d '{"firstName":"","lastName":"Test"}'
+```
+
+Expected response:
+```json
+{
+  "success": false,
+  "message": "Ad daxil edilm?lidir"
+}
+```
+
+3. **Test password change:**
+```bash
+curl -X POST http://localhost:5000/api/admin/auth/change-password \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer YOUR_TOKEN" \
+  -d '{"currentPassword":"test","newPassword":"short"}'
+```
+
+Expected response:
+```json
+{
+  "success": false,
+  "message": "Yeni ?ifr? ?n az? 6 simvol olmal?d?r"
+}
+```
+
+## Important Notes
+
+### UnsafeRelaxedJsonEscaping
+- Safe for this use case because we're serializing trusted server responses
+- Only relevant for non-ASCII characters in string values
+- Does NOT affect security - application logic handles validation
+- Recommended for APIs serving international content
+
+### Centralized Configuration
+- All JSON serialization settings are now in `BusinessDependencyInjection.cs`
+- Single source of truth for serialization options
+- Easier to maintain and modify in the future
+- Applies consistently to all endpoints
+
+### DateTime Handling
+- Custom converters still work as intended
+- Azerbaijan timezone conversion continues to function
+- Proper JSON encoding doesn't interfere with converter logic
 
 ## Files Modified
-- `App.API\Program.cs` - Added JSON serializer options
-- `App.API\Middlewares\GlobalExceptionHandlerMiddleware.cs` - Updated to use System.Text.Json with UTF-8 encoding
+- `App.Business\BusinessDependencyInjection.cs` - Added UTF-8 encoder configuration
+- `App.API\Program.cs` - Removed redundant JSON configuration
+- `App.API\Middlewares\GlobalExceptionHandlerMiddleware.cs` - Updated in previous fix
 
-## Notes
-- The `UnsafeRelaxedJsonEscaping` encoder is safe to use as we're handling trusted server responses
-- All special Azerbaijani characters are now properly preserved in all JSON responses
-- This fix applies globally to all API endpoints
+## Build Required
+**Important**: You must clean and rebuild the solution for this fix to take effect:
+
+```bash
+# Clean old binaries
+dotnet clean
+
+# Rebuild solution
+dotnet build
+
+# Or simply rebuild without clean
+dotnet build --force
+```
+
+This ensures all cached assemblies are refreshed with the new configuration.
