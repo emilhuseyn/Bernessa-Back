@@ -1,4 +1,4 @@
-using App.Business.DTOs.Categories;
+﻿using App.Business.DTOs.Categories;
 using App.Business.Services.ExternalServices.Interfaces;
 using App.Business.Services.Interfaces;
 using App.Core.Entities;
@@ -36,7 +36,7 @@ namespace App.Business.Services.Implementations
                 c => !c.IsDeleted,
                 c => c.Translations
             );
-            
+
             return categories.Select(c => MapToCategoryDTO(c));
         }
 
@@ -46,10 +46,10 @@ namespace App.Business.Services.Implementations
                 c => c.Id == id,
                 c => c.Translations
             );
-            
+
             if (category == null)
             {
-                throw new Exception("Kateqoriya tap?lmad?");
+                throw new Exception("Kateqoriya tapılmadı");
             }
 
             return MapToCategoryDTO(category);
@@ -58,10 +58,10 @@ namespace App.Business.Services.Implementations
         public async Task<CategoryDTO> GetCategoryBySlugAsync(string slug)
         {
             var category = await _categoryRepository.GetBySlugAsync(slug);
-            
+
             if (category == null)
             {
-                throw new Exception("Kateqoriya tap?lmad?");
+                throw new Exception("Kateqoriya tapılmadı");
             }
 
             return _mapper.Map<CategoryDTO>(category);
@@ -71,7 +71,7 @@ namespace App.Business.Services.Implementations
         {
             if (int.TryParse(createCategoryDto.Slug, out _) || long.TryParse(createCategoryDto.Slug, out _))
             {
-                throw new Exception("Slug sad?c? r?q?m ola bilm?z");
+                throw new Exception("Slug sadəcə rəqəm ola bilməz");
             }
 
             string imageUrl = null;
@@ -88,8 +88,8 @@ namespace App.Business.Services.Implementations
                 ProductCount = 0,
                 Translations = new List<CategoryTranslation>()
             };
-            
-             if (!string.IsNullOrWhiteSpace(createCategoryDto.NameEn))
+
+            if (!string.IsNullOrWhiteSpace(createCategoryDto.NameEn))
             {
                 category.Translations.Add(new CategoryTranslation
                 {
@@ -97,8 +97,8 @@ namespace App.Business.Services.Implementations
                     Name = createCategoryDto.NameEn
                 });
             }
-            
-             if (!string.IsNullOrWhiteSpace(createCategoryDto.NameRu))
+
+            if (!string.IsNullOrWhiteSpace(createCategoryDto.NameRu))
             {
                 category.Translations.Add(new CategoryTranslation
                 {
@@ -117,29 +117,27 @@ namespace App.Business.Services.Implementations
                 c => c.Id == id,
                 c => c.Translations
             );
-            
+
             if (category == null)
             {
-                throw new Exception("Kateqoriya tap?lmad?");
+                throw new Exception("Kateqoriya tapılmadı");
             }
 
             if (int.TryParse(updateCategoryDto.Slug, out _) || long.TryParse(updateCategoryDto.Slug, out _))
-    {
-        throw new Exception("Slug sad?c? r?q?m ola bilm?z");
-    }
+            {
+                throw new Exception("Slug sadəcə rəqəm ola bilməz");
+            }
 
             category.Name = updateCategoryDto.Name;
             category.Slug = updateCategoryDto.Slug;
-            
+
             if (updateCategoryDto.Image != null)
             {
                 category.Image = await _fileManagerService.UploadFileAsync(updateCategoryDto.Image);
             }
-            
-            // Update translations
+
             category.Translations ??= new List<CategoryTranslation>();
-            
-            // Update or add English translation
+
             var enTranslation = category.Translations.FirstOrDefault(t => t.LanguageCode == "en");
             if (!string.IsNullOrWhiteSpace(updateCategoryDto.NameEn))
             {
@@ -161,8 +159,7 @@ namespace App.Business.Services.Implementations
             {
                 category.Translations.Remove(enTranslation);
             }
-            
-            // Update or add Russian translation
+
             var ruTranslation = category.Translations.FirstOrDefault(t => t.LanguageCode == "ru");
             if (!string.IsNullOrWhiteSpace(updateCategoryDto.NameRu))
             {
@@ -192,15 +189,14 @@ namespace App.Business.Services.Implementations
         public async Task DeleteCategoryAsync(int id)
         {
             var category = await _categoryRepository.GetByIdAsync(c => c.Id == id);
-            
+
             if (category == null)
             {
-                throw new Exception("Kateqoriya tap?lmad?");
+                throw new Exception("Kateqoriya tapılmadı");
             }
 
             if (category.ProductCount > 0)
             {
-                // delete associated products
                 var products = await _productRepository.GetAllAsync(p => p.CategoryId == category.Id && !p.IsDeleted);
                 foreach (var product in products.ToList())
                 {
@@ -211,7 +207,7 @@ namespace App.Business.Services.Implementations
 
             await _categoryRepository.DeleteAsync(category);
         }
-        
+
         private CategoryDTO MapToCategoryDTO(Category category)
         {
             var dto = new CategoryDTO
@@ -223,11 +219,9 @@ namespace App.Business.Services.Implementations
                 ProductCount = category.ProductCount,
                 Translations = new Dictionary<string, string>()
             };
-            
-            // Add default Azerbaijani
+
             dto.Translations["az"] = category.Name;
-            
-            // Add other translations
+
             if (category.Translations != null)
             {
                 foreach (var translation in category.Translations)
@@ -235,7 +229,7 @@ namespace App.Business.Services.Implementations
                     dto.Translations[translation.LanguageCode] = translation.Name;
                 }
             }
-            
+
             return dto;
         }
     }

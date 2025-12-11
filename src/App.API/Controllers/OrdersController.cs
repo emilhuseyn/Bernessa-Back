@@ -1,4 +1,4 @@
-using App.Business.DTOs.Orders;
+﻿using App.Business.DTOs.Orders;
 using App.Business.Services.Interfaces;
 using App.Core.Enums;
 using App.Shared.Interfaces;
@@ -21,9 +21,6 @@ namespace App.API.Controllers
             _claimService = claimService;
         }
 
-        /// <summary>
-        /// Create new order (Public - for customers)
-        /// </summary>
         [HttpPost]
         [AllowAnonymous]
         public async Task<IActionResult> Create([FromBody] CreateOrderDTO createOrderDto)
@@ -33,31 +30,25 @@ namespace App.API.Controllers
             {
                 success = true,
                 orderNumber = order.OrderNumber,
-                message = "Sifari?iniz u?urla qeyd? al?nd?",
+                message = "Sifarişiniz uğurla qeydə alındı",
                 trackingUrl = $"/orders/track/{order.OrderNumber}",
                 data = order
             });
         }
 
-        /// <summary>
-        /// Track order by order number (Public - customers can track their orders)
-        /// </summary>
         [HttpGet("track/{orderNumber}")]
         [AllowAnonymous]
         public async Task<IActionResult> TrackOrder(string orderNumber)
         {
             if (string.IsNullOrWhiteSpace(orderNumber))
             {
-                return BadRequest(new { success = false, message = "Sifari? n�mr?si daxil edilm?lidir" });
+                return BadRequest(new { success = false, message = "Sifariş nömrəsi daxil edilməlidir" });
             }
 
             var order = await _orderService.GetOrderByNumberAsync(orderNumber);
             return Ok(new { success = true, data = order });
         }
 
-        /// <summary>
-        /// Get all orders (Admin only)
-        /// </summary>
         [HttpGet]
         [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> GetAll()
@@ -66,9 +57,6 @@ namespace App.API.Controllers
             return Ok(new { success = true, data = orders });
         }
 
-        /// <summary>
-        /// Get order by ID (Admin only)
-        /// </summary>
         [HttpGet("{id}")]
         [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> GetById(int id)
@@ -77,26 +65,20 @@ namespace App.API.Controllers
             return Ok(new { success = true, data = order });
         }
 
-        /// <summary>
-        /// Update order status (Admin only)
-        /// </summary>
         [HttpPut("{id}/status")]
         [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> UpdateStatus(int id, [FromBody] UpdateOrderStatusDTO updateStatusDto)
         {
             var order = await _orderService.UpdateOrderStatusAsync(id, updateStatusDto.Status);
-            return Ok(new { success = true, data = order, message = "Sifari? statusu yenil?ndi" });
+            return Ok(new { success = true, data = order, message = "Sifariş statusu yeniləndi" });
         }
 
-        /// <summary>
-        /// Delete order (Admin only)
-        /// </summary>
         [HttpDelete("{id}")]
         [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> Delete(int id)
         {
             await _orderService.DeleteOrderAsync(id);
-            return Ok(new { success = true, message = "Sifari? l??v edildi" });
+            return Ok(new { success = true, message = "Sifariş ləğv edildi" });
         }
     }
 }

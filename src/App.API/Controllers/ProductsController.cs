@@ -1,4 +1,4 @@
-using App.Business.DTOs.Products;
+﻿using App.Business.DTOs.Products;
 using App.Business.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -17,9 +17,6 @@ namespace App.API.Controllers
             _productService = productService;
         }
 
-        /// <summary>
-        /// Get all active products (Public)
-        /// </summary>
         [HttpGet]
         [AllowAnonymous]
         public async Task<IActionResult> GetAll()
@@ -28,9 +25,6 @@ namespace App.API.Controllers
             return Ok(new { success = true, data = products });
         }
 
-        /// <summary>
-        /// Get product by ID (Public)
-        /// </summary>
         [HttpGet("{id}")]
         [AllowAnonymous]
         public async Task<IActionResult> GetById(int id)
@@ -39,25 +33,19 @@ namespace App.API.Controllers
             return Ok(new { success = true, data = product });
         }
 
-        /// <summary>
-        /// Get related products (Public)
-        /// </summary>
         [HttpGet("{id}/related")]
         [AllowAnonymous]
         public async Task<IActionResult> GetRelatedProducts(int id, [FromQuery] int limit = 8)
         {
             if (limit < 1 || limit > 50)
             {
-                return BadRequest(new { success = false, message = "Limit 1-50 aras?nda olmal?d?r" });
+                return BadRequest(new { success = false, message = "Limit 1-50 arasında olmalıdır" });
             }
 
             var products = await _productService.GetRelatedProductsAsync(id, limit);
             return Ok(new { success = true, data = products });
         }
 
-        /// <summary>
-        /// Get featured products (Public)
-        /// </summary>
         [HttpGet("featured")]
         [AllowAnonymous]
         public async Task<IActionResult> GetFeatured()
@@ -66,9 +54,6 @@ namespace App.API.Controllers
             return Ok(new { success = true, data = products });
         }
 
-        /// <summary>
-        /// Get products by category slug (Public)
-        /// </summary>
         [HttpGet("category/{slug}")]
         [AllowAnonymous]
         public async Task<IActionResult> GetByCategory(string slug)
@@ -77,30 +62,24 @@ namespace App.API.Controllers
             return Ok(new { success = true, data = products });
         }
 
-        /// <summary>
-        /// Search products (Public)
-        /// </summary>
         [HttpGet("search")]
         [AllowAnonymous]
         public async Task<IActionResult> Search([FromQuery] string q)
         {
             if (string.IsNullOrWhiteSpace(q) || q.Length < 2)
             {
-                return BadRequest(new { success = false, message = "Axtar?? ?n az? 2 simvol olmal?d?r" });
+                return BadRequest(new { success = false, message = "Axtarış ən azı 2 simvol olmalıdır" });
             }
 
             if (q.Length > 100)
             {
-                return BadRequest(new { success = false, message = "Axtar?? maksimum 100 simvol ola bil?r" });
+                return BadRequest(new { success = false, message = "Axtarış maksimum 100 simvol ola bilər" });
             }
 
             var products = await _productService.SearchProductsAsync(q);
             return Ok(new { success = true, data = products });
         }
 
-        /// <summary>
-        /// Get products with discounts (Public)
-        /// </summary>
         [HttpGet("deals")]
         [AllowAnonymous]
         public async Task<IActionResult> GetDeals()
@@ -109,37 +88,28 @@ namespace App.API.Controllers
             return Ok(new { success = true, data = products });
         }
 
-        /// <summary>
-        /// Create new product (Admin only)
-        /// </summary>
         [HttpPost]
         [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> Create([FromForm] CreateProductDTO createProductDto)
         {
             var product = await _productService.CreateProductAsync(createProductDto);
-            return CreatedAtAction(nameof(GetById), new { id = product.Id }, new { success = true, data = product, message = "M?hsul u?urla yarad?ld?" });
+            return CreatedAtAction(nameof(GetById), new { id = product.Id }, new { success = true, data = product, message = "Məhsul uğurla yaradıldı" });
         }
 
-        /// <summary>
-        /// Update product (Admin only)
-        /// </summary>
         [HttpPut("{id}")]
         [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> Update(int id, [FromForm] CreateProductDTO updateProductDto)
         {
             var product = await _productService.UpdateProductAsync(id, updateProductDto);
-            return Ok(new { success = true, data = product, message = "M?hsul u?urla yenil?ndi" });
+            return Ok(new { success = true, data = product, message = "Məhsul uğurla yeniləndi" });
         }
 
-        /// <summary>
-        /// Delete product (Admin only)
-        /// </summary>
         [HttpDelete("{id}")]
         [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> Delete(int id)
         {
             await _productService.DeleteProductAsync(id);
-            return Ok(new { success = true, message = "M?hsul u?urla silindi" });
+            return Ok(new { success = true, message = "Məhsul uğurla silindi" });
         }
     }
 }

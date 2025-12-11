@@ -1,4 +1,4 @@
-using App.Business.DTOs.Categories;
+﻿using App.Business.DTOs.Categories;
 using App.Business.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -17,9 +17,6 @@ namespace App.API.Controllers
             _categoryService = categoryService;
         }
 
-        /// <summary>
-        /// Get all categories (Public)
-        /// </summary>
         [HttpGet]
         [AllowAnonymous]
         public async Task<IActionResult> GetAll()
@@ -28,9 +25,6 @@ namespace App.API.Controllers
             return Ok(new { success = true, data = categories });
         }
 
-        /// <summary>
-        /// Get category by ID (Public)
-        /// </summary>
         [HttpGet("{id}")]
         [AllowAnonymous]
         public async Task<IActionResult> GetById(int id)
@@ -39,9 +33,6 @@ namespace App.API.Controllers
             return Ok(new { success = true, data = category });
         }
 
-        /// <summary>
-        /// Get category by slug (Public)
-        /// </summary>
         [HttpGet("slug/{slug}")]
         [AllowAnonymous]
         public async Task<IActionResult> GetBySlug(string slug)
@@ -50,36 +41,28 @@ namespace App.API.Controllers
             return Ok(new { success = true, data = category });
         }
 
-        /// <summary>
-        /// Create new category (Admin only)
-        /// </summary>
         [HttpPost]
+        [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> Create([FromForm] CreateCategoryDTO createCategoryDto)
         {
             var category = await _categoryService.CreateCategoryAsync(createCategoryDto);
-            return CreatedAtAction(nameof(GetById), new { id = category.Id }, new { success = true, data = category, message = "Kateqoriya u?urla yarad?ld?" });
+            return CreatedAtAction(nameof(GetById), new { id = category.Id }, new { success = true, data = category, message = "Kateqoriya uğurla yaradıldı" });
         }
 
-        /// <summary>
-        /// Update category (Admin only)
-        /// </summary>
         [HttpPut("{id}")]
         [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> Update(int id, [FromForm] CreateCategoryDTO updateCategoryDto)
         {
             var category = await _categoryService.UpdateCategoryAsync(id, updateCategoryDto);
-            return Ok(new { success = true, data = category, message = "Kateqoriya u?urla yenil?ndi" });
+            return Ok(new { success = true, data = category, message = "Kateqoriya uğurla yeniləndi" });
         }
 
-        /// <summary>
-        /// Delete category (Admin only)
-        /// </summary>
         [HttpDelete("{id}")]
         [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> Delete(int id)
         {
             await _categoryService.DeleteCategoryAsync(id);
-            return Ok(new { success = true, message = "Kateqoriya u?urla silindi" });
+            return Ok(new { success = true, message = "Kateqoriya uğurla silindi" });
         }
     }
 }

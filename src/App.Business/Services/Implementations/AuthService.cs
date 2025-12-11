@@ -1,4 +1,4 @@
-using App.Business.DTOs.Auth;
+﻿using App.Business.DTOs.Auth;
 using App.Business.DTOs.Commons;
 using App.Business.Services.Interfaces;
 using App.Core.Entities.Identity;
@@ -30,29 +30,28 @@ namespace App.Business.Services.Implementations
         public async Task<ServiceResult<TokenDTO>> LoginAsync(LoginDTO loginDto)
         {
             var user = await _userManager.FindByEmailAsync(loginDto.Email);
-            
+
             if (user == null)
             {
-                return ServiceResult<TokenDTO>.FailureResult("Email v? ya ?ifr? yanl??d?r");
+                return ServiceResult<TokenDTO>.FailureResult("Email və ya şifrə yanlışdır");
             }
 
             if (user.IsDisabled)
             {
-                return ServiceResult<TokenDTO>.FailureResult("Hesab?n?z deaktiv edilib. D?st?k il? ?laq? saxlay?n");
+                return ServiceResult<TokenDTO>.FailureResult("Hesabınız deaktiv edilib. Dəstək ilə əlaqə saxlayın");
             }
 
             var result = await _signInManager.CheckPasswordSignInAsync(user, loginDto.Password, lockoutOnFailure: true);
-            
+
             if (!result.Succeeded)
             {
                 if (result.IsLockedOut)
                 {
-                    return ServiceResult<TokenDTO>.FailureResult("Hesab m�v?qq?ti olaraq bloklan?b. Z?hm?t olmasa bir q?d?r sonra yenid?n c?hd edin");
+                    return ServiceResult<TokenDTO>.FailureResult("Hesab müvəqqəti olaraq bloklanıb. Zəhmət olmasa bir qədər sonra yenidən cəhd edin");
                 }
-                return ServiceResult<TokenDTO>.FailureResult("Email v? ya ?ifr? yanl??d?r");
+                return ServiceResult<TokenDTO>.FailureResult("Email və ya şifrə yanlışdır");
             }
 
-            // Store Azerbaijan time as UTC
             var azerbaijanNow = DateTimeHelper.GetAzerbaijanNow();
             user.LastLoginAt = DateTimeHelper.ToUtcFromAzerbaijan(azerbaijanNow);
             await _userManager.UpdateAsync(user);
@@ -79,31 +78,31 @@ namespace App.Business.Services.Implementations
                 }
             };
 
-            return ServiceResult<TokenDTO>.SuccessResult(tokenDto, "U?urla daxil oldunuz");
+            return ServiceResult<TokenDTO>.SuccessResult(tokenDto, "Uğurla daxil oldunuz");
         }
 
         public async Task<ServiceResult<TokenDTO>> RefreshTokenAsync(string refreshToken)
         {
             if (!_tokenService.ValidateRefreshToken(refreshToken))
             {
-                return ServiceResult<TokenDTO>.FailureResult("Token etibars?zd?r");
+                return ServiceResult<TokenDTO>.FailureResult("Token etibarsızdır");
             }
 
-            return ServiceResult<TokenDTO>.FailureResult("Refresh token funksionall??? h?l? t?tbiq edilm?yib");
+            return ServiceResult<TokenDTO>.FailureResult("Refresh token funksionallığı hələ tətbiq edilməyib");
         }
 
         public async Task<ServiceResult<UserInfoDTO>> GetCurrentUserAsync(string userId)
         {
             var user = await _userManager.FindByIdAsync(userId);
-            
+
             if (user == null)
             {
-                return ServiceResult<UserInfoDTO>.FailureResult("?stifad?�i tap?lmad?");
+                return ServiceResult<UserInfoDTO>.FailureResult("İstifadəçi tapılmadı");
             }
 
             if (user.IsDisabled)
             {
-                return ServiceResult<UserInfoDTO>.FailureResult("Hesab?n?z deaktiv edilib");
+                return ServiceResult<UserInfoDTO>.FailureResult("Hesabınız deaktiv edilib");
             }
 
             var roles = await _userManager.GetRolesAsync(user);
@@ -125,134 +124,130 @@ namespace App.Business.Services.Implementations
         public async Task<ServiceResult> ChangePasswordAsync(string userId, string currentPassword, string newPassword)
         {
             var user = await _userManager.FindByIdAsync(userId);
-            
+
             if (user == null)
             {
-                return ServiceResult.FailureResult("?stifad?�i tap?lmad?");
+                return ServiceResult.FailureResult("İstifadəçi tapılmadı");
             }
 
             if (user.IsDisabled)
             {
-                return ServiceResult.FailureResult("Hesab?n?z deaktiv edilib");
+                return ServiceResult.FailureResult("Hesabınız deaktiv edilib");
             }
 
             if (string.IsNullOrWhiteSpace(currentPassword))
             {
-                return ServiceResult.FailureResult("Cari ?ifr? daxil edilm?lidir");
+                return ServiceResult.FailureResult("Cari şifrə daxil edilməlidir");
             }
 
             if (string.IsNullOrWhiteSpace(newPassword))
             {
-                return ServiceResult.FailureResult("Yeni ?ifr? daxil edilm?lidir");
+                return ServiceResult.FailureResult("Yeni şifrə daxil edilməlidir");
             }
 
             if (newPassword.Length < 6)
             {
-                return ServiceResult.FailureResult("Yeni ?ifr? ?n az? 6 simvol olmal?d?r");
+                return ServiceResult.FailureResult("Yeni şifrə ən azı 6 simvol olmalıdır");
             }
 
-            // Check if current password is correct
             var passwordCheck = await _userManager.CheckPasswordAsync(user, currentPassword);
             if (!passwordCheck)
             {
-                return ServiceResult.FailureResult("Cari ?ifr? yanl??d?r");
+                return ServiceResult.FailureResult("Cari şifrə yanlışdır");
             }
 
-            // Check if new password is same as current
             if (currentPassword == newPassword)
             {
-                return ServiceResult.FailureResult("Yeni ?ifr? cari ?ifr?d?n f?rqli olmal?d?r");
+                return ServiceResult.FailureResult("Yeni şifrə cari şifrədən fərqli olmalıdır");
             }
 
             var result = await _userManager.ChangePasswordAsync(user, currentPassword, newPassword);
-            
+
             if (!result.Succeeded)
             {
                 var errors = string.Join(", ", result.Errors.Select(e => e.Description));
-                return ServiceResult.FailureResult($"?ifr? d?yi?dirilm?di: {errors}");
+                return ServiceResult.FailureResult($"Şifrə dəyişdirilmədi: {errors}");
             }
 
-            return ServiceResult.SuccessResult("?ifr? u?urla d?yi?dirildi");
+            return ServiceResult.SuccessResult("Şifrə uğurla dəyişdirildi");
         }
 
         public async Task<ServiceResult> UpdateProfileAsync(string userId, string firstName, string lastName, string avatar)
         {
             var user = await _userManager.FindByIdAsync(userId);
-            
+
             if (user == null)
             {
-                return ServiceResult.FailureResult("?stifad?�i tap?lmad?");
+                return ServiceResult.FailureResult("İstifadəçi tapılmadı");
             }
 
             if (user.IsDisabled)
             {
-                return ServiceResult.FailureResult("Hesab?n?z deaktiv edilib");
+                return ServiceResult.FailureResult("Hesabınız deaktiv edilib");
             }
 
             if (string.IsNullOrWhiteSpace(firstName))
             {
-                return ServiceResult.FailureResult("Ad daxil edilm?lidir");
+                return ServiceResult.FailureResult("Ad daxil edilməlidir");
             }
 
             if (string.IsNullOrWhiteSpace(lastName))
             {
-                return ServiceResult.FailureResult("Soyad daxil edilm?lidir");
+                return ServiceResult.FailureResult("Soyad daxil edilməlidir");
             }
 
             user.FirstName = firstName.Trim();
             user.LastName = lastName.Trim();
-            
+
             if (!string.IsNullOrEmpty(avatar))
             {
                 user.Avatar = avatar.Trim();
             }
 
             var result = await _userManager.UpdateAsync(user);
-            
+
             if (!result.Succeeded)
             {
                 var errors = string.Join(", ", result.Errors.Select(e => e.Description));
-                return ServiceResult.FailureResult($"Profil yenil?nm?di: {errors}");
+                return ServiceResult.FailureResult($"Profil yenilənmədi: {errors}");
             }
 
-            return ServiceResult.SuccessResult("Profil u?urla yenil?ndi");
+            return ServiceResult.SuccessResult("Profil uğurla yeniləndi");
         }
 
         public async Task<ServiceResult> AdminResetPasswordAsync(string email, string newPassword)
         {
             var user = await _userManager.FindByEmailAsync(email);
-            
+
             if (user == null)
             {
-                return ServiceResult.FailureResult("?stifad?�i tap?lmad?");
+                return ServiceResult.FailureResult("İstifadəçi tapılmadı");
             }
 
             if (string.IsNullOrWhiteSpace(newPassword))
             {
-                return ServiceResult.FailureResult("Yeni ?ifr? daxil edilm?lidir");
+                return ServiceResult.FailureResult("Yeni şifrə daxil edilməlidir");
             }
 
             if (newPassword.Length < 6)
             {
-                return ServiceResult.FailureResult("?ifr? ?n az? 6 simvol olmal?d?r");
+                return ServiceResult.FailureResult("Şifrə ən azı 6 simvol olmalıdır");
             }
 
-            // Remove current password
             var removePasswordResult = await _userManager.RemovePasswordAsync(user);
             if (!removePasswordResult.Succeeded)
             {
-                return ServiceResult.FailureResult("?ifr? yenil?nm?di");
+                return ServiceResult.FailureResult("Şifrə yenilənmədi");
             }
 
-            // Add new password
             var addPasswordResult = await _userManager.AddPasswordAsync(user, newPassword);
             if (!addPasswordResult.Succeeded)
             {
                 var errors = string.Join(", ", addPasswordResult.Errors.Select(e => e.Description));
-                return ServiceResult.FailureResult($"?ifr? t?yin edilm?di: {errors}");
+                return ServiceResult.FailureResult($"Şifrə təyin edilmədi: {errors}");
             }
 
-            return ServiceResult.SuccessResult("?stifad?�inin ?ifr?si u?urla d?yi?dirildi");
+            return ServiceResult.SuccessResult("İstifadəçinin şifrəsi uğurla dəyişdirildi");
         }
     }
 }

@@ -1,4 +1,4 @@
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace App.Business.ValidationAttributes
 {
@@ -15,7 +15,7 @@ namespace App.Business.ValidationAttributes
             
             if (int.TryParse(stringValue, out _) || long.TryParse(stringValue, out _))
             {
-                return new ValidationResult(ErrorMessage ?? "Slug sad?c? r?q?m ola bilm?z");
+                return new ValidationResult(ErrorMessage ?? "Slug sadəcə rəqəm ola bilməz");
             }
 
             return ValidationResult.Success;

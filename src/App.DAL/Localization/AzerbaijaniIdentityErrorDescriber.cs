@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 
 namespace App.DAL.Localization
 {
@@ -10,7 +10,7 @@ namespace App.DAL.Localization
             return new IdentityError
             {
                 Code = nameof(PasswordTooShort),
-                Description = $"?ifr? ?n az? {length} simvol olmal?d?r"
+                Description = $"Şifrə ən azı {length} simvol olmalıdır"
             };
         }
 
@@ -19,7 +19,7 @@ namespace App.DAL.Localization
             return new IdentityError
             {
                 Code = nameof(PasswordRequiresDigit),
-                Description = "?ifr? ?n az? bir r?q?m (0-9) ehtiva etm?lidir"
+                Description = "Şifrə ən azı bir rəqəm (0-9) ehtiva etməlidir"
             };
         }
 
@@ -28,7 +28,7 @@ namespace App.DAL.Localization
             return new IdentityError
             {
                 Code = nameof(PasswordRequiresLower),
-                Description = "?ifr? ?n az? bir ki�ik h?rf (a-z) ehtiva etm?lidir"
+                Description = "Şifrə ən azı bir kiçik hərf (a-z) ehtiva etməlidir"
             };
         }
 
@@ -37,7 +37,7 @@ namespace App.DAL.Localization
             return new IdentityError
             {
                 Code = nameof(PasswordRequiresUpper),
-                Description = "?ifr? ?n az? bir b�y�k h?rf (A-Z) ehtiva etm?lidir"
+                Description = "Şifrə ən azı bir böyük hərf (A-Z) ehtiva etməlidir"
             };
         }
 
@@ -46,7 +46,7 @@ namespace App.DAL.Localization
             return new IdentityError
             {
                 Code = nameof(PasswordRequiresNonAlphanumeric),
-                Description = "?ifr? ?n az? bir x�susi simvol (!@#$%^&* v? s.) ehtiva etm?lidir"
+                Description = "Şifrə ən azı bir xüsusi simvol (!@#$%^&* və s.) ehtiva etməlidir"
             };
         }
 
@@ -55,7 +55,7 @@ namespace App.DAL.Localization
             return new IdentityError
             {
                 Code = nameof(PasswordRequiresUniqueChars),
-                Description = $"?ifr? ?n az? {uniqueChars} f?rqli simvol ehtiva etm?lidir"
+                Description = $"Şifrə ən azı {uniqueChars} fərqli simvol ehtiva etməlidir"
             };
         }
 
@@ -64,7 +64,7 @@ namespace App.DAL.Localization
             return new IdentityError
             {
                 Code = nameof(PasswordMismatch),
-                Description = "?ifr?l?r uy?un g?lmir"
+                Description = "Şifrələr uyğun gəlmir"
             };
         }
 
@@ -74,7 +74,7 @@ namespace App.DAL.Localization
             return new IdentityError
             {
                 Code = nameof(DuplicateEmail),
-                Description = $"{email} art?q istifad? olunur"
+                Description = $"{email} artıq istifadə olunur"
             };
         }
 
@@ -83,7 +83,7 @@ namespace App.DAL.Localization
             return new IdentityError
             {
                 Code = nameof(DuplicateUserName),
-                Description = $"{userName} art?q istifad? olunur"
+                Description = $"{userName} artıq istifadə olunur"
             };
         }
 
@@ -92,7 +92,7 @@ namespace App.DAL.Localization
             return new IdentityError
             {
                 Code = nameof(InvalidEmail),
-                Description = $"{email} etibars?z email �nvan?d?r"
+                Description = $"{email} etibarsız email ünvanıdır"
             };
         }
 
@@ -101,7 +101,7 @@ namespace App.DAL.Localization
             return new IdentityError
             {
                 Code = nameof(InvalidUserName),
-                Description = $"{userName} etibars?zd?r. ?stifad?�i ad? yaln?z h?rf v? r?q?ml?rd?n ibar?t ola bil?r"
+                Description = $"{userName} etibarsızdır. İstifadəçi adı yalnız hərflər və rəqəmlərdən ibarət ola bilər"
             };
         }
 
@@ -110,7 +110,7 @@ namespace App.DAL.Localization
             return new IdentityError
             {
                 Code = nameof(UserAlreadyHasPassword),
-                Description = "?stifad?�inin art?q ?ifr?si m�vcuddur"
+                Description = "İstifadəçinin artıq şifrəsi mövcuddur"
             };
         }
 
@@ -119,7 +119,7 @@ namespace App.DAL.Localization
             return new IdentityError
             {
                 Code = nameof(UserAlreadyInRole),
-                Description = $"?stifad?�i art?q '{role}' roluna malikdir"
+                Description = $"İstifadəçi artıq '{role}' roluna malikdir"
             };
         }
 
@@ -128,7 +128,7 @@ namespace App.DAL.Localization
             return new IdentityError
             {
                 Code = nameof(UserNotInRole),
-                Description = $"?stifad?�i '{role}' roluna malik deyil"
+                Description = $"İstifadəçi '{role}' roluna malik deyil"
             };
         }
 
@@ -137,7 +137,7 @@ namespace App.DAL.Localization
             return new IdentityError
             {
                 Code = nameof(UserLockoutNotEnabled),
-                Description = "Bu istifad?�i ���n bloklanma aktivl??dirilm?yib"
+                Description = "Bu istifadəçi üçün bloklanma aktivləşdirilməyib"
             };
         }
 
@@ -147,7 +147,7 @@ namespace App.DAL.Localization
             return new IdentityError
             {
                 Code = nameof(DuplicateRoleName),
-                Description = $"'{role}' rolu art?q m�vcuddur"
+                Description = $"'{role}' rolu artıq mövcuddur"
             };
         }
 
@@ -156,7 +156,7 @@ namespace App.DAL.Localization
             return new IdentityError
             {
                 Code = nameof(InvalidRoleName),
-                Description = $"'{role}' etibars?z rol ad?d?r"
+                Description = $"'{role}' etibarsız rol adıdır"
             };
         }
 
@@ -166,7 +166,7 @@ namespace App.DAL.Localization
             return new IdentityError
             {
                 Code = nameof(InvalidToken),
-                Description = "Token etibars?zd?r"
+                Description = "Token etibarsızdır"
             };
         }
 
@@ -176,7 +176,7 @@ namespace App.DAL.Localization
             return new IdentityError
             {
                 Code = nameof(RecoveryCodeRedemptionFailed),
-                Description = "B?rpa kodu etibars?zd?r"
+                Description = "Bərpa kodu etibarsızdır"
             };
         }
 
@@ -186,7 +186,7 @@ namespace App.DAL.Localization
             return new IdentityError
             {
                 Code = nameof(ConcurrencyFailure),
-                Description = "Optimistik yoxlama x?tas?, obyekt d?yi?dirilib"
+                Description = "Optimistik yoxlama xətası, obyekt dəyişdirilib"
             };
         }
 
@@ -196,7 +196,7 @@ namespace App.DAL.Localization
             return new IdentityError
             {
                 Code = nameof(DefaultError),
-                Description = "X?ta ba? verdi"
+                Description = "Xəta baş verdi"
             };
         }
 
@@ -206,7 +206,7 @@ namespace App.DAL.Localization
             return new IdentityError
             {
                 Code = nameof(LoginAlreadyAssociated),
-                Description = "Bu login art?q ba?qa istifad?�iy? ba?l?d?r"
+                Description = "Bu login artıq başqa istifadəçiyə bağlıdır"
             };
         }
     }

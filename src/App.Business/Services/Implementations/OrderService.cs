@@ -1,4 +1,4 @@
-using App.Business.DTOs.Orders;
+﻿using App.Business.DTOs.Orders;
 using App.Business.Services.Interfaces;
 using App.Core.Entities;
 using App.Core.Enums;
@@ -30,20 +30,16 @@ namespace App.Business.Services.Implementations
 
         public async Task<OrderDTO> CreateOrderAsync(CreateOrderDTO createOrderDto)
         {
-            // Validate stock for all items
             foreach (var item in createOrderDto.Items)
             {
                 var product = await _productRepository.GetByIdAsync(p => p.Id == item.ProductId);
-                
+
                 if (product == null)
                 {
-                    throw new Exception($"M?hsul tap?lmad?: {item.ProductId}");
+                    throw new Exception($"Məhsul tapılmadı: {item.ProductId}");
                 }
-
-                
             }
 
-            // Calculate totals
             decimal subtotal = 0;
             var orderItems = new List<OrderItem>();
 
@@ -67,18 +63,12 @@ namespace App.Business.Services.Implementations
                     Quantity = item.Quantity
                 });
 
-                // Reduce stock
-                 await _productRepository.UpdateAsync(product);
+                await _productRepository.UpdateAsync(product);
             }
 
-            // Apply discount
             decimal discount = ApplyDiscountCode(createOrderDto.DiscountCode, subtotal);
+            decimal total = subtotal - discount;
 
-
-            // Calculate total
-            decimal total = subtotal;
-
-            // Generate order number
             var orderNumber = GenerateOrderNumber();
 
             var order = new Order
@@ -90,7 +80,6 @@ namespace App.Business.Services.Implementations
                 ShippingAddress = createOrderDto.ShippingAddress,
                 CustomerNote = createOrderDto.CustomerNote,
                 Subtotal = subtotal,
- 
                 Discount = discount,
                 Total = total,
                 PaymentMethod = createOrderDto.PaymentMethod,
@@ -99,17 +88,17 @@ namespace App.Business.Services.Implementations
             };
 
             var createdOrder = await _orderRepository.AddAsync(order);
-            
+
             return await GetOrderByIdAsync(createdOrder.Id);
         }
 
         public async Task<OrderDTO> GetOrderByIdAsync(int id)
         {
             var order = await _orderRepository.GetByIdAsync(o => o.Id == id, o => o.Items);
-            
+
             if (order == null)
             {
-                throw new Exception("Sifari? tap?lmad?");
+                throw new Exception("Sifariş tapılmadı");
             }
 
             return MapToDTO(order);
@@ -118,10 +107,10 @@ namespace App.Business.Services.Implementations
         public async Task<OrderDTO> GetOrderByNumberAsync(string orderNumber)
         {
             var order = await _orderRepository.GetByOrderNumberAsync(orderNumber);
-            
+
             if (order == null)
             {
-                throw new Exception("Sifari? tap?lmad?");
+                throw new Exception("Sifariş tapılmadı");
             }
 
             return MapToDTO(order);
@@ -136,31 +125,31 @@ namespace App.Business.Services.Implementations
         public async Task<OrderDTO> UpdateOrderStatusAsync(int id, OrderStatus status)
         {
             var order = await _orderRepository.GetByIdAsync(o => o.Id == id);
-            
+
             if (order == null)
             {
-                throw new Exception("Sifari? tap?lmad?");
+                throw new Exception("Sifariş tapılmadı");
             }
 
             order.Status = status;
-            
+
             if (status == OrderStatus.Delivered)
             {
                 order.DeliveredAt = DateTime.UtcNow;
             }
 
             await _orderRepository.UpdateAsync(order);
-            
+
             return await GetOrderByIdAsync(id);
         }
 
         public async Task DeleteOrderAsync(int id)
         {
             var order = await _orderRepository.GetByIdAsync(o => o.Id == id);
-            
+
             if (order == null)
             {
-                throw new Exception("Sifari? tap?lmad?");
+                throw new Exception("Sifariş tapılmadı");
             }
 
             order.Status = OrderStatus.Cancelled;
