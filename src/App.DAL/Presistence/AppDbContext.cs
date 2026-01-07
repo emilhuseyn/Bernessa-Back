@@ -27,10 +27,14 @@ namespace App.DAL.Presistence
 
         // DbSets
         public DbSet<Product> Products { get; set; }
+        public DbSet<ProductVariant> ProductVariants { get; set; }
+        public DbSet<Brand> Brands { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<Setting> Settings { get; set; }
+        public DbSet<ContactSetting> ContactSettings { get; set; }
+        public DbSet<ContactSettingTranslation> ContactSettingTranslations { get; set; }
         public DbSet<CategoryTranslation> CategoryTranslations { get; set; }
         public DbSet<ProductTranslation> ProductTranslations { get; set; }
 

@@ -69,8 +69,9 @@ namespace App.DAL
         {
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IBrandRepository, BrandRepository>();
             services.AddScoped<IOrderRepository, OrderRepository>();
-          
+            services.AddScoped<IContactSettingRepository, ContactSettingRepository>();
         }
     }
 }

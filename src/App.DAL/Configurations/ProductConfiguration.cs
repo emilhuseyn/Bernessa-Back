@@ -14,19 +14,6 @@ namespace App.DAL.Configurations
                 .IsRequired()
                 .HasMaxLength(200);
             
-            builder.Property(p => p.Brand)
-                .IsRequired()
-                .HasMaxLength(100);
-            
-            builder.Property(p => p.Price)
-                .HasColumnType("decimal(18,2)");
-            
-            builder.Property(p => p.OriginalPrice)
-                .HasColumnType("decimal(18,2)");
-            
-            builder.Property(p => p.Volume)
-                .HasMaxLength(50);
-            
             builder.Property(p => p.Type)
                 .HasMaxLength(100);
             
@@ -35,6 +22,11 @@ namespace App.DAL.Configurations
             
             builder.Property(p => p.Images)
                 .HasColumnType("text");
+            
+            builder.HasOne(p => p.Brand)
+                .WithMany(b => b.Products)
+                .HasForeignKey(p => p.BrandId)
+                .OnDelete(DeleteBehavior.Restrict);
             
             builder.HasOne(p => p.Category)
                 .WithMany(c => c.Products)

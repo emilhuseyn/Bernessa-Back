@@ -17,6 +17,9 @@ namespace App.DAL.Repositories.Implementations
             return await DbSet
                 .Where(p => p.IsFeatured && p.IsActive && !p.IsDeleted)
                 .Include(p => p.Category)
+                .Include(p => p.Brand)
+                .Include(p => p.Variants)
+                .Include(p => p.Translations)
                 .OrderByDescending(p => p.CreatedOn)
                 .ToListAsync();
         }
@@ -25,6 +28,9 @@ namespace App.DAL.Repositories.Implementations
         {
             return await DbSet
                 .Include(p => p.Category)
+                .Include(p => p.Brand)
+                .Include(p => p.Variants)
+                .Include(p => p.Translations)
                 .Where(p => p.Category.Slug == slug && p.IsActive && !p.IsDeleted)
                 .OrderByDescending(p => p.CreatedOn)
                 .ToListAsync();
@@ -34,8 +40,11 @@ namespace App.DAL.Repositories.Implementations
         {
             return await DbSet
                 .Include(p => p.Category)
+                .Include(p => p.Brand)
+                .Include(p => p.Variants)
+                .Include(p => p.Translations)
                 .Where(p => (p.Name.Contains(query) || 
-                           p.Brand.Contains(query) || 
+                           p.Brand.Name.Contains(query) || 
                            p.Description.Contains(query)) && 
                            p.IsActive && !p.IsDeleted)
                 .OrderByDescending(p => p.CreatedOn)
@@ -46,11 +55,12 @@ namespace App.DAL.Repositories.Implementations
         {
             return await DbSet
                 .Include(p => p.Category)
+                .Include(p => p.Brand)
+                .Include(p => p.Variants)
                 .Include(p => p.Translations)
-                .Where(p => p.OriginalPrice.HasValue && 
-                           p.OriginalPrice > p.Price && 
+                .Where(p => p.Variants.Any(v => v.OriginalPrice.HasValue && v.OriginalPrice > v.Price) && 
                            p.IsActive && !p.IsDeleted)
-                .OrderByDescending(p => p.OriginalPrice - p.Price)
+                .OrderByDescending(p => p.CreatedOn)
                 .ToListAsync();
         }
     }
