@@ -34,6 +34,8 @@ namespace App.API.Controllers
 
         [HttpPost]
         [Authorize(Roles = "Admin,SuperAdmin")]
+        [RequestSizeLimit(long.MaxValue)]
+        [RequestFormLimits(MultipartBodyLengthLimit = long.MaxValue)]
         public async Task<IActionResult> Create([FromForm] CreateBrandDTO createBrandDto)
         {
             var brand = await _brandService.CreateBrandAsync(createBrandDto);
@@ -42,6 +44,8 @@ namespace App.API.Controllers
 
         [HttpPut("{id}")]
         [Authorize(Roles = "Admin,SuperAdmin")]
+        [RequestSizeLimit(long.MaxValue)]
+        [RequestFormLimits(MultipartBodyLengthLimit = long.MaxValue)]
         public async Task<IActionResult> Update(int id, [FromForm] CreateBrandDTO updateBrandDto)
         {
             var brand = await _brandService.UpdateBrandAsync(id, updateBrandDto);

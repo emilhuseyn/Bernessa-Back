@@ -1,0 +1,59 @@
+﻿using App.Business.DTOs.Brands;
+using App.Business.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+
+namespace App.API.Controllers
+{
+    [Route("api/brands")]
+    [ApiController]
+    public class BrandsController : ControllerBase
+    {
+        private readonly IBrandService _brandService;
+
+        public BrandsController(IBrandService brandService)
+        {
+            _brandService = brandService;
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<IActionResult> GetAll()
+        {
+            var brands = await _brandService.GetAllBrandsAsync();
+            return Ok(new { success = true, data = brands });
+        }
+
+        [HttpGet("{id}")]
+        [AllowAnonymous]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var brand = await _brandService.GetBrandByIdAsync(id);
+            return Ok(new { success = true, data = brand });
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Admin,SuperAdmin")]
+        public async Task<IActionResult> Create([FromForm] CreateBrandDTO createBrandDto)
+        {
+            var brand = await _brandService.CreateBrandAsync(createBrandDto);
+            return CreatedAtAction(nameof(GetById), new { id = brand.Id }, new { success = true, data = brand, message = "Brend u?urla yarad?ld?" });
+        }
+
+        [HttpPut("{id}")]
+        [Authorize(Roles = "Admin,SuperAdmin")]
+        public async Task<IActionResult> Update(int id, [FromForm] CreateBrandDTO updateBrandDto)
+        {
+            var brand = await _brandService.UpdateBrandAsync(id, updateBrandDto);
+            return Ok(new { success = true, data = brand, message = "Brend u?urla yenil?ndi" });
+        }
+
+        [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin,SuperAdmin")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            await _brandService.DeleteBrandAsync(id);
+            return Ok(new { success = true, message = "Brend u?urla silindi" });
+        }
+    }
+}

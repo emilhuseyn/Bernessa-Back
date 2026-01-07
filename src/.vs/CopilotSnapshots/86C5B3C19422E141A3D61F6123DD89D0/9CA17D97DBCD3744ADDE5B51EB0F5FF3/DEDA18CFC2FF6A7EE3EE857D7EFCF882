@@ -1,0 +1,71 @@
+﻿using App.Business.DTOs.ContactSettings;
+using App.Business.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+
+namespace App.API.Controllers
+{
+    [Route("api/contact-settings")]
+    [ApiController]
+    public class ContactSettingsController : ControllerBase
+    {
+        private readonly IContactSettingService _contactSettingService;
+
+        public ContactSettingsController(IContactSettingService contactSettingService)
+        {
+            _contactSettingService = contactSettingService;
+        }
+
+        [HttpGet("active")]
+        [AllowAnonymous]
+        public async Task<IActionResult> GetActive()
+        {
+            var setting = await _contactSettingService.GetActiveContactSettingAsync();
+            return Ok(new { success = true, data = setting });
+        }
+
+        [HttpGet]
+        [Authorize(Roles = "Admin,SuperAdmin")]
+        public async Task<IActionResult> GetAll()
+        {
+            var settings = await _contactSettingService.GetAllContactSettingsAsync();
+            return Ok(new { success = true, data = settings });
+        }
+
+        [HttpGet("{id}")]
+        [Authorize(Roles = "Admin,SuperAdmin")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var setting = await _contactSettingService.GetContactSettingByIdAsync(id);
+            return Ok(new { success = true, data = setting });
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Admin,SuperAdmin")]
+        public async Task<IActionResult> Create([FromForm] CreateContactSettingDTO createDto)
+        {
+            var setting = await _contactSettingService.CreateContactSettingAsync(createDto);
+            return CreatedAtAction(
+                nameof(GetById),
+                new { id = setting.Id },
+                new { success = true, data = setting, message = "Əlaqə parametrləri uğurla yaradıldı" }
+            );
+        }
+
+        [HttpPut("{id}")]
+        [Authorize(Roles = "Admin,SuperAdmin")]
+        public async Task<IActionResult> Update(int id, [FromForm] CreateContactSettingDTO updateDto)
+        {
+            var setting = await _contactSettingService.UpdateContactSettingAsync(id, updateDto);
+            return Ok(new { success = true, data = setting, message = "Əlaqə parametrləri uğurla yeniləndi" });
+        }
+
+        [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin,SuperAdmin")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            await _contactSettingService.DeleteContactSettingAsync(id);
+            return Ok(new { success = true, message = "Əlaqə parametrləri uğurla silindi" });
+        }
+    }
+}

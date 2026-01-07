@@ -3,10 +3,32 @@ using App.Business;
 using App.DAL;
 using App.API;
 using App.DAL.Presistence;
+using Microsoft.AspNetCore.Http.Features;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+// Configure Kestrel to accept large files (unlimited)
+builder.Services.Configure<KestrelServerOptions>(options =>
+{
+    options.Limits.MaxRequestBodySize = null; // Unlimited
+});
+
+// Configure IIS to accept large files (unlimited)
+builder.Services.Configure<IISServerOptions>(options =>
+{
+    options.MaxRequestBodySize = null; // Unlimited
+});
+
+// Configure FormOptions to accept large files (unlimited)
+builder.Services.Configure<FormOptions>(options =>
+{
+    options.MultipartBodyLengthLimit = long.MaxValue; // Unlimited
+    options.ValueLengthLimit = int.MaxValue;
+    options.MultipartHeadersLengthLimit = int.MaxValue;
+});
 
 // Add CORS - Allow all origins
 builder.Services.AddCors(options =>
