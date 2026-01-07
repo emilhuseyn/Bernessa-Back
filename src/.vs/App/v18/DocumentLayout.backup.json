@@ -722,8 +722,7 @@
               "RelativeToolTip": "App.DAL\\Migrations\\AppDbContextModelSnapshot.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T11:38:37.223Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-07T11:38:37.223Z"
             },
             {
               "$type": "Document",
@@ -735,8 +734,7 @@
               "RelativeToolTip": "App.DAL\\Presistence\\AppDbContextFactory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T11:37:22.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-07T11:37:22.612Z"
             },
             {
               "$type": "Document",
@@ -746,7 +744,7 @@
               "RelativeDocumentMoniker": "App.API\\appsettings.json",
               "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\appsettings.json",
               "RelativeToolTip": "App.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-12-01T22:32:20.121Z",
               "EditorCaption": ""
@@ -761,8 +759,7 @@
               "RelativeToolTip": "App.DAL\\Presistence\\AppDbContext.cs",
               "ViewState": "AgIAAD4AAAAAAAAAAAAYwGEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T16:45:42.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T16:45:42.935Z"
             },
             {
               "$type": "Document",
@@ -774,8 +771,7 @@
               "RelativeToolTip": "App.DAL\\Presistence\\AutomatedMigration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T22:13:29.124Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T22:13:29.124Z"
             },
             {
               "$type": "Document",
@@ -785,7 +781,7 @@
               "RelativeDocumentMoniker": "App.DAL\\Migrations\\20260107104021_AllModels.cs",
               "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20260107104021_AllModels.cs",
               "RelativeToolTip": "App.DAL\\Migrations\\20260107104021_AllModels.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAgwAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-07T10:40:21.532Z",
               "EditorCaption": ""
@@ -800,8 +796,7 @@
               "RelativeToolTip": "App.DAL\\Presistence\\AppDbContextSeed.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T22:44:33.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T22:44:33.366Z"
             },
             {
               "$type": "Document",
@@ -825,8 +820,7 @@
               "RelativeToolTip": "App.API\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T22:29:18.375Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T22:29:18.375Z"
             },
             {
               "$type": "Document",
