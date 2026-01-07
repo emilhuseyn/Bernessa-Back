@@ -1,0 +1,50 @@
+﻿using App.Core.Enums;
+using System.ComponentModel.DataAnnotations;
+
+namespace App.Business.DTOs.Orders
+{
+    public class CreateOrderDTO
+    {
+        [Required(ErrorMessage = "Ad daxil edilməlidir")]
+        [MaxLength(200)]
+        public string CustomerName { get; set; }
+
+        [Required(ErrorMessage = "Email daxil edilməlidir")]
+        [EmailAddress(ErrorMessage = "Email formatı düzgün deyil")]
+        [MaxLength(200)]
+        public string CustomerEmail { get; set; }
+
+        [Required(ErrorMessage = "Telefon nömrəsi daxil edilməlidir")]
+        [Phone(ErrorMessage = "Telefon formatı düzgün deyil")]
+        [MaxLength(50)]
+        public string CustomerPhone { get; set; }
+
+        [Required(ErrorMessage = "Ünvan daxil edilməlidir")]
+        [MaxLength(500)]
+        public string ShippingAddress { get; set; }
+
+        [MaxLength(1000)]
+        public string CustomerNote { get; set; }
+
+        [Required]
+        public List<OrderItemDTO> Items { get; set; }
+
+        [Required]
+        public PaymentMethod PaymentMethod { get; set; }
+
+        public string DiscountCode { get; set; }
+    }
+
+    public class OrderItemDTO
+    {
+        [Required(ErrorMessage = "Məhsul ID-si tələb olunur")]
+        public int ProductId { get; set; }
+
+        [Required(ErrorMessage = "Miqdar tələb olunur")]
+        [Range(1, int.MaxValue, ErrorMessage = "Miqdar minimum 1 olmalıdır")]
+        public int Quantity { get; set; }
+        
+        [Required(ErrorMessage = "Variant həcmi tələb olunur")]
+        public string VariantVolume { get; set; }
+    }
+}

@@ -1,0 +1,22 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace App.Business.DTOs.Products
+{
+    public class CreateProductVariantDTO
+    {
+        [Required(ErrorMessage = "Həcm tələb olunur")]
+        [MaxLength(50, ErrorMessage = "Həcm maksimum 50 simvol ola bilər")]
+        public string Volume { get; set; } // 50ml, 100ml, etc.
+
+        [Required(ErrorMessage = "Qiymət tələb olunur")]
+        [Range(0.01, double.MaxValue, ErrorMessage = "Qiymət 0-dan böyük olmalıdır")]
+        public decimal Price { get; set; }
+
+        public decimal? OriginalPrice { get; set; } // Previous price for discount
+
+        [Range(0, int.MaxValue, ErrorMessage = "Stok mənfi ola bilməz")]
+        public int Stock { get; set; } = 0;
+
+        public bool IsActive { get; set; } = true;
+    }
+}

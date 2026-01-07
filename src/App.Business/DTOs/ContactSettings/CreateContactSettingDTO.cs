@@ -1,0 +1,91 @@
+﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
+
+namespace App.Business.DTOs.ContactSettings
+{
+    public class CreateContactSettingDTO
+    {
+        [Required(ErrorMessage = "Ünvan tələb olunur")]
+        [MaxLength(500, ErrorMessage = "Ünvan maksimum 500 simvol ola bilər")]
+        public string Address { get; set; }
+
+        [Required(ErrorMessage = "Email tələb olunur")]
+        [EmailAddress(ErrorMessage = "Email formatı düzgün deyil")]
+        [MaxLength(200, ErrorMessage = "Email maksimum 200 simvol ola bilər")]
+        public string Email { get; set; }
+
+        [Required(ErrorMessage = "Telefon nömrəsi tələb olunur")]
+        [Phone(ErrorMessage = "Telefon formatı düzgün deyil")]
+        [MaxLength(50, ErrorMessage = "Telefon maksimum 50 simvol ola bilər")]
+        public string Phone { get; set; }
+
+        [MaxLength(50, ErrorMessage = "WhatsApp nömrəsi maksimum 50 simvol ola bilər")]
+        public string WhatsApp { get; set; }
+
+        [MaxLength(200, ErrorMessage = "Instagram maksimum 200 simvol ola bilər")]
+        public string Instagram { get; set; }
+
+        // Default Azerbaijani
+        [MaxLength(100, ErrorMessage = "İş saatları maksimum 100 simvol ola bilər")]
+        public string WorkingHoursWeekdays { get; set; }
+
+        [MaxLength(100, ErrorMessage = "İş saatları maksimum 100 simvol ola bilər")]
+        public string WorkingHoursSaturday { get; set; }
+
+        [MaxLength(100, ErrorMessage = "İş saatları maksimum 100 simvol ola bilər")]
+        public string WorkingHoursSunday { get; set; }
+
+        [MaxLength(1000, ErrorMessage = "Açıqlama maksimum 1000 simvol ola bilər")]
+        public string SupportDescription { get; set; }
+
+        public IFormFile ContactImage { get; set; }
+
+        [MaxLength(50)]
+        public string Latitude { get; set; }
+
+        [MaxLength(50)]
+        public string Longitude { get; set; }
+
+        [Url(ErrorMessage = "Facebook URL formatı düzgün deyil")]
+        [MaxLength(500)]
+        public string FacebookUrl { get; set; }
+
+        [Url(ErrorMessage = "Twitter URL formatı düzgün deyil")]
+        [MaxLength(500)]
+        public string TwitterUrl { get; set; }
+
+        [Url(ErrorMessage = "LinkedIn URL formatı düzgün deyil")]
+        [MaxLength(500)]
+        public string LinkedInUrl { get; set; }
+
+        [Url(ErrorMessage = "YouTube URL formatı düzgün deyil")]
+        [MaxLength(500)]
+        public string YouTubeUrl { get; set; }
+
+        // English Translations
+        [MaxLength(1000)]
+        public string SupportDescriptionEn { get; set; }
+
+        [MaxLength(100)]
+        public string WorkingHoursWeekdaysEn { get; set; }
+
+        [MaxLength(100)]
+        public string WorkingHoursSaturdayEn { get; set; }
+
+        [MaxLength(100)]
+        public string WorkingHoursSundayEn { get; set; }
+
+        // Russian Translations
+        [MaxLength(1000)]
+        public string SupportDescriptionRu { get; set; }
+
+        [MaxLength(100)]
+        public string WorkingHoursWeekdaysRu { get; set; }
+
+        [MaxLength(100)]
+        public string WorkingHoursSaturdayRu { get; set; }
+
+        [MaxLength(100)]
+        public string WorkingHoursSundayRu { get; set; }
+    }
+}

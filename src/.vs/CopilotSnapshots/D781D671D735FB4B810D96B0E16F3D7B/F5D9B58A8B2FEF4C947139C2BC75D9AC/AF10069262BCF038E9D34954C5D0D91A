@@ -1,0 +1,43 @@
+﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
+
+namespace App.Business.DTOs.Products
+{
+    public class CreateProductDTO
+    {
+        [Required(ErrorMessage = "Ad tələb olunur")]
+        [MaxLength(200, ErrorMessage = "Ad maksimum 200 simvol ola bilər")]
+        public string Name { get; set; } // Azerbaijani name
+
+        [Required(ErrorMessage = "Brend tələb olunur")]
+        public int BrandId { get; set; }
+
+        [Required(ErrorMessage = "Növ tələb olunur")]
+        [MaxLength(100, ErrorMessage = "Növ maksimum 100 simvol ola bilər")]
+        public string Type { get; set; }  
+
+        [Required(ErrorMessage = "Açıqlama tələb olunur")]
+        [MaxLength(2000, ErrorMessage = "Açıqlama maksimum 2000 simvol ola bilər")]
+        public string Description { get; set; } // Azerbaijani description
+
+        public List<IFormFile> Images { get; set; }
+
+        [Required(ErrorMessage = "Kateqoriya tələb olunur")]
+        public int CategoryId { get; set; }
+
+        public bool IsActive { get; set; } = true;
+        public bool IsFeatured { get; set; } = false;
+        
+        // Variants - at least one variant is required
+        [Required(ErrorMessage = "Ən azı bir variant tələb olunur")]
+        public List<CreateProductVariantDTO> Variants { get; set; }
+        
+        // Translations
+        public string NameEn { get; set; }
+        public string NameRu { get; set; }
+        public string TypeEn { get; set; }
+        public string TypeRu { get; set; }
+        public string DescriptionEn { get; set; }
+        public string DescriptionRu { get; set; }
+    }
+}

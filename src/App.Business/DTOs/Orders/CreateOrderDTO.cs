@@ -37,11 +37,14 @@ namespace App.Business.DTOs.Orders
 
     public class OrderItemDTO
     {
-        [Required]
+        [Required(ErrorMessage = "M?hsul ID-si t?l?b olunur")]
         public int ProductId { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Miqdar t?l?b olunur")]
         [Range(1, int.MaxValue, ErrorMessage = "Miqdar minimum 1 olmal?d?r")]
         public int Quantity { get; set; }
+        
+        [Required(ErrorMessage = "Variant h?cmi t?l?b olunur")]
+        public string VariantVolume { get; set; }
     }
 }

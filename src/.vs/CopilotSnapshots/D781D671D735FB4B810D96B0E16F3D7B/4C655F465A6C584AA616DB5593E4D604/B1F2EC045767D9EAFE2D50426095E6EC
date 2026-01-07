@@ -1,0 +1,255 @@
+﻿using App.Business.DTOs.Orders;
+using App.Business.Services.Interfaces;
+using App.Core.Entities;
+using App.Core.Enums;
+using App.DAL.Repositories.Interfaces;
+using AutoMapper;
+using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace App.Business.Services.Implementations
+{
+    public class OrderService : IOrderService
+    {
+        private readonly IOrderRepository _orderRepository;
+        private readonly IProductRepository _productRepository;
+        private readonly IMapper _mapper;
+
+        public OrderService(
+            IOrderRepository orderRepository,
+            IProductRepository productRepository,
+            IMapper mapper)
+        {
+            _orderRepository = orderRepository;
+            _productRepository = productRepository;
+            _mapper = mapper;
+        }
+
+        public async Task<OrderDTO> CreateOrderAsync(CreateOrderDTO createOrderDto)
+        {
+            // Validate all items first
+            foreach (var item in createOrderDto.Items)
+            {
+                if (string.IsNullOrWhiteSpace(item.VariantVolume))
+                {
+                    throw new Exception($"Məhsul üçün həcm seçilməlidir (Məhsul ID: {item.ProductId})");
+                }
+
+                var product = await _productRepository.GetByIdAsync(
+                    p => p.Id == item.ProductId,
+                    p => p.Brand,
+                    p => p.Variants
+                );
+
+                if (product == null)
+                {
+                    throw new Exception($"Məhsul tapılmadı (ID: {item.ProductId})");
+                }
+
+                if (product.Variants == null || !product.Variants.Any())
+                {
+                    throw new Exception($"Məhsul üçün variant tapılmadı (ID: {item.ProductId})");
+                }
+                
+                var variant = product.Variants.FirstOrDefault(v => v.Volume == item.VariantVolume && v.IsActive);
+                if (variant == null)
+                {
+                    var availableVolumes = string.Join(", ", product.Variants.Where(v => v.IsActive).Select(v => v.Volume));
+                    throw new Exception($"'{item.VariantVolume}' həcmi tapılmadı. Mövcud həcmlər: {availableVolumes}");
+                }
+
+                if (variant.Stock < item.Quantity)
+                {
+                    throw new Exception($"{product.Name} ({variant.Volume}) - Stokda kifayət qədər məhsul yoxdur. Mövcud: {variant.Stock}");
+                }
+            }
+
+            decimal subtotal = 0;
+            var orderItems = new List<OrderItem>();
+
+            foreach (var item in createOrderDto.Items)
+            {
+                var product = await _productRepository.GetByIdAsync(
+                    p => p.Id == item.ProductId,
+                    p => p.Brand,
+                    p => p.Variants
+                );
+                
+                var variant = product.Variants.First(v => v.Volume == item.VariantVolume && v.IsActive);
+                
+                var itemTotal = variant.Price * item.Quantity;
+                subtotal += itemTotal;
+
+                var images = JsonConvert.DeserializeObject<List<string>>(product.Images ?? "[]");
+                var firstImage = images?.FirstOrDefault() ?? "";
+
+                orderItems.Add(new OrderItem
+                {
+                    ProductId = product.Id,
+                    ProductName = product.Name,
+                    ProductBrand = product.Brand?.Name ?? "",
+                    ProductVolume = variant.Volume,
+                    ProductImage = firstImage,
+                    Price = variant.Price,
+                    Quantity = item.Quantity
+                });
+
+                // Update stock
+                variant.Stock -= item.Quantity;
+                await _productRepository.UpdateAsync(product);
+            }
+
+            decimal discount = ApplyDiscountCode(createOrderDto.DiscountCode, subtotal);
+            decimal total = subtotal - discount;
+
+            var orderNumber = GenerateOrderNumber();
+
+            var order = new Order
+            {
+                OrderNumber = orderNumber,
+                CustomerName = createOrderDto.CustomerName,
+                CustomerEmail = createOrderDto.CustomerEmail,
+                CustomerPhone = createOrderDto.CustomerPhone,
+                ShippingAddress = createOrderDto.ShippingAddress,
+                CustomerNote = createOrderDto.CustomerNote,
+                Subtotal = subtotal,
+                Discount = discount,
+                Total = total,
+                PaymentMethod = createOrderDto.PaymentMethod,
+                Status = OrderStatus.Pending,
+                Items = orderItems
+            };
+
+            var createdOrder = await _orderRepository.AddAsync(order);
+
+            return await GetOrderByIdAsync(createdOrder.Id);
+        }
+
+        public async Task<OrderDTO> GetOrderByIdAsync(int id)
+        {
+            var order = await _orderRepository.GetByIdAsync(o => o.Id == id, o => o.Items);
+
+            if (order == null)
+            {
+                throw new Exception("Sifariş tapılmadı");
+            }
+
+            return MapToDTO(order);
+        }
+
+        public async Task<OrderDTO> GetOrderByNumberAsync(string orderNumber)
+        {
+            var order = await _orderRepository.GetByOrderNumberAsync(orderNumber);
+
+            if (order == null)
+            {
+                throw new Exception("Sifariş tapılmadı");
+            }
+
+            return MapToDTO(order);
+        }
+
+        public async Task<IEnumerable<OrderDTO>> GetAllOrdersAsync()
+        {
+            var orders = await _orderRepository.GetAllAsync(o => !o.IsDeleted, o => o.Items);
+            return orders.Select(o => MapToDTO(o));
+        }
+
+        public async Task<OrderDTO> UpdateOrderStatusAsync(int id, OrderStatus status)
+        {
+            var order = await _orderRepository.GetByIdAsync(o => o.Id == id);
+
+            if (order == null)
+            {
+                throw new Exception("Sifariş tapılmadı");
+            }
+
+            order.Status = status;
+
+            if (status == OrderStatus.Delivered)
+            {
+                order.DeliveredAt = DateTime.UtcNow;
+            }
+
+            await _orderRepository.UpdateAsync(order);
+
+            return await GetOrderByIdAsync(id);
+        }
+
+        public async Task DeleteOrderAsync(int id)
+        {
+            var order = await _orderRepository.GetByIdAsync(o => o.Id == id);
+
+            if (order == null)
+            {
+                throw new Exception("Sifariş tapılmadı");
+            }
+
+            order.Status = OrderStatus.Cancelled;
+            await _orderRepository.DeleteAsync(order);
+        }
+
+        private string GenerateOrderNumber()
+        {
+            var random = new Random();
+            var number = random.Next(10000, 99999);
+            return $"ORD-{number}";
+        }
+
+        private decimal ApplyDiscountCode(string code, decimal subtotal)
+        {
+            if (string.IsNullOrEmpty(code))
+                return 0;
+
+            var discountCodes = new Dictionary<string, decimal>
+            {
+                { "SAVE10", 10m },
+                { "SAVE20", 20m },
+                { "WELCOME", 15m }
+            };
+
+            if (discountCodes.TryGetValue(code.ToUpper(), out var discountPercentage))
+            {
+                return subtotal * (discountPercentage / 100m);
+            }
+
+            return 0;
+        }
+
+        private OrderDTO MapToDTO(Order order)
+        {
+            return new OrderDTO
+            {
+                Id = order.Id,
+                OrderNumber = order.OrderNumber,
+                CustomerName = order.CustomerName,
+                CustomerEmail = order.CustomerEmail,
+                CustomerPhone = order.CustomerPhone,
+                ShippingAddress = order.ShippingAddress,
+                CustomerNote = order.CustomerNote,
+                Subtotal = order.Subtotal,
+                Tax = order.Tax,
+                Discount = order.Discount,
+                Total = order.Total,
+                PaymentMethod = order.PaymentMethod,
+                Status = order.Status,
+                CreatedOn = order.CreatedOn,
+                DeliveredAt = order.DeliveredAt,
+                Items = order.Items?.Select(item => new OrderItemDetailDTO
+                {
+                    Id = item.Id,
+                    ProductId = item.ProductId,
+                    ProductName = item.ProductName,
+                    ProductBrand = item.ProductBrand,
+                    ProductVolume = item.ProductVolume,
+                    ProductImage = item.ProductImage,
+                    Price = item.Price,
+                    Quantity = item.Quantity
+                }).ToList() ?? new List<OrderItemDetailDTO>()
+            };
+        }
+    }
+}

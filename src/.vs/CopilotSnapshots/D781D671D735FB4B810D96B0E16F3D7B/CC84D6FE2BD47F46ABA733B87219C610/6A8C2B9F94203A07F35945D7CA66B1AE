@@ -1,0 +1,11 @@
+﻿using App.Core.Entities;
+
+namespace App.DAL.Repositories.Interfaces
+{
+    public interface IBrandRepository : IRepository<Brand>
+    {
+        Task<IEnumerable<Brand>> GetAllWithTranslationsAsync();
+        Task<Brand> GetByIdWithTranslationsAsync(int id);
+        Task UpdateProductCountAsync(int brandId);
+    }
+}

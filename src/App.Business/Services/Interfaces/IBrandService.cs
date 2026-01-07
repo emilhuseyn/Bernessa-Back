@@ -1,0 +1,13 @@
+using App.Business.DTOs.Brands;
+
+namespace App.Business.Services.Interfaces
+{
+    public interface IBrandService
+    {
+        Task<IEnumerable<BrandDTO>> GetAllBrandsAsync();
+        Task<BrandDTO> GetBrandByIdAsync(int id);
+        Task<BrandDTO> CreateBrandAsync(CreateBrandDTO createBrandDto);
+        Task<BrandDTO> UpdateBrandAsync(int id, CreateBrandDTO updateBrandDto);
+        Task DeleteBrandAsync(int id);
+    }
+}

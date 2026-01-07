@@ -1,0 +1,8 @@
+﻿namespace App.Business.DTOs.Brands
+{
+    public class BrandTranslationDTO
+    {
+        public string LanguageCode { get; set; }
+        public string Name { get; set; }
+    }
+}

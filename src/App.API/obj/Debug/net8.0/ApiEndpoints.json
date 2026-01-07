@@ -100,6 +100,95 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "App.API.Controllers.BrandsController",
+    "Method": "GetAll",
+    "RelativePath": "api/brandses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "App.API.Controllers.BrandsController",
+    "Method": "Create",
+    "RelativePath": "api/brandses",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Logo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "App.API.Controllers.BrandsController",
+    "Method": "GetById",
+    "RelativePath": "api/brandses/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "App.API.Controllers.BrandsController",
+    "Method": "Update",
+    "RelativePath": "api/brandses/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Logo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "App.API.Controllers.BrandsController",
+    "Method": "Delete",
+    "RelativePath": "api/brandses/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "App.API.Controllers.CategoriesController",
     "Method": "GetAll",
     "RelativePath": "api/categorieses",
@@ -235,6 +324,325 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "App.API.Controllers.ContactSettingsController",
+    "Method": "GetAll",
+    "RelativePath": "api/contactsettingses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "App.API.Controllers.ContactSettingsController",
+    "Method": "Create",
+    "RelativePath": "api/contactsettingses",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Phone",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WhatsApp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Instagram",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkingHoursWeekdays",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkingHoursSaturday",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkingHoursSunday",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SupportDescription",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContactImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Latitude",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Longitude",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FacebookUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TwitterUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "LinkedInUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YouTubeUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SupportDescriptionEn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkingHoursWeekdaysEn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkingHoursSaturdayEn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkingHoursSundayEn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SupportDescriptionRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkingHoursWeekdaysRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkingHoursSaturdayRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkingHoursSundayRu",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "App.API.Controllers.ContactSettingsController",
+    "Method": "GetById",
+    "RelativePath": "api/contactsettingses/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "App.API.Controllers.ContactSettingsController",
+    "Method": "Update",
+    "RelativePath": "api/contactsettingses/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Phone",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WhatsApp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Instagram",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkingHoursWeekdays",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkingHoursSaturday",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkingHoursSunday",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SupportDescription",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContactImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Latitude",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Longitude",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FacebookUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TwitterUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "LinkedInUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YouTubeUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SupportDescriptionEn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkingHoursWeekdaysEn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkingHoursSaturdayEn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkingHoursSundayEn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SupportDescriptionRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkingHoursWeekdaysRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkingHoursSaturdayRu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkingHoursSundayRu",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "App.API.Controllers.ContactSettingsController",
+    "Method": "Delete",
+    "RelativePath": "api/contactsettingses/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "App.API.Controllers.ContactSettingsController",
+    "Method": "GetActive",
+    "RelativePath": "api/contactsettingses/active",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "App.API.Controllers.OrdersController",
     "Method": "Create",
     "RelativePath": "api/orderses",
@@ -353,23 +761,8 @@
         "IsRequired": false
       },
       {
-        "Name": "Brand",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Price",
-        "Type": "System.Decimal",
-        "IsRequired": false
-      },
-      {
-        "Name": "OriginalPrice",
-        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "Volume",
-        "Type": "System.String",
+        "Name": "BrandId",
+        "Type": "System.Int32",
         "IsRequired": false
       },
       {
@@ -393,11 +786,6 @@
         "IsRequired": false
       },
       {
-        "Name": "Stock",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
         "Name": "IsActive",
         "Type": "System.Boolean",
         "IsRequired": false
@@ -405,6 +793,11 @@
       {
         "Name": "IsFeatured",
         "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Variants",
+        "Type": "System.Collections.Generic.List\u00601[[App.Business.DTOs.Products.CreateProductVariantDTO, App.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": false
       },
       {
@@ -475,23 +868,8 @@
         "IsRequired": false
       },
       {
-        "Name": "Brand",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Price",
-        "Type": "System.Decimal",
-        "IsRequired": false
-      },
-      {
-        "Name": "OriginalPrice",
-        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "Volume",
-        "Type": "System.String",
+        "Name": "BrandId",
+        "Type": "System.Int32",
         "IsRequired": false
       },
       {
@@ -515,11 +893,6 @@
         "IsRequired": false
       },
       {
-        "Name": "Stock",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
         "Name": "IsActive",
         "Type": "System.Boolean",
         "IsRequired": false
@@ -527,6 +900,11 @@
       {
         "Name": "IsFeatured",
         "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Variants",
+        "Type": "System.Collections.Generic.List\u00601[[App.Business.DTOs.Products.CreateProductVariantDTO, App.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": false
       },
       {

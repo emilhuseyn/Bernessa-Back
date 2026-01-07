@@ -1,0 +1,39 @@
+namespace App.Business.DTOs.ContactSettings
+{
+    public class ContactSettingDTO
+    {
+        public int Id { get; set; }
+        
+        // Contact Information
+        public string Address { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
+        public string WhatsApp { get; set; }
+        public string Instagram { get; set; }
+        
+        // Working Hours (Default - Azerbaijani)
+        public string WorkingHoursWeekdays { get; set; }
+        public string WorkingHoursSaturday { get; set; }
+        public string WorkingHoursSunday { get; set; }
+        
+        // Additional Info (Default - Azerbaijani)
+        public string SupportDescription { get; set; }
+        public string ContactImage { get; set; }
+        
+        // Map Coordinates
+        public string Latitude { get; set; }
+        public string Longitude { get; set; }
+        
+        // Social Media Links
+        public string FacebookUrl { get; set; }
+        public string TwitterUrl { get; set; }
+        public string LinkedInUrl { get; set; }
+        public string YouTubeUrl { get; set; }
+        
+        // Translations
+        public Dictionary<string, ContactSettingTranslationDTO> Translations { get; set; }
+        
+        public DateTime CreatedOn { get; set; }
+        public DateTime UpdatedOn { get; set; }
+    }
+}

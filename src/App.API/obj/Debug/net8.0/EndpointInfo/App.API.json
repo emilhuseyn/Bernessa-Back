@@ -184,6 +184,153 @@
         }
       }
     },
+    "/api/brandses": {
+      "get": {
+        "tags": [
+          "Brands"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Brands"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "Name"
+                ],
+                "type": "object",
+                "properties": {
+                  "Name": {
+                    "maxLength": 100,
+                    "type": "string"
+                  },
+                  "Logo": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Name": {
+                  "style": "form"
+                },
+                "Logo": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/brandses/{id}": {
+      "get": {
+        "tags": [
+          "Brands"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Brands"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "Name"
+                ],
+                "type": "object",
+                "properties": {
+                  "Name": {
+                    "maxLength": 100,
+                    "type": "string"
+                  },
+                  "Logo": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Name": {
+                  "style": "form"
+                },
+                "Logo": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Brands"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/categorieses": {
       "get": {
         "tags": [
@@ -393,6 +540,489 @@
         }
       }
     },
+    "/api/contactsettingses/active": {
+      "get": {
+        "tags": [
+          "ContactSettings"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/contactsettingses": {
+      "get": {
+        "tags": [
+          "ContactSettings"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ContactSettings"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "Address",
+                  "Email",
+                  "Phone"
+                ],
+                "type": "object",
+                "properties": {
+                  "Address": {
+                    "maxLength": 500,
+                    "type": "string"
+                  },
+                  "Email": {
+                    "maxLength": 200,
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "Phone": {
+                    "maxLength": 50,
+                    "type": "string",
+                    "format": "tel"
+                  },
+                  "WhatsApp": {
+                    "maxLength": 50,
+                    "type": "string"
+                  },
+                  "Instagram": {
+                    "maxLength": 200,
+                    "type": "string"
+                  },
+                  "WorkingHoursWeekdays": {
+                    "maxLength": 100,
+                    "type": "string"
+                  },
+                  "WorkingHoursSaturday": {
+                    "maxLength": 100,
+                    "type": "string"
+                  },
+                  "WorkingHoursSunday": {
+                    "maxLength": 100,
+                    "type": "string"
+                  },
+                  "SupportDescription": {
+                    "maxLength": 1000,
+                    "type": "string"
+                  },
+                  "ContactImage": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "Latitude": {
+                    "maxLength": 50,
+                    "type": "string"
+                  },
+                  "Longitude": {
+                    "maxLength": 50,
+                    "type": "string"
+                  },
+                  "FacebookUrl": {
+                    "maxLength": 500,
+                    "type": "string",
+                    "format": "uri"
+                  },
+                  "TwitterUrl": {
+                    "maxLength": 500,
+                    "type": "string",
+                    "format": "uri"
+                  },
+                  "LinkedInUrl": {
+                    "maxLength": 500,
+                    "type": "string",
+                    "format": "uri"
+                  },
+                  "YouTubeUrl": {
+                    "maxLength": 500,
+                    "type": "string",
+                    "format": "uri"
+                  },
+                  "SupportDescriptionEn": {
+                    "maxLength": 1000,
+                    "type": "string"
+                  },
+                  "WorkingHoursWeekdaysEn": {
+                    "maxLength": 100,
+                    "type": "string"
+                  },
+                  "WorkingHoursSaturdayEn": {
+                    "maxLength": 100,
+                    "type": "string"
+                  },
+                  "WorkingHoursSundayEn": {
+                    "maxLength": 100,
+                    "type": "string"
+                  },
+                  "SupportDescriptionRu": {
+                    "maxLength": 1000,
+                    "type": "string"
+                  },
+                  "WorkingHoursWeekdaysRu": {
+                    "maxLength": 100,
+                    "type": "string"
+                  },
+                  "WorkingHoursSaturdayRu": {
+                    "maxLength": 100,
+                    "type": "string"
+                  },
+                  "WorkingHoursSundayRu": {
+                    "maxLength": 100,
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "Address": {
+                  "style": "form"
+                },
+                "Email": {
+                  "style": "form"
+                },
+                "Phone": {
+                  "style": "form"
+                },
+                "WhatsApp": {
+                  "style": "form"
+                },
+                "Instagram": {
+                  "style": "form"
+                },
+                "WorkingHoursWeekdays": {
+                  "style": "form"
+                },
+                "WorkingHoursSaturday": {
+                  "style": "form"
+                },
+                "WorkingHoursSunday": {
+                  "style": "form"
+                },
+                "SupportDescription": {
+                  "style": "form"
+                },
+                "ContactImage": {
+                  "style": "form"
+                },
+                "Latitude": {
+                  "style": "form"
+                },
+                "Longitude": {
+                  "style": "form"
+                },
+                "FacebookUrl": {
+                  "style": "form"
+                },
+                "TwitterUrl": {
+                  "style": "form"
+                },
+                "LinkedInUrl": {
+                  "style": "form"
+                },
+                "YouTubeUrl": {
+                  "style": "form"
+                },
+                "SupportDescriptionEn": {
+                  "style": "form"
+                },
+                "WorkingHoursWeekdaysEn": {
+                  "style": "form"
+                },
+                "WorkingHoursSaturdayEn": {
+                  "style": "form"
+                },
+                "WorkingHoursSundayEn": {
+                  "style": "form"
+                },
+                "SupportDescriptionRu": {
+                  "style": "form"
+                },
+                "WorkingHoursWeekdaysRu": {
+                  "style": "form"
+                },
+                "WorkingHoursSaturdayRu": {
+                  "style": "form"
+                },
+                "WorkingHoursSundayRu": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/contactsettingses/{id}": {
+      "get": {
+        "tags": [
+          "ContactSettings"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ContactSettings"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "Address",
+                  "Email",
+                  "Phone"
+                ],
+                "type": "object",
+                "properties": {
+                  "Address": {
+                    "maxLength": 500,
+                    "type": "string"
+                  },
+                  "Email": {
+                    "maxLength": 200,
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "Phone": {
+                    "maxLength": 50,
+                    "type": "string",
+                    "format": "tel"
+                  },
+                  "WhatsApp": {
+                    "maxLength": 50,
+                    "type": "string"
+                  },
+                  "Instagram": {
+                    "maxLength": 200,
+                    "type": "string"
+                  },
+                  "WorkingHoursWeekdays": {
+                    "maxLength": 100,
+                    "type": "string"
+                  },
+                  "WorkingHoursSaturday": {
+                    "maxLength": 100,
+                    "type": "string"
+                  },
+                  "WorkingHoursSunday": {
+                    "maxLength": 100,
+                    "type": "string"
+                  },
+                  "SupportDescription": {
+                    "maxLength": 1000,
+                    "type": "string"
+                  },
+                  "ContactImage": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "Latitude": {
+                    "maxLength": 50,
+                    "type": "string"
+                  },
+                  "Longitude": {
+                    "maxLength": 50,
+                    "type": "string"
+                  },
+                  "FacebookUrl": {
+                    "maxLength": 500,
+                    "type": "string",
+                    "format": "uri"
+                  },
+                  "TwitterUrl": {
+                    "maxLength": 500,
+                    "type": "string",
+                    "format": "uri"
+                  },
+                  "LinkedInUrl": {
+                    "maxLength": 500,
+                    "type": "string",
+                    "format": "uri"
+                  },
+                  "YouTubeUrl": {
+                    "maxLength": 500,
+                    "type": "string",
+                    "format": "uri"
+                  },
+                  "SupportDescriptionEn": {
+                    "maxLength": 1000,
+                    "type": "string"
+                  },
+                  "WorkingHoursWeekdaysEn": {
+                    "maxLength": 100,
+                    "type": "string"
+                  },
+                  "WorkingHoursSaturdayEn": {
+                    "maxLength": 100,
+                    "type": "string"
+                  },
+                  "WorkingHoursSundayEn": {
+                    "maxLength": 100,
+                    "type": "string"
+                  },
+                  "SupportDescriptionRu": {
+                    "maxLength": 1000,
+                    "type": "string"
+                  },
+                  "WorkingHoursWeekdaysRu": {
+                    "maxLength": 100,
+                    "type": "string"
+                  },
+                  "WorkingHoursSaturdayRu": {
+                    "maxLength": 100,
+                    "type": "string"
+                  },
+                  "WorkingHoursSundayRu": {
+                    "maxLength": 100,
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "Address": {
+                  "style": "form"
+                },
+                "Email": {
+                  "style": "form"
+                },
+                "Phone": {
+                  "style": "form"
+                },
+                "WhatsApp": {
+                  "style": "form"
+                },
+                "Instagram": {
+                  "style": "form"
+                },
+                "WorkingHoursWeekdays": {
+                  "style": "form"
+                },
+                "WorkingHoursSaturday": {
+                  "style": "form"
+                },
+                "WorkingHoursSunday": {
+                  "style": "form"
+                },
+                "SupportDescription": {
+                  "style": "form"
+                },
+                "ContactImage": {
+                  "style": "form"
+                },
+                "Latitude": {
+                  "style": "form"
+                },
+                "Longitude": {
+                  "style": "form"
+                },
+                "FacebookUrl": {
+                  "style": "form"
+                },
+                "TwitterUrl": {
+                  "style": "form"
+                },
+                "LinkedInUrl": {
+                  "style": "form"
+                },
+                "YouTubeUrl": {
+                  "style": "form"
+                },
+                "SupportDescriptionEn": {
+                  "style": "form"
+                },
+                "WorkingHoursWeekdaysEn": {
+                  "style": "form"
+                },
+                "WorkingHoursSaturdayEn": {
+                  "style": "form"
+                },
+                "WorkingHoursSundayEn": {
+                  "style": "form"
+                },
+                "SupportDescriptionRu": {
+                  "style": "form"
+                },
+                "WorkingHoursWeekdaysRu": {
+                  "style": "form"
+                },
+                "WorkingHoursSaturdayRu": {
+                  "style": "form"
+                },
+                "WorkingHoursSundayRu": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ContactSettings"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/orderses": {
       "post": {
         "tags": [
@@ -562,14 +1192,12 @@
             "multipart/form-data": {
               "schema": {
                 "required": [
-                  "Brand",
+                  "BrandId",
                   "CategoryId",
                   "Description",
                   "Name",
-                  "Price",
-                  "Stock",
                   "Type",
-                  "Volume"
+                  "Variants"
                 ],
                 "type": "object",
                 "properties": {
@@ -577,22 +1205,9 @@
                     "maxLength": 200,
                     "type": "string"
                   },
-                  "Brand": {
-                    "maxLength": 100,
-                    "type": "string"
-                  },
-                  "Price": {
-                    "minimum": 0.01,
-                    "type": "number",
-                    "format": "double"
-                  },
-                  "OriginalPrice": {
-                    "type": "number",
-                    "format": "double"
-                  },
-                  "Volume": {
-                    "maxLength": 50,
-                    "type": "string"
+                  "BrandId": {
+                    "type": "integer",
+                    "format": "int32"
                   },
                   "Type": {
                     "maxLength": 100,
@@ -613,17 +1228,17 @@
                     "type": "integer",
                     "format": "int32"
                   },
-                  "Stock": {
-                    "maximum": 2147483647,
-                    "minimum": 0,
-                    "type": "integer",
-                    "format": "int32"
-                  },
                   "IsActive": {
                     "type": "boolean"
                   },
                   "IsFeatured": {
                     "type": "boolean"
+                  },
+                  "Variants": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/CreateProductVariantDTO"
+                    }
                   },
                   "NameEn": {
                     "type": "string"
@@ -649,16 +1264,7 @@
                 "Name": {
                   "style": "form"
                 },
-                "Brand": {
-                  "style": "form"
-                },
-                "Price": {
-                  "style": "form"
-                },
-                "OriginalPrice": {
-                  "style": "form"
-                },
-                "Volume": {
+                "BrandId": {
                   "style": "form"
                 },
                 "Type": {
@@ -673,13 +1279,13 @@
                 "CategoryId": {
                   "style": "form"
                 },
-                "Stock": {
-                  "style": "form"
-                },
                 "IsActive": {
                   "style": "form"
                 },
                 "IsFeatured": {
+                  "style": "form"
+                },
+                "Variants": {
                   "style": "form"
                 },
                 "NameEn": {
@@ -753,14 +1359,12 @@
             "multipart/form-data": {
               "schema": {
                 "required": [
-                  "Brand",
+                  "BrandId",
                   "CategoryId",
                   "Description",
                   "Name",
-                  "Price",
-                  "Stock",
                   "Type",
-                  "Volume"
+                  "Variants"
                 ],
                 "type": "object",
                 "properties": {
@@ -768,22 +1372,9 @@
                     "maxLength": 200,
                     "type": "string"
                   },
-                  "Brand": {
-                    "maxLength": 100,
-                    "type": "string"
-                  },
-                  "Price": {
-                    "minimum": 0.01,
-                    "type": "number",
-                    "format": "double"
-                  },
-                  "OriginalPrice": {
-                    "type": "number",
-                    "format": "double"
-                  },
-                  "Volume": {
-                    "maxLength": 50,
-                    "type": "string"
+                  "BrandId": {
+                    "type": "integer",
+                    "format": "int32"
                   },
                   "Type": {
                     "maxLength": 100,
@@ -804,17 +1395,17 @@
                     "type": "integer",
                     "format": "int32"
                   },
-                  "Stock": {
-                    "maximum": 2147483647,
-                    "minimum": 0,
-                    "type": "integer",
-                    "format": "int32"
-                  },
                   "IsActive": {
                     "type": "boolean"
                   },
                   "IsFeatured": {
                     "type": "boolean"
+                  },
+                  "Variants": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/CreateProductVariantDTO"
+                    }
                   },
                   "NameEn": {
                     "type": "string"
@@ -840,16 +1431,7 @@
                 "Name": {
                   "style": "form"
                 },
-                "Brand": {
-                  "style": "form"
-                },
-                "Price": {
-                  "style": "form"
-                },
-                "OriginalPrice": {
-                  "style": "form"
-                },
-                "Volume": {
+                "BrandId": {
                   "style": "form"
                 },
                 "Type": {
@@ -864,13 +1446,13 @@
                 "CategoryId": {
                   "style": "form"
                 },
-                "Stock": {
-                  "style": "form"
-                },
                 "IsActive": {
                   "style": "form"
                 },
                 "IsFeatured": {
+                  "style": "form"
+                },
+                "Variants": {
                   "style": "form"
                 },
                 "NameEn": {
@@ -1126,6 +1708,34 @@
         },
         "additionalProperties": false
       },
+      "CreateProductVariantDTO": {
+        "required": [
+          "price",
+          "volume"
+        ],
+        "type": "object",
+        "properties": {
+          "volume": {
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
+          },
+          "price": {
+            "minimum": 0.01,
+            "type": "number",
+            "format": "double"
+          },
+          "originalPrice": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
       "LoginDTO": {
         "required": [
           "email",
@@ -1148,7 +1758,8 @@
       "OrderItemDTO": {
         "required": [
           "productId",
-          "quantity"
+          "quantity",
+          "variantVolume"
         ],
         "type": "object",
         "properties": {
@@ -1161,6 +1772,10 @@
             "minimum": 1,
             "type": "integer",
             "format": "int32"
+          },
+          "variantVolume": {
+            "minLength": 1,
+            "type": "string"
           }
         },
         "additionalProperties": false

@@ -1,0 +1,156 @@
+﻿using App.Business.DTOs.ContactSettings;
+using App.Business.Services.ExternalServices.Interfaces;
+using App.Business.Services.Interfaces;
+using App.Core.Entities;
+using App.DAL.Repositories.Interfaces;
+
+namespace App.Business.Services.Implementations
+{
+    public class ContactSettingService : IContactSettingService
+    {
+        private readonly IContactSettingRepository _contactSettingRepository;
+        private readonly IFileManagerService _fileManagerService;
+
+        public ContactSettingService(
+            IContactSettingRepository contactSettingRepository,
+            IFileManagerService fileManagerService)
+        {
+            _contactSettingRepository = contactSettingRepository;
+            _fileManagerService = fileManagerService;
+        }
+
+        public async Task<ContactSettingDTO> GetActiveContactSettingAsync()
+        {
+            var setting = await _contactSettingRepository.GetActiveSettingAsync();
+            
+            if (setting == null)
+            {
+                throw new Exception("?laq? parametrl?ri tap?lmad?");
+            }
+
+            return MapToDTO(setting);
+        }
+
+        public async Task<ContactSettingDTO> GetContactSettingByIdAsync(int id)
+        {
+            var setting = await _contactSettingRepository.GetByIdAsync(c => c.Id == id);
+            
+            if (setting == null)
+            {
+                throw new Exception("?laq? parametrl?ri tap?lmad?");
+            }
+
+            return MapToDTO(setting);
+        }
+
+        public async Task<IEnumerable<ContactSettingDTO>> GetAllContactSettingsAsync()
+        {
+            var settings = await _contactSettingRepository.GetAllAsync(c => !c.IsDeleted);
+            return settings.Select(s => MapToDTO(s));
+        }
+
+        public async Task<ContactSettingDTO> CreateContactSettingAsync(CreateContactSettingDTO createDto)
+        {
+            string imageUrl = null;
+            if (createDto.ContactImage != null)
+            {
+                imageUrl = await _fileManagerService.UploadFileAsync(createDto.ContactImage);
+            }
+
+            var setting = new ContactSetting
+            {
+                Address = createDto.Address,
+                Email = createDto.Email,
+                Phone = createDto.Phone,
+                WhatsApp = createDto.WhatsApp,
+                Instagram = createDto.Instagram,
+                WorkingHoursWeekdays = createDto.WorkingHoursWeekdays,
+                WorkingHoursSaturday = createDto.WorkingHoursSaturday,
+                WorkingHoursSunday = createDto.WorkingHoursSunday,
+                SupportDescription = createDto.SupportDescription,
+                ContactImage = imageUrl,
+                Latitude = createDto.Latitude,
+                Longitude = createDto.Longitude,
+                FacebookUrl = createDto.FacebookUrl,
+                TwitterUrl = createDto.TwitterUrl,
+                LinkedInUrl = createDto.LinkedInUrl,
+                YouTubeUrl = createDto.YouTubeUrl
+            };
+
+            var createdSetting = await _contactSettingRepository.AddAsync(setting);
+            return MapToDTO(createdSetting);
+        }
+
+        public async Task<ContactSettingDTO> UpdateContactSettingAsync(int id, CreateContactSettingDTO updateDto)
+        {
+            var setting = await _contactSettingRepository.GetByIdAsync(c => c.Id == id);
+            
+            if (setting == null)
+            {
+                throw new Exception("?laq? parametrl?ri tap?lmad?");
+            }
+
+            setting.Address = updateDto.Address;
+            setting.Email = updateDto.Email;
+            setting.Phone = updateDto.Phone;
+            setting.WhatsApp = updateDto.WhatsApp;
+            setting.Instagram = updateDto.Instagram;
+            setting.WorkingHoursWeekdays = updateDto.WorkingHoursWeekdays;
+            setting.WorkingHoursSaturday = updateDto.WorkingHoursSaturday;
+            setting.WorkingHoursSunday = updateDto.WorkingHoursSunday;
+            setting.SupportDescription = updateDto.SupportDescription;
+            setting.Latitude = updateDto.Latitude;
+            setting.Longitude = updateDto.Longitude;
+            setting.FacebookUrl = updateDto.FacebookUrl;
+            setting.TwitterUrl = updateDto.TwitterUrl;
+            setting.LinkedInUrl = updateDto.LinkedInUrl;
+            setting.YouTubeUrl = updateDto.YouTubeUrl;
+
+            if (updateDto.ContactImage != null)
+            {
+                setting.ContactImage = await _fileManagerService.UploadFileAsync(updateDto.ContactImage);
+            }
+
+            var updatedSetting = await _contactSettingRepository.UpdateAsync(setting);
+            return MapToDTO(updatedSetting);
+        }
+
+        public async Task DeleteContactSettingAsync(int id)
+        {
+            var setting = await _contactSettingRepository.GetByIdAsync(c => c.Id == id);
+            
+            if (setting == null)
+            {
+                throw new Exception("?laq? parametrl?ri tap?lmad?");
+            }
+
+            await _contactSettingRepository.DeleteAsync(setting);
+        }
+
+        private ContactSettingDTO MapToDTO(ContactSetting setting)
+        {
+            return new ContactSettingDTO
+            {
+                Id = setting.Id,
+                Address = setting.Address,
+                Email = setting.Email,
+                Phone = setting.Phone,
+                WhatsApp = setting.WhatsApp,
+                Instagram = setting.Instagram,
+                WorkingHoursWeekdays = setting.WorkingHoursWeekdays,
+                WorkingHoursSaturday = setting.WorkingHoursSaturday,
+                WorkingHoursSunday = setting.WorkingHoursSunday,
+                SupportDescription = setting.SupportDescription,
+                ContactImage = setting.ContactImage,
+                Latitude = setting.Latitude,
+                Longitude = setting.Longitude,
+                FacebookUrl = setting.FacebookUrl,
+                TwitterUrl = setting.TwitterUrl,
+                LinkedInUrl = setting.LinkedInUrl,
+                YouTubeUrl = setting.YouTubeUrl,
+                CreatedOn = setting.CreatedOn,
+                UpdatedOn = setting.UpdatedOn
+            };
+        }
+    }
+}

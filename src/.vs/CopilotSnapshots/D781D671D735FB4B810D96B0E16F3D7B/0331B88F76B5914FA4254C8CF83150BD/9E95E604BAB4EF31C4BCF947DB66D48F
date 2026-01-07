@@ -1,0 +1,22 @@
+﻿using App.Core.Entities.Commons;
+using System;
+using System.Collections.Generic;
+
+namespace App.Core.Entities
+{
+    public class Brand : BaseEntity, IAuditedEntity
+    {
+        public string Name { get; set; } // Default name (Azerbaijani)
+        public string Logo { get; set; } // Brand logo image URL
+        
+        // IAuditedEntity
+        public string CreatedBy { get; set; }
+        public DateTime CreatedOn { get; set; }
+        public string UpdatedBy { get; set; }
+        public DateTime UpdatedOn { get; set; }
+        public bool IsDeleted { get; set; }
+        
+        // Navigation properties
+        public ICollection<Product> Products { get; set; }
+    }
+}

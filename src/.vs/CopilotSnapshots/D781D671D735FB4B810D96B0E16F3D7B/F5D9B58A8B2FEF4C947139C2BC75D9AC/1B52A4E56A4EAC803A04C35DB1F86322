@@ -1,0 +1,36 @@
+﻿using App.Core.Entities;
+using App.DAL.Presistence;
+using App.DAL.Repositories.Abstractions;
+using App.DAL.Repositories.Interfaces;
+using Microsoft.EntityFrameworkCore;
+
+namespace App.DAL.Repositories.Implementations
+{
+    public class BrandRepository : Repository<Brand>, IBrandRepository
+    {
+        public BrandRepository(AppDbContext context) : base(context)
+        {
+        }
+
+        public async Task<IEnumerable<Brand>> GetAllWithTranslationsAsync()
+        {
+            return await DbSet
+                .Include(b => b.Translations)
+                .Where(b => !b.IsDeleted)
+                .ToListAsync();
+        }
+
+        public async Task<Brand> GetByIdWithTranslationsAsync(int id)
+        {
+            return await DbSet
+                .Include(b => b.Translations)
+                .FirstOrDefaultAsync(b => b.Id == id && !b.IsDeleted);
+        }
+
+        public async Task UpdateProductCountAsync(int brandId)
+        {
+            // Optional: If you need to track product count per brand
+            // This can be implemented if needed
+        }
+    }
+}

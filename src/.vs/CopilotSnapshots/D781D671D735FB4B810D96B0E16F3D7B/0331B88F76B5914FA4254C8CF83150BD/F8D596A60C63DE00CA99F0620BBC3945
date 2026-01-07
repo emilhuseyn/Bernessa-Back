@@ -1,0 +1,195 @@
+﻿using App.Business.DTOs.Brands;
+using App.Business.Services.ExternalServices.Interfaces;
+using App.Business.Services.Interfaces;
+using App.Core.Entities;
+using App.DAL.Repositories.Interfaces;
+
+namespace App.Business.Services.Implementations
+{
+    public class BrandService : IBrandService
+    {
+        private readonly IBrandRepository _brandRepository;
+        private readonly IFileManagerService _fileManagerService;
+
+        public BrandService(
+            IBrandRepository brandRepository,
+            IFileManagerService fileManagerService)
+        {
+            _brandRepository = brandRepository;
+            _fileManagerService = fileManagerService;
+        }
+
+        public async Task<IEnumerable<BrandDTO>> GetAllBrandsAsync()
+        {
+            var brands = await _brandRepository.GetAllWithTranslationsAsync();
+            return brands.Select(b => MapToDTO(b));
+        }
+
+        public async Task<BrandDTO> GetBrandByIdAsync(int id)
+        {
+            var brand = await _brandRepository.GetByIdWithTranslationsAsync(id);
+            
+            if (brand == null)
+            {
+                throw new Exception("Brend tapılmadı");
+            }
+
+            return MapToDTO(brand);
+        }
+
+        public async Task<BrandDTO> CreateBrandAsync(CreateBrandDTO createBrandDto)
+        {
+            string logoUrl = null;
+            if (createBrandDto.Logo != null)
+            {
+                logoUrl = await _fileManagerService.UploadFileAsync(createBrandDto.Logo);
+            }
+
+            var brand = new Brand
+            {
+                Name = createBrandDto.Name,
+                Logo = logoUrl,
+                Translations = new List<BrandTranslation>()
+            };
+
+            // Add English translation if provided
+            if (!string.IsNullOrWhiteSpace(createBrandDto.NameEn))
+            {
+                brand.Translations.Add(new BrandTranslation
+                {
+                    LanguageCode = "en",
+                    Name = createBrandDto.NameEn
+                });
+            }
+
+            // Add Russian translation if provided
+            if (!string.IsNullOrWhiteSpace(createBrandDto.NameRu))
+            {
+                brand.Translations.Add(new BrandTranslation
+                {
+                    LanguageCode = "ru",
+                    Name = createBrandDto.NameRu
+                });
+            }
+
+            var createdBrand = await _brandRepository.AddAsync(brand);
+            return MapToDTO(createdBrand);
+        }
+
+        public async Task<BrandDTO> UpdateBrandAsync(int id, CreateBrandDTO updateBrandDto)
+        {
+            var brand = await _brandRepository.GetByIdWithTranslationsAsync(id);
+            
+            if (brand == null)
+            {
+                throw new Exception("Brend tapılmadı");
+            }
+
+            brand.Name = updateBrandDto.Name;
+
+            if (updateBrandDto.Logo != null)
+            {
+                brand.Logo = await _fileManagerService.UploadFileAsync(updateBrandDto.Logo);
+            }
+
+            // Update translations
+            brand.Translations ??= new List<BrandTranslation>();
+
+            // Update or add English translation
+            var enTranslation = brand.Translations.FirstOrDefault(t => t.LanguageCode == "en");
+            if (!string.IsNullOrWhiteSpace(updateBrandDto.NameEn))
+            {
+                if (enTranslation != null)
+                {
+                    enTranslation.Name = updateBrandDto.NameEn;
+                }
+                else
+                {
+                    brand.Translations.Add(new BrandTranslation
+                    {
+                        BrandId = brand.Id,
+                        LanguageCode = "en",
+                        Name = updateBrandDto.NameEn
+                    });
+                }
+            }
+            else if (enTranslation != null)
+            {
+                brand.Translations.Remove(enTranslation);
+            }
+
+            // Update or add Russian translation
+            var ruTranslation = brand.Translations.FirstOrDefault(t => t.LanguageCode == "ru");
+            if (!string.IsNullOrWhiteSpace(updateBrandDto.NameRu))
+            {
+                if (ruTranslation != null)
+                {
+                    ruTranslation.Name = updateBrandDto.NameRu;
+                }
+                else
+                {
+                    brand.Translations.Add(new BrandTranslation
+                    {
+                        BrandId = brand.Id,
+                        LanguageCode = "ru",
+                        Name = updateBrandDto.NameRu
+                    });
+                }
+            }
+            else if (ruTranslation != null)
+            {
+                brand.Translations.Remove(ruTranslation);
+            }
+
+            var updatedBrand = await _brandRepository.UpdateAsync(brand);
+            return MapToDTO(updatedBrand);
+        }
+
+        public async Task DeleteBrandAsync(int id)
+        {
+            var brand = await _brandRepository.GetByIdAsync(b => b.Id == id);
+            
+            if (brand == null)
+            {
+                throw new Exception("Brend tapılmadı");
+            }
+
+            await _brandRepository.DeleteAsync(brand);
+        }
+
+        private BrandDTO MapToDTO(Brand brand)
+        {
+            var dto = new BrandDTO
+            {
+                Id = brand.Id,
+                Name = brand.Name,
+                Logo = brand.Logo,
+                CreatedOn = brand.CreatedOn,
+                UpdatedOn = brand.UpdatedOn,
+                Translations = new Dictionary<string, BrandTranslationDTO>()
+            };
+
+            // Add default Azerbaijani
+            dto.Translations["az"] = new BrandTranslationDTO
+            {
+                LanguageCode = "az",
+                Name = brand.Name
+            };
+
+            // Add other translations
+            if (brand.Translations != null)
+            {
+                foreach (var translation in brand.Translations)
+                {
+                    dto.Translations[translation.LanguageCode] = new BrandTranslationDTO
+                    {
+                        LanguageCode = translation.LanguageCode,
+                        Name = translation.Name
+                    };
+                }
+            }
+
+            return dto;
+        }
+    }
+}

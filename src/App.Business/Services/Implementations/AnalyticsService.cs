@@ -142,21 +142,23 @@ namespace App.Business.Services.Implementations
             var topSellingProducts = await _context.OrderItems
                 .Where(oi => !oi.IsDeleted && oi.Order.Status == OrderStatus.Delivered)
                 .Include(oi => oi.Product)
+                .ThenInclude(p => p.Brand)
+                .Include(oi => oi.Product)
                 .ThenInclude(p => p.Category)
                 .Include(oi => oi.Order)
                 .GroupBy(oi => new 
                 { 
                     oi.ProductId, 
                     oi.Product.Name,
-                    oi.Product.Brand,
+                    ProductBrand = oi.Product.Brand.Name,
                     CategoryName = oi.Product.Category.Name,
-                    oi.Product.Price
+                    oi.Price
                 })
                 .Select(g => new TopProductDTO
                 {
                     ProductId = g.Key.ProductId,
                     ProductName = g.Key.Name,
-                    ProductBrand = g.Key.Brand,
+                    ProductBrand = g.Key.ProductBrand,
                     CategoryName = g.Key.CategoryName,
                     TotalSold = g.Sum(oi => oi.Quantity),
                     Revenue = g.Sum(oi => oi.Price * oi.Quantity),
@@ -170,21 +172,23 @@ namespace App.Business.Services.Implementations
             var topRevenueProducts = await _context.OrderItems
                 .Where(oi => !oi.IsDeleted && oi.Order.Status == OrderStatus.Delivered)
                 .Include(oi => oi.Product)
+                .ThenInclude(p => p.Brand)
+                .Include(oi => oi.Product)
                 .ThenInclude(p => p.Category)
                 .Include(oi => oi.Order)
                 .GroupBy(oi => new 
                 { 
                     oi.ProductId, 
                     oi.Product.Name,
-                    oi.Product.Brand,
+                    ProductBrand = oi.Product.Brand.Name,
                     CategoryName = oi.Product.Category.Name,
-                    oi.Product.Price
+                    oi.Price
                 })
                 .Select(g => new TopProductDTO
                 {
                     ProductId = g.Key.ProductId,
                     ProductName = g.Key.Name,
-                    ProductBrand = g.Key.Brand,
+                    ProductBrand = g.Key.ProductBrand,
                     CategoryName = g.Key.CategoryName,
                     TotalSold = g.Sum(oi => oi.Quantity),
                     Revenue = g.Sum(oi => oi.Price * oi.Quantity),

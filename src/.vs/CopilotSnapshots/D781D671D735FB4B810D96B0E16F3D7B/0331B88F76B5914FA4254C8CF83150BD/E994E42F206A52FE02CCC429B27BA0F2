@@ -1,0 +1,15 @@
+﻿using App.Core.Entities.Commons;
+using System;
+
+namespace App.Core.Entities
+{
+    public class BrandTranslation : BaseEntity
+    {
+        public int BrandId { get; set; }
+        public string LanguageCode { get; set; } // "en", "ru"
+        public string Name { get; set; }
+        
+        // Navigation property
+        public Brand Brand { get; set; }
+    }
+}

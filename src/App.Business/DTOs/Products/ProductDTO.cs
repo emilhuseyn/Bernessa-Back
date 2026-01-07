@@ -4,20 +4,18 @@ namespace App.Business.DTOs.Products
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Brand { get; set; }
-        public decimal Price { get; set; }
-        public decimal? OriginalPrice { get; set; }
-        public string Volume { get; set; }
+        public int BrandId { get; set; }
+        public string BrandName { get; set; }
         public string Type { get; set; }
         public string Description { get; set; }
         public List<string> Images { get; set; }
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
-        public int Stock { get; set; }
         public bool IsActive { get; set; }
         public bool IsFeatured { get; set; }
         public DateTime CreatedOn { get; set; }
         public DateTime UpdatedOn { get; set; }
+        public List<ProductVariantDTO> Variants { get; set; }
         public Dictionary<string, ProductTranslationDTO> Translations { get; set; } // { "en": {...}, "ru": {...} }
     }
 }

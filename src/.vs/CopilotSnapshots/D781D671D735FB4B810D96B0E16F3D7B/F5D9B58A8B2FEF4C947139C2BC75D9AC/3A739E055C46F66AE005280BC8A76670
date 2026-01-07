@@ -1,0 +1,57 @@
+﻿using App.Core.Entities;
+using App.DAL.Presistence;
+using App.DAL.Repositories.Abstractions;
+using App.DAL.Repositories.Interfaces;
+using Microsoft.EntityFrameworkCore;
+
+namespace App.DAL.Repositories.Implementations
+{
+    public class ProductRepository : Repository<Product>, IProductRepository
+    {
+        public ProductRepository(AppDbContext context) : base(context)
+        {
+        }
+
+        public async Task<ICollection<Product>> GetFeaturedProductsAsync()
+        {
+            return await DbSet
+                .Where(p => p.IsFeatured && p.IsActive && !p.IsDeleted)
+                .Include(p => p.Category)
+                .OrderByDescending(p => p.CreatedOn)
+                .ToListAsync();
+        }
+
+        public async Task<ICollection<Product>> GetByCategorySlugAsync(string slug)
+        {
+            return await DbSet
+                .Include(p => p.Category)
+                .Where(p => p.Category.Slug == slug && p.IsActive && !p.IsDeleted)
+                .OrderByDescending(p => p.CreatedOn)
+                .ToListAsync();
+        }
+
+        public async Task<ICollection<Product>> SearchProductsAsync(string query)
+        {
+            return await DbSet
+                .Include(p => p.Category)
+                .Where(p => (p.Name.Contains(query) || 
+                           p.Brand.Contains(query) || 
+                           p.Description.Contains(query)) && 
+                           p.IsActive && !p.IsDeleted)
+                .OrderByDescending(p => p.CreatedOn)
+                .ToListAsync();
+        }
+
+        public async Task<ICollection<Product>> GetDealsAsync()
+        {
+            return await DbSet
+                .Include(p => p.Category)
+                .Include(p => p.Translations)
+                .Where(p => p.OriginalPrice.HasValue && 
+                           p.OriginalPrice > p.Price && 
+                           p.IsActive && !p.IsDeleted)
+                .OrderByDescending(p => p.OriginalPrice - p.Price)
+                .ToListAsync();
+        }
+    }
+}

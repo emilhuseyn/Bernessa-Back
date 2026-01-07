@@ -1,0 +1,11 @@
+namespace App.Business.DTOs.Products
+{
+    public class ProductVariantDTO
+    {
+        public int Id { get; set; }
+        public string Volume { get; set; }
+        public decimal Price { get; set; }
+        public decimal? OriginalPrice { get; set; }
+        public bool IsActive { get; set; }
+    }
+}

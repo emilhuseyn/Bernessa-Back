@@ -1,0 +1,18 @@
+﻿using App.Core.Entities.Commons;
+using System;
+
+namespace App.Core.Entities
+{
+    public class ProductVariant : BaseEntity
+    {
+        public int ProductId { get; set; }
+        public string Volume { get; set; } // 50ml, 100ml, etc.
+        public decimal Price { get; set; }
+        public decimal? OriginalPrice { get; set; } // Previous price for discount display
+        public int Stock { get; set; } // Stock for this variant
+        public bool IsActive { get; set; } = true;
+        
+        // Navigation property
+        public Product Product { get; set; }
+    }
+}

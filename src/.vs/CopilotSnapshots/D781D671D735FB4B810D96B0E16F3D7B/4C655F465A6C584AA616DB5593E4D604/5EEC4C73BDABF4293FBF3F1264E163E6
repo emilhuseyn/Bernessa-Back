@@ -1,0 +1,199 @@
+﻿using System;
+using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
+
+#nullable disable
+
+namespace App.DAL.Migrations
+{
+    /// <inheritdoc />
+    public partial class addingBrand : Migration
+    {
+        /// <inheritdoc />
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
+            // Step 1: Create Brands table first
+            migrationBuilder.CreateTable(
+                name: "Brands",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    Name = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Logo = table.Column<string>(type: "varchar(500)", maxLength: 500, nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    CreatedBy = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    CreatedOn = table.Column<DateTime>(type: "datetime", nullable: false),
+                    UpdatedBy = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    UpdatedOn = table.Column<DateTime>(type: "datetime", nullable: false),
+                    IsDeleted = table.Column<bool>(type: "tinyint(1)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Brands", x => x.Id);
+                })
+                .Annotation("MySql:CharSet", "utf8mb4");
+
+            // Step 2: Insert a default brand for existing products
+            migrationBuilder.Sql(@"
+                INSERT INTO Brands (Name, Logo, CreatedBy, CreatedOn, UpdatedBy, UpdatedOn, IsDeleted)
+                VALUES ('Default Brand', NULL, 'System', UTC_TIMESTAMP(), 'System', UTC_TIMESTAMP(), 0);
+            ");
+
+            // Step 3: Add BrandId column to Products (nullable first)
+            migrationBuilder.AddColumn<int>(
+                name: "BrandId",
+                table: "Products",
+                type: "int",
+                nullable: true);
+
+            // Step 4: Update existing products with default brand
+            migrationBuilder.Sql(@"
+                UPDATE Products 
+                SET BrandId = (SELECT Id FROM Brands WHERE Name = 'Default Brand' LIMIT 1)
+                WHERE BrandId IS NULL;
+            ");
+
+            // Step 5: Make BrandId NOT NULL
+            migrationBuilder.AlterColumn<int>(
+                name: "BrandId",
+                table: "Products",
+                type: "int",
+                nullable: false,
+                oldClrType: typeof(int),
+                oldType: "int",
+                oldNullable: true);
+
+            // Step 6: Create ProductVariants table
+            migrationBuilder.CreateTable(
+                name: "ProductVariants",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    ProductId = table.Column<int>(type: "int", nullable: false),
+                    Volume = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    OriginalPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    IsActive = table.Column<bool>(type: "tinyint(1)", nullable: false, defaultValue: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ProductVariants", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_ProductVariants_Products_ProductId",
+                        column: x => x.ProductId,
+                        principalTable: "Products",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                })
+                .Annotation("MySql:CharSet", "utf8mb4");
+
+            // Step 7: Migrate old product data to ProductVariants
+            migrationBuilder.Sql(@"
+                INSERT INTO ProductVariants (ProductId, Volume, Price, OriginalPrice, IsActive)
+                SELECT Id, 
+                       COALESCE(Volume, '50ml') as Volume,
+                       COALESCE(Price, 0) as Price,
+                       OriginalPrice,
+                       1 as IsActive
+                FROM Products
+                WHERE Volume IS NOT NULL;
+            ");
+
+            // Step 8: Drop old columns from Products
+            migrationBuilder.DropColumn(
+                name: "Brand",
+                table: "Products");
+
+            migrationBuilder.DropColumn(
+                name: "OriginalPrice",
+                table: "Products");
+
+            migrationBuilder.DropColumn(
+                name: "Price",
+                table: "Products");
+
+            migrationBuilder.DropColumn(
+                name: "Volume",
+                table: "Products");
+
+            // Step 9: Create indexes
+            migrationBuilder.CreateIndex(
+                name: "IX_Products_BrandId",
+                table: "Products",
+                column: "BrandId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ProductVariants_ProductId",
+                table: "ProductVariants",
+                column: "ProductId");
+
+            // Step 10: Add foreign key constraint
+            migrationBuilder.AddForeignKey(
+                name: "FK_Products_Brands_BrandId",
+                table: "Products",
+                column: "BrandId",
+                principalTable: "Brands",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Restrict);
+        }
+
+        /// <inheritdoc />
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropForeignKey(
+                name: "FK_Products_Brands_BrandId",
+                table: "Products");
+
+            migrationBuilder.DropTable(
+                name: "Brands");
+
+            migrationBuilder.DropTable(
+                name: "ProductVariants");
+
+            migrationBuilder.DropIndex(
+                name: "IX_Products_BrandId",
+                table: "Products");
+
+            migrationBuilder.DropColumn(
+                name: "BrandId",
+                table: "Products");
+
+            migrationBuilder.AddColumn<string>(
+                name: "Brand",
+                table: "Products",
+                type: "varchar(100)",
+                maxLength: 100,
+                nullable: false,
+                defaultValue: "")
+                .Annotation("MySql:CharSet", "utf8mb4");
+
+            migrationBuilder.AddColumn<decimal>(
+                name: "OriginalPrice",
+                table: "Products",
+                type: "decimal(18,2)",
+                nullable: true);
+
+            migrationBuilder.AddColumn<decimal>(
+                name: "Price",
+                table: "Products",
+                type: "decimal(18,2)",
+                nullable: false,
+                defaultValue: 0m);
+
+            migrationBuilder.AddColumn<string>(
+                name: "Volume",
+                table: "Products",
+                type: "varchar(50)",
+                maxLength: 50,
+                nullable: false,
+                defaultValue: "")
+                .Annotation("MySql:CharSet", "utf8mb4");
+        }
+    }
+}

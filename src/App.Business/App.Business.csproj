@@ -18,13 +18,17 @@
 	<ItemGroup>
 	  <Compile Include="Services\Implementations\AnalyticsService.cs" />
 	  <Compile Include="Services\Implementations\AuthService.cs" />
+	  <Compile Include="Services\Implementations\BrandService.cs" />
 	  <Compile Include="Services\Implementations\CategoryService.cs" />
+	  <Compile Include="Services\Implementations\ContactSettingService.cs" />
 	  <Compile Include="Services\Implementations\OrderService.cs" />
 	  <Compile Include="Services\Implementations\ProductService.cs" />
 	  <Compile Include="Services\Implementations\TokenService.cs" />
 	  <Compile Include="Services\Interfaces\IAnalyticsService.cs" />
 	  <Compile Include="Services\Interfaces\IAuthService.cs" />
+	  <Compile Include="Services\Interfaces\IBrandService.cs" />
 	  <Compile Include="Services\Interfaces\ICategoryService.cs" />
+	  <Compile Include="Services\Interfaces\IContactSettingService.cs" />
 	  <Compile Include="Services\Interfaces\IOrderService.cs" />
 	  <Compile Include="Services\Interfaces\IProductService.cs" />
 	  <Compile Include="Services\Interfaces\ITokenService.cs" />

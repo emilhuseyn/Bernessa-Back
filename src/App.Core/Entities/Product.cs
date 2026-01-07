@@ -7,10 +7,7 @@ namespace App.Core.Entities
     public class Product : BaseEntity, IAuditedEntity
     {
         public string Name { get; set; }
-        public string Brand { get; set; }
-        public decimal Price { get; set; }
-        public decimal? OriginalPrice { get; set; }
-        public string Volume { get; set; }
+        public int BrandId { get; set; }
         public string Type { get; set; }
         public string Description { get; set; }
         public string Images { get; set; } // JSON array stored as string
@@ -27,7 +24,9 @@ namespace App.Core.Entities
         public bool IsDeleted { get; set; }
         
         // Navigation properties
+        public Brand Brand { get; set; }
         public Category Category { get; set; }
+        public ICollection<ProductVariant> Variants { get; set; }
         public ICollection<OrderItem> OrderItems { get; set; }
         public ICollection<ProductTranslation> Translations { get; set; }
     }

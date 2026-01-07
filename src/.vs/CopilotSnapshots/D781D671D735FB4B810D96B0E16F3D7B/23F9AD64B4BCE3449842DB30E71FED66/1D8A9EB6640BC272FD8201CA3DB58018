@@ -1,0 +1,33 @@
+﻿using App.Core.Entities.Commons;
+using System;
+using System.Collections.Generic;
+
+namespace App.Core.Entities
+{
+    public class Product : BaseEntity, IAuditedEntity
+    {
+        public string Name { get; set; }
+        public int BrandId { get; set; }
+        public string Type { get; set; }
+        public string Description { get; set; }
+        public string Images { get; set; } // JSON array stored as string
+        public int CategoryId { get; set; }
+  
+        public bool IsActive { get; set; }
+        public bool IsFeatured { get; set; }
+        
+        // IAuditedEntity
+        public string CreatedBy { get; set; }
+        public DateTime CreatedOn { get; set; }
+        public string UpdatedBy { get; set; }
+        public DateTime UpdatedOn { get; set; }
+        public bool IsDeleted { get; set; }
+        
+        // Navigation properties
+        public Brand Brand { get; set; }
+        public Category Category { get; set; }
+        public ICollection<ProductVariant> Variants { get; set; }
+        public ICollection<OrderItem> OrderItems { get; set; }
+        public ICollection<ProductTranslation> Translations { get; set; }
+    }
+}

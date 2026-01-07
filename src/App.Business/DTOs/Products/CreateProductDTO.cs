@@ -5,43 +5,32 @@ namespace App.Business.DTOs.Products
 {
     public class CreateProductDTO
     {
-        [Required]
-        [MaxLength(200)]
+        [Required(ErrorMessage = "Ad t?l?b olunur")]
+        [MaxLength(200, ErrorMessage = "Ad maksimum 200 simvol ola bil?r")]
         public string Name { get; set; } // Azerbaijani name
 
-        [Required]
-        [MaxLength(100)]
-        public string Brand { get; set; }
+        [Required(ErrorMessage = "Brend t?l?b olunur")]
+        public int BrandId { get; set; }
 
-        [Required]
-        [Range(0.01, double.MaxValue)]
-        public decimal Price { get; set; }
-
-        public decimal? OriginalPrice { get; set; }
-
-        [Required]
-        [MaxLength(50)]
-        public string Volume { get; set; }
-
-        [Required]
-        [MaxLength(100)]
+        [Required(ErrorMessage = "Növ t?l?b olunur")]
+        [MaxLength(100, ErrorMessage = "Növ maksimum 100 simvol ola bil?r")]
         public string Type { get; set; }  
 
-        [Required]
-        [MaxLength(2000)]
+        [Required(ErrorMessage = "Aç?qlama t?l?b olunur")]
+        [MaxLength(2000, ErrorMessage = "Aç?qlama maksimum 2000 simvol ola bil?r")]
         public string Description { get; set; } // Azerbaijani description
 
         public List<IFormFile> Images { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Kateqoriya t?l?b olunur")]
         public int CategoryId { get; set; }
-
-        [Required]
-        [Range(0, int.MaxValue)]
-        public int Stock { get; set; }
 
         public bool IsActive { get; set; } = true;
         public bool IsFeatured { get; set; } = false;
+        
+        // Variants - at least one variant is required
+        [Required(ErrorMessage = "?n az? bir variant t?l?b olunur")]
+        public List<CreateProductVariantDTO> Variants { get; set; }
         
         // Translations
         public string NameEn { get; set; }
