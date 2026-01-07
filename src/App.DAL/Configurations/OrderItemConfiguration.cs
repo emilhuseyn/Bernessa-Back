@@ -8,6 +8,8 @@ namespace App.DAL.Configurations
     {
         public void Configure(EntityTypeBuilder<OrderItem> builder)
         {
+            builder.ToTable("orderitems");
+            
             builder.HasKey(oi => oi.Id);
             
             builder.Property(oi => oi.ProductName)

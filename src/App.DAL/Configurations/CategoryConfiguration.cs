@@ -8,6 +8,8 @@ namespace App.DAL.Configurations
     {
         public void Configure(EntityTypeBuilder<Category> builder)
         {
+            builder.ToTable("categories");
+            
             builder.HasKey(c => c.Id);
             
             builder.Property(c => c.Name)

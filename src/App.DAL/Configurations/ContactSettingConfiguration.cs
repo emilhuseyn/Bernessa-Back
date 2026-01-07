@@ -8,6 +8,8 @@ namespace App.DAL.Configurations
     {
         public void Configure(EntityTypeBuilder<ContactSetting> builder)
         {
+            builder.ToTable("contactsettings");
+            
             builder.HasKey(c => c.Id);
             
             builder.Property(c => c.Address)

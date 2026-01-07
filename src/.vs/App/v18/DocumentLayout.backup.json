@@ -7,12 +7,28 @@
       "RelativeMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|solutionrelative:app.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.api\\controllers\\contactsettingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|solutionrelative:app.api\\controllers\\contactsettingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\src\\App.DAL\\Configurations\\SettingConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\App.DAL\\Configurations\\SettingConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\presistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\presistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\configurations\\categoryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\configurations\\categoryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.core\\entities\\contactsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|solutionrelative:app.core\\entities\\contactsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\configurations\\brandconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\configurations\\brandconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.api\\controllers\\contactsettingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD81E615-E4EC-46FC-ABC9-13985E3A624F}|App.API\\App.API.csproj|solutionrelative:app.api\\controllers\\contactsettingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{32126517-CDDC-4BA9-B31B-A552B34AF250}|App.Business\\App.Business.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.business\\dtos\\contactsettings\\createcontactsettingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -119,10 +135,6 @@
       "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\presistence\\automatedmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\presistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\presistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\localization\\azerbaijaniidentityerrordescriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\localization\\azerbaijaniidentityerrordescriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -161,10 +173,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\configurations\\categorytranslationconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\configurations\\categorytranslationconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\configurations\\categoryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\configurations\\categoryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67A6B18E-D112-4E2C-A6D1-87951A3A4B87}|App.Core\\App.Core.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.core\\entities\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -631,10 +639,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\App.API\\Controllers\\BrandsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\configurations\\brandconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\configurations\\brandconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|c:\\users\\emil\\source\\repos\\bernessa\\app\\src\\app.dal\\configurations\\productvariantconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36A9E6DB-A0CC-46A3-9E58-0DF1369591C7}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\configurations\\productvariantconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -726,7 +730,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -738,31 +742,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 179,
-              "Title": "ContactSettingTranslationDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\ContactSettings\\ContactSettingTranslationDTO.cs",
-              "RelativeDocumentMoniker": "App.Business\\DTOs\\ContactSettings\\ContactSettingTranslationDTO.cs",
-              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\ContactSettings\\ContactSettingTranslationDTO.cs",
-              "RelativeToolTip": "App.Business\\DTOs\\ContactSettings\\ContactSettingTranslationDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "SettingConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\src\\App.DAL\\Configurations\\SettingConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\App.DAL\\Configurations\\SettingConfiguration.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\src\\App.DAL\\Configurations\\SettingConfiguration.cs",
+              "RelativeToolTip": "src\\App.DAL\\Configurations\\SettingConfiguration.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T08:00:55.742Z"
+              "WhenOpened": "2026-01-07T10:27:37.967Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ContactSettingTranslation.cs",
-              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\ContactSettingTranslation.cs",
-              "RelativeDocumentMoniker": "App.Core\\Entities\\ContactSettingTranslation.cs",
-              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\ContactSettingTranslation.cs",
-              "RelativeToolTip": "App.Core\\Entities\\ContactSettingTranslation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T08:00:15.439Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "ContactSetting.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\ContactSetting.cs",
               "RelativeDocumentMoniker": "App.Core\\Entities\\ContactSetting.cs",
@@ -770,23 +763,12 @@
               "RelativeToolTip": "App.Core\\Entities\\ContactSetting.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAUwCAAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-06T19:16:02.63Z"
+              "WhenOpened": "2026-01-06T19:16:02.63Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ContactSettingsController.cs",
-              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Controllers\\ContactSettingsController.cs",
-              "RelativeDocumentMoniker": "App.API\\Controllers\\ContactSettingsController.cs",
-              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Controllers\\ContactSettingsController.cs",
-              "RelativeToolTip": "App.API\\Controllers\\ContactSettingsController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAswD8AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-06T19:18:03.737Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "CreateContactSettingDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\ContactSettings\\CreateContactSettingDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\ContactSettings\\CreateContactSettingDTO.cs",
@@ -804,26 +786,102 @@
               "RelativeDocumentMoniker": "App.API\\appsettings.json",
               "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\appsettings.json",
               "RelativeToolTip": "App.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-12-01T22:32:20.121Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 178,
+              "DocumentIndex": 5,
+              "Title": "BrandConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\BrandConfiguration.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Configurations\\BrandConfiguration.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\BrandConfiguration.cs",
+              "RelativeToolTip": "App.DAL\\Configurations\\BrandConfiguration.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T18:34:23.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Presistence\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Presistence\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Presistence\\AppDbContext.cs",
+              "RelativeToolTip": "App.DAL\\Presistence\\AppDbContext.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T16:45:42.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ContactSettingsController.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Controllers\\ContactSettingsController.cs",
+              "RelativeDocumentMoniker": "App.API\\Controllers\\ContactSettingsController.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Controllers\\ContactSettingsController.cs",
+              "RelativeToolTip": "App.API\\Controllers\\ContactSettingsController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAswD8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T19:18:03.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoryConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\CategoryConfiguration.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Configurations\\CategoryConfiguration.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\CategoryConfiguration.cs",
+              "RelativeToolTip": "App.DAL\\Configurations\\CategoryConfiguration.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAAAYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T22:32:04.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ContactSettingTranslation.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\ContactSettingTranslation.cs",
+              "RelativeDocumentMoniker": "App.Core\\Entities\\ContactSettingTranslation.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\ContactSettingTranslation.cs",
+              "RelativeToolTip": "App.Core\\Entities\\ContactSettingTranslation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T08:00:15.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 180,
+              "Title": "ContactSettingTranslationDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\ContactSettings\\ContactSettingTranslationDTO.cs",
+              "RelativeDocumentMoniker": "App.Business\\DTOs\\ContactSettings\\ContactSettingTranslationDTO.cs",
+              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\ContactSettings\\ContactSettingTranslationDTO.cs",
+              "RelativeToolTip": "App.Business\\DTOs\\ContactSettings\\ContactSettingTranslationDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T08:00:55.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 179,
               "Title": "ContactSettingTranslationConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\ContactSettingTranslationConfiguration.cs",
               "RelativeDocumentMoniker": "App.DAL\\Configurations\\ContactSettingTranslationConfiguration.cs",
               "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\ContactSettingTranslationConfiguration.cs",
               "RelativeToolTip": "App.DAL\\Configurations\\ContactSettingTranslationConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAABRwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T08:00:38.158Z"
+              "WhenOpened": "2026-01-07T08:00:38.158Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "20260103203915_addingBrand2.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20260103203915_addingBrand2.cs",
               "RelativeDocumentMoniker": "App.DAL\\Migrations\\20260103203915_addingBrand2.cs",
@@ -835,7 +893,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "ContactSettingService.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Implementations\\ContactSettingService.cs",
               "RelativeDocumentMoniker": "App.Business\\Services\\Implementations\\ContactSettingService.cs",
@@ -847,19 +905,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 173,
+              "DocumentIndex": 174,
               "Title": "ContactSettingConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\ContactSettingConfiguration.cs",
               "RelativeDocumentMoniker": "App.DAL\\Configurations\\ContactSettingConfiguration.cs",
               "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\ContactSettingConfiguration.cs",
               "RelativeToolTip": "App.DAL\\Configurations\\ContactSettingConfiguration.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAABRwFAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAABRwFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-06T19:16:24.968Z"
+              "WhenOpened": "2026-01-06T19:16:24.968Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 174,
+              "DocumentIndex": 175,
               "Title": "IContactSettingRepository.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Interfaces\\IContactSettingRepository.cs",
               "RelativeDocumentMoniker": "App.DAL\\Repositories\\Interfaces\\IContactSettingRepository.cs",
@@ -871,7 +930,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 175,
+              "DocumentIndex": 176,
               "Title": "ContactSettingRepository.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Implementations\\ContactSettingRepository.cs",
               "RelativeDocumentMoniker": "App.DAL\\Repositories\\Implementations\\ContactSettingRepository.cs",
@@ -883,7 +942,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 177,
+              "DocumentIndex": 178,
               "Title": "IContactSettingService.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Interfaces\\IContactSettingService.cs",
               "RelativeDocumentMoniker": "App.Business\\Services\\Interfaces\\IContactSettingService.cs",
@@ -895,7 +954,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 176,
+              "DocumentIndex": 177,
               "Title": "ContactSettingDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\ContactSettings\\ContactSettingDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\ContactSettings\\ContactSettingDTO.cs",
@@ -907,7 +966,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 171,
+              "DocumentIndex": 172,
               "Title": "BrandsController.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-483826842\\BrandsController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-483826842\\BrandsController.cs",
@@ -919,7 +978,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 170,
+              "DocumentIndex": 171,
               "Title": "ProductVariantDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1946492735\\ProductVariantDTO.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1946492735\\ProductVariantDTO.cs",
@@ -931,7 +990,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 169,
+              "DocumentIndex": 170,
               "Title": "ProductVariantConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1378166673\\ProductVariantConfiguration.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1378166673\\ProductVariantConfiguration.cs",
@@ -943,7 +1002,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 168,
+              "DocumentIndex": 169,
               "Title": "BrandConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1378166673\\BrandConfiguration.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1378166673\\BrandConfiguration.cs",
@@ -955,7 +1014,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "ProductService.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Implementations\\ProductService.cs",
               "RelativeDocumentMoniker": "App.Business\\Services\\Implementations\\ProductService.cs",
@@ -967,7 +1026,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "CreateOrderDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Orders\\CreateOrderDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Orders\\CreateOrderDTO.cs",
@@ -979,7 +1038,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "ProductVariant.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\ProductVariant.cs",
               "RelativeDocumentMoniker": "App.Core\\Entities\\ProductVariant.cs",
@@ -991,19 +1050,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 158,
+              "DocumentIndex": 159,
               "Title": "ProductVariantConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\ProductVariantConfiguration.cs",
               "RelativeDocumentMoniker": "App.DAL\\Configurations\\ProductVariantConfiguration.cs",
               "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\ProductVariantConfiguration.cs",
               "RelativeToolTip": "App.DAL\\Configurations\\ProductVariantConfiguration.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAIBZwCAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAEBVwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T18:34:31.384Z"
+              "WhenOpened": "2026-01-03T18:34:31.384Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 167,
+              "DocumentIndex": 168,
               "Title": "BrandsController.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Controllers\\BrandsController.cs",
               "RelativeDocumentMoniker": "App.API\\Controllers\\BrandsController.cs",
@@ -1015,7 +1075,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\Order.cs",
               "RelativeDocumentMoniker": "App.Core\\Entities\\Order.cs",
@@ -1027,7 +1087,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "OrderItem.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\OrderItem.cs",
               "RelativeDocumentMoniker": "App.Core\\Entities\\OrderItem.cs",
@@ -1039,7 +1099,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 159,
+              "DocumentIndex": 160,
               "Title": "IBrandRepository.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Interfaces\\IBrandRepository.cs",
               "RelativeDocumentMoniker": "App.DAL\\Repositories\\Interfaces\\IBrandRepository.cs",
@@ -1051,7 +1111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "Brand.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\Brand.cs",
               "RelativeDocumentMoniker": "App.Core\\Entities\\Brand.cs",
@@ -1063,7 +1123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\Product.cs",
               "RelativeDocumentMoniker": "App.Core\\Entities\\Product.cs",
@@ -1075,7 +1135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 166,
+              "DocumentIndex": 167,
               "Title": "BrandService.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Implementations\\BrandService.cs",
               "RelativeDocumentMoniker": "App.Business\\Services\\Implementations\\BrandService.cs",
@@ -1087,7 +1147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "CreateProductDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Products\\CreateProductDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Products\\CreateProductDTO.cs",
@@ -1099,7 +1159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 165,
+              "DocumentIndex": 166,
               "Title": "IBrandService.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Interfaces\\IBrandService.cs",
               "RelativeDocumentMoniker": "App.Business\\Services\\Interfaces\\IBrandService.cs",
@@ -1111,7 +1171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 164,
+              "DocumentIndex": 165,
               "Title": "CreateProductVariantDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Products\\CreateProductVariantDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Products\\CreateProductVariantDTO.cs",
@@ -1123,7 +1183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 163,
+              "DocumentIndex": 164,
               "Title": "ProductVariantDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Products\\ProductVariantDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Products\\ProductVariantDTO.cs",
@@ -1135,7 +1195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 162,
+              "DocumentIndex": 163,
               "Title": "CreateBrandDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Brands\\CreateBrandDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Brands\\CreateBrandDTO.cs",
@@ -1147,7 +1207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 161,
+              "DocumentIndex": 162,
               "Title": "BrandDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Brands\\BrandDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Brands\\BrandDTO.cs",
@@ -1159,7 +1219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 160,
+              "DocumentIndex": 161,
               "Title": "BrandRepository.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Implementations\\BrandRepository.cs",
               "RelativeDocumentMoniker": "App.DAL\\Repositories\\Implementations\\BrandRepository.cs",
@@ -1171,19 +1231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 157,
-              "Title": "BrandConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\BrandConfiguration.cs",
-              "RelativeDocumentMoniker": "App.DAL\\Configurations\\BrandConfiguration.cs",
-              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\BrandConfiguration.cs",
-              "RelativeToolTip": "App.DAL\\Configurations\\BrandConfiguration.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAABRwBgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T18:34:23.558Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 172,
+              "DocumentIndex": 173,
               "Title": "20260103175808_addingBrand.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20260103175808_addingBrand.cs",
               "RelativeDocumentMoniker": "App.DAL\\Migrations\\20260103175808_addingBrand.cs",
@@ -1195,7 +1243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "AppDbContextSeed.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Presistence\\AppDbContextSeed.cs",
               "RelativeDocumentMoniker": "App.DAL\\Presistence\\AppDbContextSeed.cs",
@@ -1207,7 +1255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 142,
+              "DocumentIndex": 144,
               "Title": "BrandTranslation.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\src\\App.Core\\Entities\\BrandTranslation.cs",
               "RelativeDocumentMoniker": "src\\App.Core\\Entities\\BrandTranslation.cs",
@@ -1219,7 +1267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 143,
+              "DocumentIndex": 145,
               "Title": "ProductVariant.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\src\\App.Core\\Entities\\ProductVariant.cs",
               "RelativeDocumentMoniker": "src\\App.Core\\Entities\\ProductVariant.cs",
@@ -1231,7 +1279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 144,
+              "DocumentIndex": 146,
               "Title": "BrandConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\src\\App.DAL\\Configurations\\BrandConfiguration.cs",
               "RelativeDocumentMoniker": "src\\App.DAL\\Configurations\\BrandConfiguration.cs",
@@ -1243,7 +1291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 149,
+              "DocumentIndex": 151,
               "Title": "BrandDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\src\\App.Business\\DTOs\\Brands\\BrandDTO.cs",
               "RelativeDocumentMoniker": "src\\App.Business\\DTOs\\Brands\\BrandDTO.cs",
@@ -1255,7 +1303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 141,
+              "DocumentIndex": 143,
               "Title": "Brand.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\src\\App.Core\\Entities\\Brand.cs",
               "RelativeDocumentMoniker": "src\\App.Core\\Entities\\Brand.cs",
@@ -1267,7 +1315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "BusinessDependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\BusinessDependencyInjection.cs",
               "RelativeDocumentMoniker": "App.Business\\BusinessDependencyInjection.cs",
@@ -1279,7 +1327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 156,
+              "DocumentIndex": 158,
               "Title": "BrandsController.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\src\\App.API\\Controllers\\BrandsController.cs",
               "RelativeDocumentMoniker": "src\\App.API\\Controllers\\BrandsController.cs",
@@ -1291,7 +1339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 155,
+              "DocumentIndex": 157,
               "Title": "BrandService.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\src\\App.Business\\Services\\Implementations\\BrandService.cs",
               "RelativeDocumentMoniker": "src\\App.Business\\Services\\Implementations\\BrandService.cs",
@@ -1303,7 +1351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 154,
+              "DocumentIndex": 156,
               "Title": "IBrandService.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\src\\App.Business\\Services\\Interfaces\\IBrandService.cs",
               "RelativeDocumentMoniker": "src\\App.Business\\Services\\Interfaces\\IBrandService.cs",
@@ -1315,7 +1363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 153,
+              "DocumentIndex": 155,
               "Title": "CreateProductVariantDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\src\\App.Business\\DTOs\\Products\\CreateProductVariantDTO.cs",
               "RelativeDocumentMoniker": "src\\App.Business\\DTOs\\Products\\CreateProductVariantDTO.cs",
@@ -1327,7 +1375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 152,
+              "DocumentIndex": 154,
               "Title": "ProductVariantDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\src\\App.Business\\DTOs\\Products\\ProductVariantDTO.cs",
               "RelativeDocumentMoniker": "src\\App.Business\\DTOs\\Products\\ProductVariantDTO.cs",
@@ -1339,7 +1387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 151,
+              "DocumentIndex": 153,
               "Title": "CreateBrandDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\src\\App.Business\\DTOs\\Brands\\CreateBrandDTO.cs",
               "RelativeDocumentMoniker": "src\\App.Business\\DTOs\\Brands\\CreateBrandDTO.cs",
@@ -1351,7 +1399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 150,
+              "DocumentIndex": 152,
               "Title": "BrandTranslationDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\src\\App.Business\\DTOs\\Brands\\BrandTranslationDTO.cs",
               "RelativeDocumentMoniker": "src\\App.Business\\DTOs\\Brands\\BrandTranslationDTO.cs",
@@ -1363,7 +1411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 148,
+              "DocumentIndex": 150,
               "Title": "BrandRepository.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\src\\App.DAL\\Repositories\\Implementations\\BrandRepository.cs",
               "RelativeDocumentMoniker": "src\\App.DAL\\Repositories\\Implementations\\BrandRepository.cs",
@@ -1375,7 +1423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 147,
+              "DocumentIndex": 149,
               "Title": "IBrandRepository.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\src\\App.DAL\\Repositories\\Interfaces\\IBrandRepository.cs",
               "RelativeDocumentMoniker": "src\\App.DAL\\Repositories\\Interfaces\\IBrandRepository.cs",
@@ -1387,7 +1435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 146,
+              "DocumentIndex": 148,
               "Title": "ProductVariantConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\src\\App.DAL\\Configurations\\ProductVariantConfiguration.cs",
               "RelativeDocumentMoniker": "src\\App.DAL\\Configurations\\ProductVariantConfiguration.cs",
@@ -1399,7 +1447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 145,
+              "DocumentIndex": 147,
               "Title": "BrandTranslationConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\src\\App.DAL\\Configurations\\BrandTranslationConfiguration.cs",
               "RelativeDocumentMoniker": "src\\App.DAL\\Configurations\\BrandTranslationConfiguration.cs",
@@ -1411,19 +1459,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "DALDependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\DALDependencyInjection.cs",
               "RelativeDocumentMoniker": "App.DAL\\DALDependencyInjection.cs",
               "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\DALDependencyInjection.cs",
               "RelativeToolTip": "App.DAL\\DALDependencyInjection.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAABRwA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAABRwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T16:47:37.727Z"
+              "WhenOpened": "2024-09-24T16:47:37.727Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Program.cs",
               "RelativeDocumentMoniker": "App.API\\Program.cs",
@@ -1435,7 +1484,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "ServiceResult.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Commons\\ServiceResult.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Commons\\ServiceResult.cs",
@@ -1447,7 +1496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Implementations\\AuthService.cs",
               "RelativeDocumentMoniker": "App.Business\\Services\\Implementations\\AuthService.cs",
@@ -1459,7 +1508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "App.API\\Controllers\\AuthController.cs",
@@ -1471,7 +1520,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 140,
+              "DocumentIndex": 142,
               "Title": "QUICK-UTF8-FIX.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\QUICK-UTF8-FIX.md",
               "RelativeDocumentMoniker": "QUICK-UTF8-FIX.md",
@@ -1483,7 +1532,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 139,
+              "DocumentIndex": 141,
               "Title": "UTF8-ENCODING-FIX.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\UTF8-ENCODING-FIX.md",
               "RelativeDocumentMoniker": "UTF8-ENCODING-FIX.md",
@@ -1495,7 +1544,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "GlobalExceptionHandlerMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Middlewares\\GlobalExceptionHandlerMiddleware.cs",
               "RelativeDocumentMoniker": "App.API\\Middlewares\\GlobalExceptionHandlerMiddleware.cs",
@@ -1507,7 +1556,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "AUTH-SERVICE-RESULT-PATTERN.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\AUTH-SERVICE-RESULT-PATTERN.md",
               "RelativeDocumentMoniker": "AUTH-SERVICE-RESULT-PATTERN.md",
@@ -1519,7 +1568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Implementations\\Repository.cs",
               "RelativeDocumentMoniker": "App.DAL\\Repositories\\Implementations\\Repository.cs",
@@ -1531,7 +1580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "ProductRepository.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Implementations\\ProductRepository.cs",
               "RelativeDocumentMoniker": "App.DAL\\Repositories\\Implementations\\ProductRepository.cs",
@@ -1543,7 +1592,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "OrderRepository.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Implementations\\OrderRepository.cs",
               "RelativeDocumentMoniker": "App.DAL\\Repositories\\Implementations\\OrderRepository.cs",
@@ -1555,7 +1604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "CategoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Implementations\\CategoryRepository.cs",
               "RelativeDocumentMoniker": "App.DAL\\Repositories\\Implementations\\CategoryRepository.cs",
@@ -1567,7 +1616,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "AutomatedMigration.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Presistence\\AutomatedMigration.cs",
               "RelativeDocumentMoniker": "App.DAL\\Presistence\\AutomatedMigration.cs",
@@ -1579,19 +1628,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Presistence\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "App.DAL\\Presistence\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Presistence\\AppDbContext.cs",
-              "RelativeToolTip": "App.DAL\\Presistence\\AppDbContext.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAABRwFgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T16:45:42.935Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "AzerbaijaniIdentityErrorDescriber.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Localization\\AzerbaijaniIdentityErrorDescriber.cs",
               "RelativeDocumentMoniker": "App.DAL\\Localization\\AzerbaijaniIdentityErrorDescriber.cs",
@@ -1603,7 +1640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "AzerbaijaniIdentityErrorDescriber.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Localization\\AzerbaijaniIdentityErrorDescriber.cs",
               "RelativeDocumentMoniker": "App.Business\\Localization\\AzerbaijaniIdentityErrorDescriber.cs",
@@ -1615,7 +1652,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "App.API\\Controllers\\ProductsController.cs",
@@ -1627,7 +1664,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "Handler.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Handlers\\Implementations\\Handler.cs",
               "RelativeDocumentMoniker": "App.DAL\\Handlers\\Implementations\\Handler.cs",
@@ -1639,7 +1676,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "UserConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\UserConfiguration.cs",
               "RelativeDocumentMoniker": "App.DAL\\Configurations\\UserConfiguration.cs",
@@ -1651,79 +1688,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "ProductTranslationConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\ProductTranslationConfiguration.cs",
               "RelativeDocumentMoniker": "App.DAL\\Configurations\\ProductTranslationConfiguration.cs",
               "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\ProductTranslationConfiguration.cs",
               "RelativeToolTip": "App.DAL\\Configurations\\ProductTranslationConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAABRwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T21:44:45.225Z"
+              "WhenOpened": "2025-12-05T21:44:45.225Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "ProductConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\ProductConfiguration.cs",
               "RelativeDocumentMoniker": "App.DAL\\Configurations\\ProductConfiguration.cs",
               "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\ProductConfiguration.cs",
               "RelativeToolTip": "App.DAL\\Configurations\\ProductConfiguration.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAEBVwCIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAABRwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T22:31:57.69Z"
+              "WhenOpened": "2025-12-01T22:31:57.69Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "OrderItemConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\OrderItemConfiguration.cs",
               "RelativeDocumentMoniker": "App.DAL\\Configurations\\OrderItemConfiguration.cs",
               "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\OrderItemConfiguration.cs",
               "RelativeToolTip": "App.DAL\\Configurations\\OrderItemConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAABRwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T22:32:23.459Z"
+              "WhenOpened": "2025-12-01T22:32:23.459Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "OrderConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\OrderConfiguration.cs",
               "RelativeDocumentMoniker": "App.DAL\\Configurations\\OrderConfiguration.cs",
               "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\OrderConfiguration.cs",
               "RelativeToolTip": "App.DAL\\Configurations\\OrderConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAABRwDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T22:32:15.411Z"
+              "WhenOpened": "2025-12-01T22:32:15.411Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "CategoryTranslationConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\CategoryTranslationConfiguration.cs",
               "RelativeDocumentMoniker": "App.DAL\\Configurations\\CategoryTranslationConfiguration.cs",
               "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\CategoryTranslationConfiguration.cs",
               "RelativeToolTip": "App.DAL\\Configurations\\CategoryTranslationConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAEBVwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T21:44:39.148Z"
+              "WhenOpened": "2025-12-05T21:44:39.148Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "CategoryConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\CategoryConfiguration.cs",
-              "RelativeDocumentMoniker": "App.DAL\\Configurations\\CategoryConfiguration.cs",
-              "ToolTip": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Configurations\\CategoryConfiguration.cs",
-              "RelativeToolTip": "App.DAL\\Configurations\\CategoryConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T22:32:04.222Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "Setting.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\Setting.cs",
               "RelativeDocumentMoniker": "App.Core\\Entities\\Setting.cs",
@@ -1735,7 +1765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "AnalyticsService.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Implementations\\AnalyticsService.cs",
               "RelativeDocumentMoniker": "App.Business\\Services\\Implementations\\AnalyticsService.cs",
@@ -1747,7 +1777,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "XSSProtectionMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Middlewares\\XSSProtectionMiddleware.cs",
               "RelativeDocumentMoniker": "App.API\\Middlewares\\XSSProtectionMiddleware.cs",
@@ -1759,7 +1789,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "App.API\\Controllers\\OrdersController.cs",
@@ -1771,7 +1801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "App.API\\Controllers\\CategoriesController.cs",
@@ -1783,7 +1813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 48,
               "Title": "AnalyticsController.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\Controllers\\AnalyticsController.cs",
               "RelativeDocumentMoniker": "App.API\\Controllers\\AnalyticsController.cs",
@@ -1795,7 +1825,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "AzerbaijanDateTimeConverter.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Converters\\AzerbaijanDateTimeConverter.cs",
               "RelativeDocumentMoniker": "App.Business\\Converters\\AzerbaijanDateTimeConverter.cs",
@@ -1807,7 +1837,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "ProductTranslationDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Products\\ProductTranslationDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Products\\ProductTranslationDTO.cs",
@@ -1819,7 +1849,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 51,
               "Title": "SlugGenerator.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Helpers\\SlugGenerator.cs",
               "RelativeDocumentMoniker": "App.Business\\Helpers\\SlugGenerator.cs",
@@ -1831,7 +1861,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 52,
               "Title": "PluralizedRouteConvention.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Helpers\\PluralizedRouteConvention.cs",
               "RelativeDocumentMoniker": "App.Business\\Helpers\\PluralizedRouteConvention.cs",
@@ -1843,7 +1873,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 53,
               "Title": "JWTGenerator.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Helpers\\JWTGenerator.cs",
               "RelativeDocumentMoniker": "App.Business\\Helpers\\JWTGenerator.cs",
@@ -1855,7 +1885,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 54,
               "Title": "EnumSchemaFilter.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Helpers\\EnumSchemaFilter.cs",
               "RelativeDocumentMoniker": "App.Business\\Helpers\\EnumSchemaFilter.cs",
@@ -1867,7 +1897,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 56,
               "Title": "BaseEntityValidator.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Validators\\Commons\\BaseEntityValidator.cs",
               "RelativeDocumentMoniker": "App.Business\\Validators\\Commons\\BaseEntityValidator.cs",
@@ -1879,7 +1909,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 57,
               "Title": "OrderService.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Implementations\\OrderService.cs",
               "RelativeDocumentMoniker": "App.Business\\Services\\Implementations\\OrderService.cs",
@@ -1891,7 +1921,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 58,
               "Title": "FileManagerService.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\ExternalServices\\Abstractions\\FileManagerService.cs",
               "RelativeDocumentMoniker": "App.Business\\Services\\ExternalServices\\Abstractions\\FileManagerService.cs",
@@ -1903,7 +1933,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 55,
               "Title": "CategoryProfile.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\MappingProfiles\\CategoryProfile.cs",
               "RelativeDocumentMoniker": "App.Business\\MappingProfiles\\CategoryProfile.cs",
@@ -1915,7 +1945,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 60,
               "Title": "TokenService.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Implementations\\TokenService.cs",
               "RelativeDocumentMoniker": "App.Business\\Services\\Implementations\\TokenService.cs",
@@ -1927,7 +1957,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 61,
               "Title": "CategoryService.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Implementations\\CategoryService.cs",
               "RelativeDocumentMoniker": "App.Business\\Services\\Implementations\\CategoryService.cs",
@@ -1939,7 +1969,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 59,
               "Title": "NotNumericAttribute.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\ValidationAttributes\\NotNumericAttribute.cs",
               "RelativeDocumentMoniker": "App.Business\\ValidationAttributes\\NotNumericAttribute.cs",
@@ -1951,7 +1981,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 62,
               "Title": "CATEGORY-SLUG-NUMERIC-VALIDATION.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\CATEGORY-SLUG-NUMERIC-VALIDATION.md",
               "RelativeDocumentMoniker": "CATEGORY-SLUG-NUMERIC-VALIDATION.md",
@@ -1963,7 +1993,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 138,
+              "DocumentIndex": 140,
               "Title": "REMOVE-SLUG-UNIQUE-CONSTRAINT.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\REMOVE-SLUG-UNIQUE-CONSTRAINT.md",
               "RelativeDocumentMoniker": "REMOVE-SLUG-UNIQUE-CONSTRAINT.md",
@@ -1975,7 +2005,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 63,
               "Title": "CreateCategoryDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Categories\\CreateCategoryDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Categories\\CreateCategoryDTO.cs",
@@ -1987,7 +2017,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 64,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\Category.cs",
               "RelativeDocumentMoniker": "App.Core\\Entities\\Category.cs",
@@ -1999,7 +2029,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 65,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\appsettings.Development.json",
               "RelativeDocumentMoniker": "App.API\\appsettings.Development.json",
@@ -2011,7 +2041,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 137,
+              "DocumentIndex": 139,
               "Title": "CONTROLLER-SECURITY-FIX.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\CONTROLLER-SECURITY-FIX.md",
               "RelativeDocumentMoniker": "CONTROLLER-SECURITY-FIX.md",
@@ -2023,7 +2053,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 66,
               "Title": "APIDependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\APIDependencyInjection.cs",
               "RelativeDocumentMoniker": "App.API\\APIDependencyInjection.cs",
@@ -2035,7 +2065,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 136,
+              "DocumentIndex": 138,
               "Title": "FIX-CATEGORY-IFORMFILE-ERROR.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\FIX-CATEGORY-IFORMFILE-ERROR.md",
               "RelativeDocumentMoniker": "FIX-CATEGORY-IFORMFILE-ERROR.md",
@@ -2047,7 +2077,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 135,
+              "DocumentIndex": 137,
               "Title": "FIX-415-ERROR.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\FIX-415-ERROR.md",
               "RelativeDocumentMoniker": "FIX-415-ERROR.md",
@@ -2059,7 +2089,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 67,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\Identity\\User.cs",
               "RelativeDocumentMoniker": "App.Core\\Entities\\Identity\\User.cs",
@@ -2071,7 +2101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 134,
+              "DocumentIndex": 136,
               "Title": "SECURITY-IMPROVEMENTS-COMPLETED.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\SECURITY-IMPROVEMENTS-COMPLETED.md",
               "RelativeDocumentMoniker": "SECURITY-IMPROVEMENTS-COMPLETED.md",
@@ -2083,7 +2113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 133,
+              "DocumentIndex": 135,
               "Title": "20251206201135_test214.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251206201135_test214.cs",
               "RelativeDocumentMoniker": "App.DAL\\Migrations\\20251206201135_test214.cs",
@@ -2095,7 +2125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 130,
+              "DocumentIndex": 132,
               "Title": "AZERBAIJANI-ERROR-MESSAGES.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\AZERBAIJANI-ERROR-MESSAGES.md",
               "RelativeDocumentMoniker": "AZERBAIJANI-ERROR-MESSAGES.md",
@@ -2107,7 +2137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 68,
               "Title": "AdminResetPasswordDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\AdminResetPasswordDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Auth\\AdminResetPasswordDTO.cs",
@@ -2119,7 +2149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 129,
+              "DocumentIndex": 131,
               "Title": "SIMPLE-PASSWORD-RESET.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\SIMPLE-PASSWORD-RESET.md",
               "RelativeDocumentMoniker": "SIMPLE-PASSWORD-RESET.md",
@@ -2131,7 +2161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 123,
+              "DocumentIndex": 125,
               "Title": "ChangePasswordDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\ChangePasswordDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Auth\\ChangePasswordDTO.cs",
@@ -2143,7 +2173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 124,
+              "DocumentIndex": 126,
               "Title": "UpdateProfileDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\UpdateProfileDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Auth\\UpdateProfileDTO.cs",
@@ -2155,7 +2185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 125,
+              "DocumentIndex": 127,
               "Title": "ForgotPasswordDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\ForgotPasswordDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Auth\\ForgotPasswordDTO.cs",
@@ -2167,7 +2197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 126,
+              "DocumentIndex": 128,
               "Title": "ResetPasswordDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\ResetPasswordDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Auth\\ResetPasswordDTO.cs",
@@ -2179,7 +2209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 127,
+              "DocumentIndex": 129,
               "Title": "ValidateTokenDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\ValidateTokenDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Auth\\ValidateTokenDTO.cs",
@@ -2191,7 +2221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 128,
+              "DocumentIndex": 130,
               "Title": "PASSWORD-MANAGEMENT.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\PASSWORD-MANAGEMENT.md",
               "RelativeDocumentMoniker": "PASSWORD-MANAGEMENT.md",
@@ -2203,7 +2233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 122,
+              "DocumentIndex": 124,
               "Title": "ANALYTICS-REVENUE-FIX.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\ANALYTICS-REVENUE-FIX.md",
               "RelativeDocumentMoniker": "ANALYTICS-REVENUE-FIX.md",
@@ -2215,7 +2245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 131,
+              "DocumentIndex": 133,
               "Title": "20251205224042_removingStock2.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251205224042_removingStock2.cs",
               "RelativeDocumentMoniker": "App.DAL\\Migrations\\20251205224042_removingStock2.cs",
@@ -2227,7 +2257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 132,
+              "DocumentIndex": 134,
               "Title": "20251205223917_removingStock.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251205223917_removingStock.cs",
               "RelativeDocumentMoniker": "App.DAL\\Migrations\\20251205223917_removingStock.cs",
@@ -2239,7 +2269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 69,
               "Title": "ProductTranslation.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\ProductTranslation.cs",
               "RelativeDocumentMoniker": "App.Core\\Entities\\ProductTranslation.cs",
@@ -2251,7 +2281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 70,
               "Title": "ProductDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Products\\ProductDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Products\\ProductDTO.cs",
@@ -2263,7 +2293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 71,
               "Title": "20251205220439_addingTranslation.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251205220439_addingTranslation.cs",
               "RelativeDocumentMoniker": "App.DAL\\Migrations\\20251205220439_addingTranslation.cs",
@@ -2275,7 +2305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 121,
+              "DocumentIndex": 123,
               "Title": "PRODUCT-UPDATE-FIX.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\PRODUCT-UPDATE-FIX.md",
               "RelativeDocumentMoniker": "PRODUCT-UPDATE-FIX.md",
@@ -2287,7 +2317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 72,
               "Title": "CategoryDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Categories\\CategoryDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Categories\\CategoryDTO.cs",
@@ -2299,7 +2329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 120,
+              "DocumentIndex": 122,
               "Title": "AZERBAIJAN-TIMEZONE-IMPLEMENTATION.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\AZERBAIJAN-TIMEZONE-IMPLEMENTATION.md",
               "RelativeDocumentMoniker": "AZERBAIJAN-TIMEZONE-IMPLEMENTATION.md",
@@ -2311,7 +2341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 73,
               "Title": "DateTimeHelper.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Helpers\\DateTimeHelper.cs",
               "RelativeDocumentMoniker": "App.Core\\Helpers\\DateTimeHelper.cs",
@@ -2323,7 +2353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 74,
               "Title": "CategoryTranslationDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Categories\\CategoryTranslationDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Categories\\CategoryTranslationDTO.cs",
@@ -2335,7 +2365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 119,
+              "DocumentIndex": 121,
               "Title": "MULTI-LANGUAGE-IMPLEMENTATION.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\MULTI-LANGUAGE-IMPLEMENTATION.md",
               "RelativeDocumentMoniker": "MULTI-LANGUAGE-IMPLEMENTATION.md",
@@ -2347,7 +2377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 75,
               "Title": "CategoryTranslation.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Entities\\CategoryTranslation.cs",
               "RelativeDocumentMoniker": "App.Core\\Entities\\CategoryTranslation.cs",
@@ -2359,7 +2389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 76,
               "Title": "20251204142735_asdasd.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251204142735_asdasd.cs",
               "RelativeDocumentMoniker": "App.DAL\\Migrations\\20251204142735_asdasd.cs",
@@ -2371,7 +2401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 77,
               "Title": "ICategoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Interfaces\\ICategoryRepository.cs",
               "RelativeDocumentMoniker": "App.DAL\\Repositories\\Interfaces\\ICategoryRepository.cs",
@@ -2383,7 +2413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 118,
+              "DocumentIndex": 120,
               "Title": "RELATED-PRODUCTS-API.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\RELATED-PRODUCTS-API.md",
               "RelativeDocumentMoniker": "RELATED-PRODUCTS-API.md",
@@ -2395,7 +2425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 78,
               "Title": "IProductService.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Interfaces\\IProductService.cs",
               "RelativeDocumentMoniker": "App.Business\\Services\\Interfaces\\IProductService.cs",
@@ -2407,7 +2437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 79,
               "Title": "DashboardDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Analytics\\DashboardDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Analytics\\DashboardDTO.cs",
@@ -2419,7 +2449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 82,
               "Title": "OrderDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Orders\\OrderDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Orders\\OrderDTO.cs",
@@ -2431,7 +2461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 81,
               "Title": "UpdateOrderStatusDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Orders\\UpdateOrderStatusDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Orders\\UpdateOrderStatusDTO.cs",
@@ -2443,7 +2473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 80,
               "Title": "OrderStatus.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Enums\\OrderStatus.cs",
               "RelativeDocumentMoniker": "App.Core\\Enums\\OrderStatus.cs",
@@ -2455,7 +2485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 117,
+              "DocumentIndex": 119,
               "Title": "ANALYTICS-DASHBOARD-API.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\ANALYTICS-DASHBOARD-API.md",
               "RelativeDocumentMoniker": "ANALYTICS-DASHBOARD-API.md",
@@ -2467,7 +2497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 117,
               "Title": "IMAGE-UPLOAD-IMPLEMENTATION.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\IMAGE-UPLOAD-IMPLEMENTATION.md",
               "RelativeDocumentMoniker": "IMAGE-UPLOAD-IMPLEMENTATION.md",
@@ -2479,7 +2509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 118,
               "Title": "20251202073259_test.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251202073259_test.cs",
               "RelativeDocumentMoniker": "App.DAL\\Migrations\\20251202073259_test.cs",
@@ -2491,7 +2521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
+              "DocumentIndex": 116,
               "Title": ".gitkeep",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.API\\wwwroot\\images\\.gitkeep",
               "RelativeDocumentMoniker": "App.API\\wwwroot\\images\\.gitkeep",
@@ -2503,7 +2533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 85,
               "Title": "quick-start.bat",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\quick-start.bat",
               "RelativeDocumentMoniker": "quick-start.bat",
@@ -2515,7 +2545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 106,
               "Title": "README.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\README.md",
               "RelativeDocumentMoniker": "README.md",
@@ -2527,7 +2557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 107,
               "Title": "IMPLEMENTATION-SUMMARY.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\IMPLEMENTATION-SUMMARY.md",
               "RelativeDocumentMoniker": "IMPLEMENTATION-SUMMARY.md",
@@ -2539,7 +2569,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 108,
               "Title": "start-app.bat",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\start-app.bat",
               "RelativeDocumentMoniker": "start-app.bat",
@@ -2551,7 +2581,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 109,
               "Title": "setup-database.bat",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\setup-database.bat",
               "RelativeDocumentMoniker": "setup-database.bat",
@@ -2563,7 +2593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 83,
               "Title": "20251201231754_addmodels2.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251201231754_addmodels2.cs",
               "RelativeDocumentMoniker": "App.DAL\\Migrations\\20251201231754_addmodels2.cs",
@@ -2575,7 +2605,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 84,
               "Title": "FIX-SEEDING-ERROR.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\FIX-SEEDING-ERROR.md",
               "RelativeDocumentMoniker": "FIX-SEEDING-ERROR.md",
@@ -2587,7 +2617,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 110,
               "Title": "QUICK-SETUP.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\QUICK-SETUP.md",
               "RelativeDocumentMoniker": "QUICK-SETUP.md",
@@ -2599,7 +2629,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 114,
               "Title": "reset-database.bat",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\reset-database.bat",
               "RelativeDocumentMoniker": "reset-database.bat",
@@ -2611,7 +2641,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 115,
               "Title": "20251201230429_addmodels.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Migrations\\20251201230429_addmodels.cs",
               "RelativeDocumentMoniker": "App.DAL\\Migrations\\20251201230429_addmodels.cs",
@@ -2623,7 +2653,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 113,
               "Title": "fix-avatar-migration.bat",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\fix-avatar-migration.bat",
               "RelativeDocumentMoniker": "fix-avatar-migration.bat",
@@ -2635,7 +2665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 111,
               "Title": "check-database.bat",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\check-database.bat",
               "RelativeDocumentMoniker": "check-database.bat",
@@ -2647,7 +2677,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 112,
               "Title": "START-HERE.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\START-HERE.md",
               "RelativeDocumentMoniker": "START-HERE.md",
@@ -2659,7 +2689,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 105,
               "Title": "quick-start.sh",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\quick-start.sh",
               "RelativeDocumentMoniker": "quick-start.sh",
@@ -2671,7 +2701,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 86,
               "Title": "SETUP-GUIDE.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\SETUP-GUIDE.md",
               "RelativeDocumentMoniker": "SETUP-GUIDE.md",
@@ -2683,7 +2713,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 104,
               "Title": "Postman-Collection.json",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\Postman-Collection.json",
               "RelativeDocumentMoniker": "Postman-Collection.json",
@@ -2695,7 +2725,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 103,
               "Title": "API-DOCUMENTATION.md",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\API-DOCUMENTATION.md",
               "RelativeDocumentMoniker": "API-DOCUMENTATION.md",
@@ -2707,7 +2737,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 102,
               "Title": "migration-commands.txt",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\migration-commands.txt",
               "RelativeDocumentMoniker": "migration-commands.txt",
@@ -2719,7 +2749,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 101,
               "Title": "BadRequestException.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Exceptions\\BadRequestException.cs",
               "RelativeDocumentMoniker": "App.Core\\Exceptions\\BadRequestException.cs",
@@ -2731,7 +2761,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 100,
               "Title": "UnauthorizedException.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Exceptions\\UnauthorizedException.cs",
               "RelativeDocumentMoniker": "App.Core\\Exceptions\\UnauthorizedException.cs",
@@ -2743,7 +2773,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 87,
               "Title": "ICategoryService.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Interfaces\\ICategoryService.cs",
               "RelativeDocumentMoniker": "App.Business\\Services\\Interfaces\\ICategoryService.cs",
@@ -2755,7 +2785,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 98,
               "Title": "IOrderService.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Interfaces\\IOrderService.cs",
               "RelativeDocumentMoniker": "App.Business\\Services\\Interfaces\\IOrderService.cs",
@@ -2767,7 +2797,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 99,
               "Title": "IAnalyticsService.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Interfaces\\IAnalyticsService.cs",
               "RelativeDocumentMoniker": "App.Business\\Services\\Interfaces\\IAnalyticsService.cs",
@@ -2779,7 +2809,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 97,
               "Title": "ITokenService.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Interfaces\\ITokenService.cs",
               "RelativeDocumentMoniker": "App.Business\\Services\\Interfaces\\ITokenService.cs",
@@ -2791,7 +2821,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 88,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\Services\\Interfaces\\IAuthService.cs",
               "RelativeDocumentMoniker": "App.Business\\Services\\Interfaces\\IAuthService.cs",
@@ -2803,7 +2833,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 89,
               "Title": "IProductRepository.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Interfaces\\IProductRepository.cs",
               "RelativeDocumentMoniker": "App.DAL\\Repositories\\Interfaces\\IProductRepository.cs",
@@ -2815,7 +2845,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 96,
               "Title": "IOrderRepository.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.DAL\\Repositories\\Interfaces\\IOrderRepository.cs",
               "RelativeDocumentMoniker": "App.DAL\\Repositories\\Interfaces\\IOrderRepository.cs",
@@ -2827,7 +2857,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 93,
               "Title": "LoginDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\LoginDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Auth\\LoginDTO.cs",
@@ -2839,7 +2869,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 94,
               "Title": "TokenDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\TokenDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Auth\\TokenDTO.cs",
@@ -2851,7 +2881,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 95,
               "Title": "UserInfoDTO.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Business\\DTOs\\Auth\\UserInfoDTO.cs",
               "RelativeDocumentMoniker": "App.Business\\DTOs\\Auth\\UserInfoDTO.cs",
@@ -2863,7 +2893,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 92,
               "Title": "PaymentMethod.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Enums\\PaymentMethod.cs",
               "RelativeDocumentMoniker": "App.Core\\Enums\\PaymentMethod.cs",
@@ -2875,7 +2905,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 90,
               "Title": "EUserRole.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Core\\Enums\\EUserRole.cs",
               "RelativeDocumentMoniker": "App.Core\\Enums\\EUserRole.cs",
@@ -2887,7 +2917,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 91,
               "Title": "ClaimService.cs",
               "DocumentMoniker": "C:\\Users\\Emil\\source\\repos\\Bernessa\\App\\src\\App.Shared\\Implementations\\ClaimService.cs",
               "RelativeDocumentMoniker": "App.Shared\\Implementations\\ClaimService.cs",

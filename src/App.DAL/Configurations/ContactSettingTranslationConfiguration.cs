@@ -8,6 +8,8 @@ namespace App.DAL.Configurations
     {
         public void Configure(EntityTypeBuilder<ContactSettingTranslation> builder)
         {
+            builder.ToTable("contactsettingtranslations");
+            
             builder.HasKey(t => t.Id);
             
             builder.Property(t => t.LanguageCode)

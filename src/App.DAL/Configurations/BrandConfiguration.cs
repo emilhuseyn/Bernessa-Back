@@ -8,6 +8,8 @@ namespace App.DAL.Configurations
     {
         public void Configure(EntityTypeBuilder<Brand> builder)
         {
+            builder.ToTable("brands");
+            
             builder.HasKey(b => b.Id);
             
             builder.Property(b => b.Name)

@@ -1,0 +1,108 @@
+﻿using App.Core.Entities.Commons;
+using App.Core.Entities.Identity;
+using App.Core.Entities;
+using App.Core.Helpers;
+using App.Shared.Interfaces;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+
+namespace App.DAL.Presistence
+{
+    public class AppDbContext : IdentityDbContext<User>
+    {
+        private readonly IClaimService _claimService;
+
+        public AppDbContext(DbContextOptions<AppDbContext> options, IClaimService claimService) : base(options)
+        {
+            _claimService = claimService;
+        }
+
+        // DbSets
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductVariant> ProductVariants { get; set; }
+        public DbSet<Brand> Brands { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
+        public DbSet<Setting> Settings { get; set; }
+        public DbSet<ContactSetting> ContactSettings { get; set; }
+        public DbSet<ContactSettingTranslation> ContactSettingTranslations { get; set; }
+        public DbSet<CategoryTranslation> CategoryTranslations { get; set; }
+        public DbSet<ProductTranslation> ProductTranslations { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+            
+            // Configure Identity tables with lowercase names for Linux MySQL compatibility
+            modelBuilder.Entity<User>().ToTable("aspnetusers");
+            modelBuilder.Entity<Microsoft.AspNetCore.Identity.IdentityRole>().ToTable("aspnetroles");
+            modelBuilder.Entity<Microsoft.AspNetCore.Identity.IdentityUserRole<string>>().ToTable("aspnetuserroles");
+            modelBuilder.Entity<Microsoft.AspNetCore.Identity.IdentityUserClaim<string>>().ToTable("aspnetuserclaims");
+            modelBuilder.Entity<Microsoft.AspNetCore.Identity.IdentityUserLogin<string>>().ToTable("aspnetuserlogins");
+            modelBuilder.Entity<Microsoft.AspNetCore.Identity.IdentityUserToken<string>>().ToTable("aspnetusertokens");
+            modelBuilder.Entity<Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>>().ToTable("aspnetroleclaims");
+            
+            // Configure all DateTime properties to be stored as UTC and converted to Azerbaijan time
+            foreach (var entityType in modelBuilder.Model.GetEntityTypes())
+            {
+                foreach (var property in entityType.GetProperties())
+                {
+                    if (property.ClrType == typeof(DateTime) || property.ClrType == typeof(DateTime?))
+                    {
+                        // Store as UTC in database
+                        property.SetColumnType("datetime");
+                    }
+                }
+            }
+            
+            base.OnModelCreating(modelBuilder);
+        }
+        
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            base.OnConfiguring(optionsBuilder);
+            
+            // Configure migrations history table name for Linux MySQL compatibility
+            optionsBuilder.UseMySql(
+                ServerVersion.AutoDetect(optionsBuilder.Options.FindExtension<Microsoft.EntityFrameworkCore.Infrastructure.RelationalOptionsExtension>()?.ConnectionString ?? ""),
+                mySqlOptions => mySqlOptions.MigrationsHistoryTable("__efmigrationshistory")
+            );
+        }
+
+        public new async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new())
+        {
+            var currentUserId = _claimService?.GetUserId() ?? "System";
+            var azerbaijanNow = DateTimeHelper.GetAzerbaijanNow();
+            var utcNow = DateTimeHelper.ToUtcFromAzerbaijan(azerbaijanNow);
+
+            foreach (var entry in ChangeTracker.Entries<IAuditedEntity>())
+            {
+                switch (entry.State)
+                {
+                    case EntityState.Added:
+                        entry.Entity.CreatedBy = currentUserId;
+                        entry.Entity.CreatedOn = utcNow; // Store as UTC
+
+                        entry.Entity.UpdatedBy = currentUserId;
+                        entry.Entity.UpdatedOn = utcNow; // Store as UTC
+                        break;
+                    case EntityState.Modified:
+                        entry.Entity.UpdatedBy = currentUserId;
+                        entry.Entity.UpdatedOn = utcNow; // Store as UTC
+                        break;
+                }
+            }
+
+            return await base.SaveChangesAsync(cancellationToken);
+        }
+    }
+}

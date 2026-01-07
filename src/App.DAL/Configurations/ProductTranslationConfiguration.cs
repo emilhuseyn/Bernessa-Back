@@ -8,6 +8,8 @@ namespace App.DAL.Configurations
     {
         public void Configure(EntityTypeBuilder<ProductTranslation> builder)
         {
+            builder.ToTable("producttranslations");
+            
             builder.HasKey(pt => pt.Id);
             
             builder.Property(pt => pt.LanguageCode)
