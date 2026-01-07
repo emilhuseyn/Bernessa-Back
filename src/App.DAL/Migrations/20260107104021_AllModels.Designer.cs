@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace App.DAL.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260107083250_FixContactSettingNullables")]
-    partial class FixContactSettingNullables
+    [Migration("20260107104021_AllModels")]
+    partial class AllModels
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -61,7 +61,7 @@ namespace App.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Brands");
+                    b.ToTable("brands", (string)null);
                 });
 
             modelBuilder.Entity("App.Core.Entities.Category", b =>
@@ -111,7 +111,7 @@ namespace App.DAL.Migrations
 
                     b.HasIndex("Slug");
 
-                    b.ToTable("Categories");
+                    b.ToTable("categories", (string)null);
                 });
 
             modelBuilder.Entity("App.Core.Entities.CategoryTranslation", b =>
@@ -140,7 +140,7 @@ namespace App.DAL.Migrations
                     b.HasIndex("CategoryId", "LanguageCode")
                         .IsUnique();
 
-                    b.ToTable("CategoryTranslations");
+                    b.ToTable("categorytranslations", (string)null);
                 });
 
             modelBuilder.Entity("App.Core.Entities.ContactSetting", b =>
@@ -237,7 +237,7 @@ namespace App.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ContactSettings");
+                    b.ToTable("contactsettings", (string)null);
                 });
 
             modelBuilder.Entity("App.Core.Entities.ContactSettingTranslation", b =>
@@ -277,7 +277,7 @@ namespace App.DAL.Migrations
                     b.HasIndex("ContactSettingId", "LanguageCode")
                         .IsUnique();
 
-                    b.ToTable("ContactSettingTranslations");
+                    b.ToTable("contactsettingtranslations", (string)null);
                 });
 
             modelBuilder.Entity("App.Core.Entities.Identity.User", b =>
@@ -444,7 +444,7 @@ namespace App.DAL.Migrations
                     b.HasIndex("OrderNumber")
                         .IsUnique();
 
-                    b.ToTable("Orders");
+                    b.ToTable("orders", (string)null);
                 });
 
             modelBuilder.Entity("App.Core.Entities.OrderItem", b =>
@@ -510,7 +510,7 @@ namespace App.DAL.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("OrderItems");
+                    b.ToTable("orderitems", (string)null);
                 });
 
             modelBuilder.Entity("App.Core.Entities.Product", b =>
@@ -575,7 +575,7 @@ namespace App.DAL.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Products");
+                    b.ToTable("products", (string)null);
                 });
 
             modelBuilder.Entity("App.Core.Entities.ProductTranslation", b =>
@@ -614,7 +614,7 @@ namespace App.DAL.Migrations
                     b.HasIndex("ProductId", "LanguageCode")
                         .IsUnique();
 
-                    b.ToTable("ProductTranslations");
+                    b.ToTable("producttranslations", (string)null);
                 });
 
             modelBuilder.Entity("App.Core.Entities.ProductVariant", b =>
@@ -648,7 +648,7 @@ namespace App.DAL.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ProductVariants");
+                    b.ToTable("productvariants", (string)null);
                 });
 
             modelBuilder.Entity("App.Core.Entities.Setting", b =>
