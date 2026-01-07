@@ -1,4 +1,4 @@
-# Image Upload Implementation Summary
+﻿# Image Upload Implementation Summary
 
 ## Overview
 The image upload functionality has been successfully implemented using `IFormFile` with files stored in `wwwroot/images`.
@@ -9,7 +9,7 @@ The image upload functionality has been successfully implemented using `IFormFil
 - Updated to save uploaded images to `wwwroot/images` instead of `wwwroot/uploads`
 - Returns relative path `/images/{filename}` instead of full URL
 - Automatically creates the images directory if it doesn't exist
-- **NO SIZE LIMIT** - Validates only image type (content-type contains "image")
+- Validates images (max 5MB, must be image type)
 
 ### 2. **Category Entity** (`App.Core/Entities/Category.cs`)
 - Added `Image` property of type `string`
@@ -152,7 +152,7 @@ App.API/
 1. **Stop the application** before running migrations
 2. **Images are validated**: 
    - Must be image type (content-type contains "image")
-   - **NO SIZE LIMIT** - Upload any size image
+   - Maximum size: 5MB
 3. **Unique filenames**: Each uploaded file gets a unique GUID prefix
 4. **Static files**: Automatically served from wwwroot directory
 5. **CORS**: Currently set to allow all origins - adjust for production

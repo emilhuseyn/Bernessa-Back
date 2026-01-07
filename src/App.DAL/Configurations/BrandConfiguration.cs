@@ -17,7 +17,7 @@ namespace App.DAL.Configurations
                 .HasMaxLength(100);
             
             builder.Property(b => b.Logo)
-                .HasMaxLength(500)
+             
                 .IsRequired(false);
             
             builder.HasQueryFilter(b => !b.IsDeleted);

@@ -1,4 +1,4 @@
-using App.Core.Entities;
+﻿using App.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -23,7 +23,7 @@ namespace App.DAL.Configurations
                 .HasMaxLength(50);
             
             builder.Property(oi => oi.ProductImage)
-                .IsRequired(false);
+                .HasMaxLength(500);
             
             builder.Property(oi => oi.Price)
                 .HasColumnType("decimal(18,2)");
